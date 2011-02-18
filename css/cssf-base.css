@@ -246,7 +246,6 @@ table td {  }
 select { font-size: 12px; }
 .i-text { border: 1px solid #ccc; border-color: #a0a0a0 #bbb #ccc #bbb; padding: 4px; color: #444; font: 12px/1.2 sans-serif; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; box-sizing: border-box; -webkit-box-sizing:border-box; -moz-box-sizing: border-box; }
 label, .bu, button { cursor: pointer; }
-bu::-moz-focus-inner, button::-moz-focus-inner, input::-moz-focus-inner { padding: 0; border: none; }
 
 /* Button
 ---------------------------------------- */
@@ -255,6 +254,7 @@ bu::-moz-focus-inner, button::-moz-focus-inner, input::-moz-focus-inner { paddin
 .bu:hover, .bu:focus,
 .i-text:focus,
 textarea:focus { border-color: #06c; outline: none; }
+.bu::-moz-focus-inner, button::-moz-focus-inner, input::-moz-focus-inner { padding: 0; border: none; }
 
 /* Message block
 ---------------------------------------- */
