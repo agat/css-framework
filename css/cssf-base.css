@@ -278,9 +278,9 @@ em									{ font-style: italic; }
 dfn									{ font-style: italic; font-weight: bold; }
 del									{ text-decoration: line-through; }
 sup,
-sub									{ position: relative; font-size: 0.8em; }
-sup									{ top: -0.4em; }
-sub									{ bottom: -0.3em; }
+sub									{ position: relative; font-size: 0.8em; line-height: 0; }
+sup									{ vertical-align: text-top; }
+sub									{ vertical-align: text-bottom; }
 small								{ font-size: 0.8em; }
 hr,
 .hr									{ color: #ccc; background-color: #ccc; height: 1px; border: 0px; }
