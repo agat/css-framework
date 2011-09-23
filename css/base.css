@@ -111,7 +111,7 @@ section								{ display: block; }
 
 /* Main styles
 ---------------------------------------- */
-html								{ background: #fff; color: #444; font: 14px/1.5em sans-serif; }
+html								{ background: #fff; color: #444; font: 14px/20px sans-serif; }
 body								{ }
 
 a									{ color: #06c; }
@@ -120,7 +120,7 @@ a:active							{ outline: none; }
 
 /* Grid System
 ---------------------------------------- */
-.g-960								{ width: 960px; margin: 0 auto; }
+.g									{ width: 960px; margin: 0 auto; }
 .g-1,
 .g-2,
 .g-3,
@@ -201,18 +201,18 @@ a:active							{ outline: none; }
 /* Horizontal Navigation
 ---------------------------------------- */
 .nav-h								{ }
-.nav-h li							{ float: left; display: block; position: relative; border-left: 1px solid #ccc; list-style: none; }
+.nav-h li							{ float: left; display: block; position: relative; border-left: 1px solid #666; list-style: none; }
 .nav-h li:first-child,
 .nav-h li.first						{ border-left: none; }
-.nav-h a							{ text-decoration: none; padding: 2px 10px; display: block; }
-.nav-h ul							{ display: none; position: absolute; left: 0; top: 25px; width: 160px; background: #fff; border: 1px solid #ccc; border-width: 1px 1px 0; }
-.nav-h ul ul						{ left: 100%; top: -1px; }
+.nav-h a							{ text-decoration: none; padding: 3px 10px 2px 10px; display: block; }
+.nav-h ul							{ display: none; position: absolute; left: -1px; top: 25px; width: 250px; background: #eee; }
+.nav-h > li:first-child > ul		{ left: 0; }
+.nav-h ul ul						{ left: 100%; top: 0; }
 .nav-h li li						{ float: none; border: none; }
-.nav-h li li a						{ border-bottom: 1px solid #ccc }
-.nav-h li:hover,
-.nav-v-d li:hover					{ background: #666; }
+.nav-h li li a						{ }
+.nav-v li a:hover,
 .nav-h li:hover > a,
-.nav-v-d li:hover > a				{ color: #fff; }
+.nav-v-d li:hover > a				{ background: #666; color: #fff; text-decoration: none; }
 .nav-h li:hover ul ul,
 .nav-h li:hover ul li:hover ul ul	{ display: none; }
 .nav-h li:hover ul,
@@ -222,25 +222,20 @@ a:active							{ outline: none; }
 /* Vertical Navigation
 ---------------------------------------- */
 .nav-v								{ }
-.nav-v li							{ padding: 2px 10px; list-style: none; }
-.nav-v li li						{ border: none; }
-.nav-v a							{ text-decoration: none; display: block; }
-.nav-v a:hover						{ text-decoration: underline; }
+.nav-v li							{ list-style: none; }
+.nav-v li li a						{ padding-left: 20px; }
+.nav-v a							{ text-decoration: none; display: block; padding: 3px 10px 2px 10px; }
+.nav-v a:hover						{  }
 
 /* Vertical Drop Down Navigation
 ---------------------------------------- */
 .nav-v								{ }
-.nav-v-d li							{ padding: 2px 0; display: block; position: relative; list-style: none; }
-.nav-v-d a							{ display: block; position: relative; text-decoration: none; padding-left: 10px; }
-.nav-v-d ul							{ display: none; position: absolute; top: 0; border: 1px solid #ccc; border-width: 1px 1px 0; left: 100%; width: 100%; background: #fff; }
-.nav-v-d ul ul						{ top: -1px; left: 100%; }
-.nav-v-d ul li						{ border-bottom: 1px solid #ccc; }
-.nav-v-d li:hover ul ul,
-.nav-v-d li:hover ul li:hover ul ul	{ display: none; }
-.nav-v-d li:hover ul,
-.nav-v-d li:hover ul li:hover ul,
-.nav-v-d li:hover ul li:hover ul li:hover ul
-									{ display: block; }
+.nav-v-d li							{ position: relative; list-style: none; }
+.nav-v-d a							{ display: block; text-decoration: none; padding: 3px 10px 2px 10px; }
+.nav-v-d ul							{ display: none; position: absolute; top: 0; left: 100%; width: 250px; background: #eee; }
+.nav-v-d ul ul						{ left: 100%; }
+.nav-v-d li:hover > ul				{ display: block; }
+
 /* Content elements
 ---------------------------------------- */
 .c h1,
@@ -329,7 +324,7 @@ img									{ border: none; max-width: 100%; }
 ---------------------------------------- */
 .gallery							{ }
 .gallery-item						{ float: left; margin: 0 0 10px 20px; width: 140px; }
-.gallery .first						{ margin-left: 0; }
+.gallery-item:first-child			{ margin-left: 0; }
 .gallery .b-gallery-item dt			{ font-weight: normal; }
 .gallery dd							{ margin: 0 0 2px 0; }
 .gallery dd img						{ display: block; }
@@ -382,7 +377,9 @@ button								{ cursor: pointer; }
 
 /* Button
 ---------------------------------------- */
-.bu									{ padding: 3px 6px; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; border: 1px solid #ccc; border-color: #ccc #bbb #a0a0a0 #bbb; background: #eee; background: -webkit-gradient(linear, 0 0, 0 bottom, from(#f9f9f9), to(#e3e3e3)); background: -moz-linear-gradient(#f9f9f9, #e3e3e3); background: linear-gradient(#f9f9f9, #e3e3e3); -pie-background: linear-gradient(#f9f9f9, #e3e3e3); color: #333; text-decoration: none; text-align: center; font: 12px/1.2 sans-serif; width: auto; overflow: visible; }
+.bu									{ padding: 6px 10px 5px 10px; border: 1px solid #ccc; border-color: #ccc #bbb #a0a0a0 #bbb; color: #333; text-decoration: none; text-align: center; font: 12px/1.2 sans-serif; width: auto; overflow: visible;
+										-moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px;
+										background: #eee; background: -webkit-gradient(linear, 0 0, 0 bottom, from(#f9f9f9), to(#e3e3e3)); background: -moz-linear-gradient(#f9f9f9, #e3e3e3); background: linear-gradient(#f9f9f9, #e3e3e3); -pie-background: linear-gradient(#f9f9f9, #e3e3e3); }
 .bu:hover,
 .bu:focus,
 .i-text:focus,
