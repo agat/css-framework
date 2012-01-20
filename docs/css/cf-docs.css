@@ -1,0 +1,5 @@
+/* css-framework documentation styles
+--------------------------------------- */
+
+.grid-demo .g-row > [class ^= "g-"]			{ text-align: center; background: #fdf6e3; padding: 3px 0; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; }
+.grid-demo .g-row:hover > [class ^= "g-"]	{ background: #eee8d5; }
