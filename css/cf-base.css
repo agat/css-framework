@@ -297,6 +297,7 @@ th,
 td									{ border: 1px solid #ccc; padding: 2px 8px; vertical-align: top; }
 th									{ background: #f4f4f4; font-weight: normal; text-align: left; }
 td									{ }
+
 /* Form
 ---------------------------------------- */
 .form								{ }
@@ -334,10 +335,10 @@ input::-moz-focus-inner				{ padding: 0; border: none; }
 
 /* Message block
 ---------------------------------------- */
-.f-message							{ }
-.f-message h3						{ border-bottom: 1px solid #ccc; padding-bottom: 5px; margin-bottom: 10px; }
-.f-message p						{ margin-bottom: 10px; }
-.f-message-error					{ }
-.f-message-error h3					{ color: red; border-color: red; }
-.f-message-success					{ }
-.f-message-success h3				{ color: green; border-color: green; }
+.f-message							{ padding: 4px 27px 4px 9px; background: #fff9b8; border: 1px solid #e5dfa5; position: relative;
+										-webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; }
+.f-message-close					{ position: absolute; right: 8px; top: 4px; font-weight: bold; font-size: 18px; cursor: pointer; opacity: 0.2; filter: alpha(opacity=20); }
+.f-message-close:hover				{ opacity: 0.8; filter: alpha(opacity=80); }
+.f-message p						{ margin-bottom: 0; }
+.f-message-error					{ background: #ffc6bc; border-color: #e5b1a8; }
+.f-message-success					{ background: #d3dbb2; border-color: #bdc49f; }
