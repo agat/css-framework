@@ -248,6 +248,7 @@ address,
 pre,
 hr,
 .hr,
+.f-breadcrumbs,
 .f-pager,
 .form,
 .form legend,
@@ -273,11 +274,20 @@ img									{ border: none; max-width: 100%; }
 .f-gallery dd						{ margin: 0 0 2px 0; }
 .f-gallery dd img					{ display: block; }
 
+/* Breadcrumbs
+--------------------------------------- */
+.f-breadcrumbs						{ overflow: hidden; margin-left: 0; padding: 0; }
+.f-breadcrumbs li					{ float: left; margin-left: 9px; list-style: none; }
+.f-breadcrumbs li:before			{ content: '/'; margin-right: 9px; }
+.f-breadcrumbs li:first-child		{ margin-left: 0; }
+.f-breadcrumbs li:first-child:before		{ display: none; }
+.f-breadcrumbs a					{ text-decoration: none; }
+.f-breadcrumbs a:hover				{ text-decoration: underline; }
+.f-breadcrumb .cur					{ }
+
 /* Pager block
 ---------------------------------------- */
 .f-pager							{ text-align: center; }
-/*.f-pager-prev a,*/
-/*.f-pager-next a						{ font-size: 120%; }*/
 .f-pager-prev						{ margin-right: 10px; }
 .f-pager-next						{ margin-left: 10px; }
 .f-pager-prev a,
