@@ -6,188 +6,196 @@
 
 		<link href="../css/cf-base.css" rel="stylesheet">
 		<link href="css/cf-docs.css" rel="stylesheet">
+		<link href="css/prettify.css" rel="stylesheet">
 
-		<!--<script src="js/base.js"></script>-->
+		<script src="js/prettify.js"></script>
 	</head>
 	<body class="g">
-	<div class="g-row">
-		<div class="g-12">
-			<br>
-			<h1>Демонстрация css-framework'а</h1>
-			<h2>Разметка страницы</h2>
-			<p>Система блоков с базовыми классами <code>class="g-x"</code> позволяет создавать различные макеты страниц.</p>
-			<p>Ширина первичного блока <code>"g-1" - 60px</code>.</p>
-		</div><!-- g -->
-	</div><!-- g-row -->
-
-<pre>
-&lt;div class=&quot;g-row&quot;&gt;
-	&lt;div class=&quot;g-5&quot;&gt;
-		...
-	&lt;/div&gt;
-	&lt;div class=&quot;g-7&quot;&gt;
-		...
-	&lt;/div&gt;
-&lt;/div&gt;
+		<div class="g-row">
+			<div class="g-12">
+				<br>
+				<h1>Демонстрация css-framework'а</h1>
+			</div><!-- g-12 -->
+		</div><!-- g-row -->
+		<section class="g-row">
+			<div class="g-12">
+				<h2>Разметка страницы</h2>
+				<p>Макет сайта создается с помощью портированного и оптимизированного кода из <a href="http://960.gs/">960 Grid System</a>. 12 колонок, основной блок шириной <code>60px</code>, расстояние между колонками и рядами <code>20px</code>.</p>
+				<h3>Основа</h3>
+				<p>Основой разметки служит родительский блок с классом <code>class="g"</code>. В нём следует расположить контейнер с классом <code>class="g-row"</code>, который разделяет разметку на ряды.</p>
+				<p>Контейнеры с классами <code>class="g-x"</code> позволяют создавать различные конфигурации колонок в рядах.</p>
+<pre class="prettyprint linenums">&lt;div class=&quot;g&quot;&gt;
+	&lt;div class=&quot;g-row&quot;&gt;
+		&lt;div class=&quot;g-5&quot;&gt;
+			...
+		&lt;/div&gt;&lt;!-- g-5 --&gt;
+		&lt;div class=&quot;g-7&quot;&gt;
+			...
+		&lt;/div&gt;&lt;!-- g-7 --&gt;
+	&lt;/div&gt;&lt;!-- g-row --&gt;
+&lt;/div&gt;&lt;!-- g --&gt;
 </pre>
+				<h3>Демонстрация 12-колоночной разметки</h3>
 
-		<div class="grid-demo">
-			<div class="g-row">
-				<div class="g-1">
-					<code>g-1</code>
-				</div><!-- g -->
-				<div class="g-1">
-					<code>g-1</code>
-				</div><!-- g -->
-				<div class="g-1">
-					<code>g-1</code>
-				</div><!-- g -->
-				<div class="g-1">
-					<code>g-1</code>
-				</div><!-- g -->
-				<div class="g-1">
-					<code>g-1</code>
-				</div><!-- g -->
-				<div class="g-1">
-					<code>g-1</code>
-				</div><!-- g -->
-				<div class="g-1">
-					<code>g-1</code>
-				</div><!-- g -->
-				<div class="g-1">
-					<code>g-1</code>
-				</div><!-- g -->
-				<div class="g-1">
-					<code>g-1</code>
-				</div><!-- g -->
-				<div class="g-1">
-					<code>g-1</code>
-				</div><!-- g -->
-				<div class="g-1">
-					<code>g-1</code>
-				</div><!-- g -->
-				<div class="g-1">
-					<code>g-1</code>
-				</div><!-- g -->
-			</div><!-- g-row -->
+				<div class="g-row grid-demo">
+					<div class="g-1">
+						<code>g-1</code>
+					</div><!-- g -->
+					<div class="g-1">
+						<code>g-1</code>
+					</div><!-- g -->
+					<div class="g-1">
+						<code>g-1</code>
+					</div><!-- g -->
+					<div class="g-1">
+						<code>g-1</code>
+					</div><!-- g -->
+					<div class="g-1">
+						<code>g-1</code>
+					</div><!-- g -->
+					<div class="g-1">
+						<code>g-1</code>
+					</div><!-- g -->
+					<div class="g-1">
+						<code>g-1</code>
+					</div><!-- g -->
+					<div class="g-1">
+						<code>g-1</code>
+					</div><!-- g -->
+					<div class="g-1">
+						<code>g-1</code>
+					</div><!-- g -->
+					<div class="g-1">
+						<code>g-1</code>
+					</div><!-- g -->
+					<div class="g-1">
+						<code>g-1</code>
+					</div><!-- g -->
+					<div class="g-1">
+						<code>g-1</code>
+					</div><!-- g -->
+				</div><!-- g-row -->
 
-			<div class="g-row">
-				<div class="g-2">
-					<code>g-2 - 140px</code>
-				</div><!-- g -->
-				<div class="g-2">
-					<code>g-2</code>
-				</div><!-- g -->
-				<div class="g-2">
-					<code>g-2</code>
-				</div><!-- g -->
-				<div class="g-2">
-					<code>g-2</code>
-				</div><!-- g -->
-				<div class="g-2">
-					<code>g-2</code>
-				</div><!-- g -->
-				<div class="g-2">
-					<code>g-2</code>
-				</div><!-- g -->
-			</div><!-- g-row -->
+				<div class="g-row grid-demo">
+					<div class="g-2">
+						<code>g-2 - 140px</code>
+					</div><!-- g -->
+					<div class="g-2">
+						<code>g-2</code>
+					</div><!-- g -->
+					<div class="g-2">
+						<code>g-2</code>
+					</div><!-- g -->
+					<div class="g-2">
+						<code>g-2</code>
+					</div><!-- g -->
+					<div class="g-2">
+						<code>g-2</code>
+					</div><!-- g -->
+					<div class="g-2">
+						<code>g-2</code>
+					</div><!-- g -->
+				</div><!-- g-row -->
 
-			<div class="g-row">
-				<div class="g-3">
-					<code>"g-3" - 220px</code>
-				</div><!-- g -->
-				<div class="g-3">
-					<code>"g-3"</code>
-				</div><!-- g -->
-				<div class="g-3">
-					<code>"g-3"</code>
-				</div><!-- g -->
-				<div class="g-3">
-					<code>"g-3"</code>
-				</div><!-- g -->
-			</div><!-- g-row -->
+				<div class="g-row grid-demo">
+					<div class="g-3">
+						<code>"g-3" - 220px</code>
+					</div><!-- g -->
+					<div class="g-3">
+						<code>"g-3"</code>
+					</div><!-- g -->
+					<div class="g-3">
+						<code>"g-3"</code>
+					</div><!-- g -->
+					<div class="g-3">
+						<code>"g-3"</code>
+					</div><!-- g -->
+				</div><!-- g-row -->
 
-			<div class="g-row">
-				<div class="g-4">
-					<code>"g-4" - 300px</code>
-				</div><!-- g -->
-				<div class="g-4">
-					<code>"g-4"</code>
-				</div><!-- g -->
-				<div class="g-4">
-					<code>"g-4"</code>
-				</div><!-- g -->
-			</div><!-- g-row -->
+				<div class="g-row grid-demo">
+					<div class="g-4">
+						<code>"g-4" - 300px</code>
+					</div><!-- g -->
+					<div class="g-4">
+						<code>"g-4"</code>
+					</div><!-- g -->
+					<div class="g-4">
+						<code>"g-4"</code>
+					</div><!-- g -->
+				</div><!-- g-row -->
 
-			<div class="g-row">
-				<div class="g-5">
-					<code>"g-5" - 380px</code>
-				</div><!-- g -->
-				<div class="g-7">
-					<code>"g-7"</code>
-				</div><!-- g -->
-			</div><!-- g-row -->
+				<div class="g-row grid-demo">
+					<div class="g-5">
+						<code>"g-5" - 380px</code>
+					</div><!-- g -->
+					<div class="g-7">
+						<code>"g-7"</code>
+					</div><!-- g -->
+				</div><!-- g-row -->
 
-			<div class="g-row">
-				<div class="g-6">
-					<code>"g-6" - 460px</code>
-				</div><!-- g -->
-				<div class="g-6">
-					<code>"g-6"</code>
-				</div><!-- g -->
-			</div><!-- g-row -->
+				<div class="g-row grid-demo">
+					<div class="g-6">
+						<code>"g-6" - 460px</code>
+					</div><!-- g -->
+					<div class="g-6">
+						<code>"g-6"</code>
+					</div><!-- g -->
+				</div><!-- g-row -->
 
-			<div class="g-row">
-				<div class="g-7">
-					<code>"g-7" - 540px</code>
-				</div><!-- g -->
-				<div class="g-5">
-					<code>"g-5"</code>
-				</div><!-- g -->
-			</div><!-- g-row -->
+				<div class="g-row grid-demo">
+					<div class="g-7">
+						<code>"g-7" - 540px</code>
+					</div><!-- g -->
+					<div class="g-5">
+						<code>"g-5"</code>
+					</div><!-- g -->
+				</div><!-- g-row -->
 
-			<div class="g-row">
-				<div class="g-8">
-					<code>"g-8" - 620px</code>
-				</div><!-- g -->
-				<div class="g-4">
-					<code>"g-4"</code>
-				</div><!-- g -->
-			</div><!-- g-row -->
+				<div class="g-row grid-demo">
+					<div class="g-8">
+						<code>"g-8" - 620px</code>
+					</div><!-- g -->
+					<div class="g-4">
+						<code>"g-4"</code>
+					</div><!-- g -->
+				</div><!-- g-row -->
 
-			<div class="g-row">
-				<div class="g-9">
-					<code>"g-9" - 700px</code>
-				</div><!-- g -->
-				<div class="g-3">
-					<code>"g-3"</code>
-				</div><!-- g -->
-			</div><!-- g-row -->
+				<div class="g-row grid-demo">
+					<div class="g-9">
+						<code>"g-9" - 700px</code>
+					</div><!-- g -->
+					<div class="g-3">
+						<code>"g-3"</code>
+					</div><!-- g -->
+				</div><!-- g-row -->
 
-			<div class="g-row">
-				<div class="g-10">
-					<code>"g-10" - 780px</code>
-				</div><!-- g -->
-				<div class="g-2">
-					<code>"g-2"</code>
-				</div><!-- g -->
-			</div><!-- g-row -->
+				<div class="g-row grid-demo">
+					<div class="g-10">
+						<code>"g-10" - 780px</code>
+					</div><!-- g -->
+					<div class="g-2">
+						<code>"g-2"</code>
+					</div><!-- g -->
+				</div><!-- g-row -->
 
-			<div class="g-row">
-				<div class="g-11">
-					<code>"g-11" - 860px</code>
-				</div><!-- g -->
-				<div class="g-1">
-					<code>"g-1"</code>
-				</div><!-- g -->
-			</div><!-- g-row -->
+				<div class="g-row grid-demo">
+					<div class="g-11">
+						<code>"g-11" - 860px</code>
+					</div><!-- g -->
+					<div class="g-1">
+						<code>"g-1"</code>
+					</div><!-- g -->
+				</div><!-- g-row -->
 
-			<div class="g-row">
-				<div class="g-12">
-					<code>"g-12" - 940px</code>
-				</div><!-- g -->
-			</div><!-- g-row -->
-		</div><!-- grid-demo -->
+				<div class="g-row grid-demo">
+					<div class="g-12">
+						<code>"g-12" - 940px</code>
+					</div><!-- g -->
+				</div><!-- g-row -->
+			</div><!-- g-12 -->
+		</section><!-- g-row -->
+
+
 
 		<div class="g-7">
 			<h2>Горизонтальная многоуровневая навигация</h2>
@@ -328,7 +336,7 @@
 				<li><a href="#">Последний пункт</a></li>
 			</ul>
 
-			<h2>Хлебные крошки</h2>
+			<h2>&laquo;Хлебные крошки&raquo;</h2>
 
 			<ul class="f-breadcrumbs">
 				<li><a href="#">Главная</a></li>
@@ -367,7 +375,7 @@
 			<h2>Блок с картинкой и текстом</h2>
 
 			<div class="bwi">
-				<img class="bwi-pic" src="http://dummyimage.com/200x100/ccc/999.gif" alt="temp image" height="100" width="200">
+				<img class="bwi-pic" src="http://dummyimage.com/200x100/ccc/999.gif" alt="temp image" height="100" width="200" />
 				<div class="bwi-text">
 					<p>Это пример блока с картинкой и текстом. Блоку задан класс <code>class="b-wi"</code><br>
 					Картинке задан класс <code>class="b-wi-pic"</code><br>
@@ -570,10 +578,12 @@
 			</div><!--f-message -->
 
 			<div class="f-message f-message-error">
+				<span class="f-message-close">&times;</span>
 				<p>Текст сообщения об ошибке</p>
 			</div><!-- f-message-->
 
 			<div class="f-message f-message-success">
+				<span class="f-message-close">&times;</span>
 				<p>Текст сообщения об успехе</p>
 			</div><!-- f-message -->
 
@@ -649,6 +659,8 @@
 
 		</div><!-- g -->
 
-		<br class="cc">
+		<script>
+			prettyPrint();
+		</script>
 	</body>
 </html>
