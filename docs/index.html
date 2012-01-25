@@ -24,6 +24,7 @@
 				<h3>Основа</h3>
 				<p>Основой разметки служит родительский блок с классом <code>class="g"</code>. В нём следует расположить контейнер с классом <code>class="g-row"</code>, который разделяет разметку на ряды.</p>
 				<p>Контейнеры с классами <code>class="g-x"</code> позволяют создавать различные конфигурации колонок в рядах.</p>
+
 <pre class="prettyprint linenums">&lt;div class=&quot;g&quot;&gt;
 	&lt;div class=&quot;g-row&quot;&gt;
 		&lt;div class=&quot;g-5&quot;&gt;
@@ -35,7 +36,8 @@
 	&lt;/div&gt;&lt;!-- g-row --&gt;
 &lt;/div&gt;&lt;!-- g --&gt;
 </pre>
-				<h3>Демонстрация 12-колоночной разметки</h3>
+
+				<h4>Демонстрация 12-колоночной разметки</h4>
 
 				<div class="g-row grid-demo">
 					<div class="g-1">
@@ -192,82 +194,131 @@
 						<code>"g-12" - 940px</code>
 					</div><!-- g -->
 				</div><!-- g-row -->
+
+				<h3>Вложенные колонки</h3>
+				<p>Для создания более сложных разметок вы можете вкладывать контейнеры <code class="prettyprint">&lt;div class=&quot;g-row&quot;&gt;...&lt;/div&gt;</code> друг в друга:</p>
+
+<pre class="prettyprint linenums">&lt;div class=&quot;g&quot;&gt;
+	&lt;div class=&quot;g-row&quot;&gt;				&lt;!-- 1 уровень --&gt;
+		&lt;div class=&quot;g-6&quot;&gt;
+			&lt;div class=&quot;g-row&quot;&gt;			&lt;!-- 2 уровень --&gt;
+				&lt;div class=&quot;g-1&quot;&gt;...&lt;/div&gt;
+				&lt;div class=&quot;g-4&quot;&gt;...&lt;/div&gt;
+				&lt;div class=&quot;g-1&quot;&gt;...&lt;/div&gt;
+			&lt;/div&gt;&lt;!-- g-row --&gt;
+			&lt;div class=&quot;g-row&quot;&gt;			&lt;!-- 2 уровень --&gt;
+				&lt;div class=&quot;g-2&quot;&gt;...&lt;/div&gt;
+				&lt;div class=&quot;g-2&quot;&gt;...&lt;/div&gt;
+				&lt;div class=&quot;g-2&quot;&gt;...&lt;/div&gt;
+			&lt;/div&gt;&lt;!-- g-row --&gt;
+		&lt;/div&gt;&lt;!-- g-6 --&gt;
+		&lt;div class=&quot;g-6&quot;&gt;
+			&lt;div class=&quot;g-row&quot;&gt;			&lt;!-- 2 уровень --&gt;
+				&lt;div class=&quot;g-6&quot;&gt;...&lt;/div&gt;
+			&lt;/div&gt;&lt;!-- g-row --&gt;
+			&lt;div class=&quot;g-row&quot;&gt;			&lt;!-- 2 уровень --&gt;
+				&lt;div class=&quot;g-3&quot;&gt;...&lt;/div&gt;
+				&lt;div class=&quot;g-3&quot;&gt;...&lt;/div&gt;
+			&lt;/div&gt;&lt;!-- g-row --&gt;
+		&lt;/div&gt;&lt;!-- g-6 --&gt;
+	&lt;/div&gt;&lt;!-- g-row --&gt;
+&lt;/div&gt;&lt;!-- g --&gt;
+</pre>
+
+				<h4>Пример вложенных колонок</h4>
+
+				<div class="g-row grid-demo">
+					<div class="g-6">
+						<div class="g-row grid-demo">
+							<div class="g-1">
+								<code>"g-1"</code>
+							</div><!-- g -->
+							<div class="g-4">
+								<code>"g-4"</code>
+							</div><!-- g -->
+							<div class="g-1">
+								<code>"g-1"</code>
+							</div><!-- g -->
+						</div><!-- g-row -->
+						<div class="g-row grid-demo">
+							<div class="g-2">
+								<code>"g-2"</code>
+							</div><!-- g -->
+							<div class="g-2">
+								<code>"g-2"</code>
+							</div><!-- g -->
+							<div class="g-2">
+								<code>"g-2"</code>
+							</div><!-- g -->
+						</div><!-- g-row -->
+					</div><!-- g -->
+					<div class="g-6">
+						<div class="g-row grid-demo">
+							<div class="g-6">
+								<code>"g-6"</code>
+							</div><!-- g -->
+						</div><!-- g-row -->
+						<div class="g-row grid-demo">
+							<div class="g-3">
+								<code>"g-3"</code>
+							</div><!-- g -->
+							<div class="g-3">
+								<code>"g-3"</code>
+							</div><!-- g -->
+						</div><!-- g-row -->
+					</div><!-- g -->
+				</div><!-- g-row -->
+
 			</div><!-- g-12 -->
 		</section><!-- g-row -->
 
+		<section class="g-row">
+			<div class="g-12">
+				<h2>Навигация</h2>
+				<h3>Горизонтальная навигация</h3>
 
+				<ul class="f-nav">
+					<li><a href="#">Первый пункт</a></li>
+					<li><a href="#">Второй</a></li>
+					<li><a href="#">Третий</a></li>
+					<li><a href="#">Последний пункт</a></li>
+				</ul><!-- f-nav -->
 
-		<div class="g-7">
-			<h2>Горизонтальная многоуровневая навигация</h2>
-			<ul class="nav-h">
-				<li><a href="#">Первый пункт</a></li>
-				<li><a href="#">Выпадающего меню</a>
-					<ul>
-						<li><a href="#">Первый пункт</a>
-							<ul>
-								<li><a href="#">Первый пункт</a>
-									<ul>
-										<li><a href="#">Первый пункт</a></li>
-										<li><a href="#">Второй</a></li>
-										<li><a href="#">Третий</a></li>
-										<li><a href="#">Последний пункт</a></li>
-									</ul>
-								</li>
-								<li><a href="#">Второй</a>
-									<ul>
-										<li><a href="#">Первый пункт</a></li>
-										<li><a href="#">Второй</a></li>
-										<li><a href="#">Третий</a></li>
-										<li><a href="#">Последний пункт</a></li>
-									</ul>
-								</li>
-								<li><a href="#">Третий</a></li>
-								<li><a href="#">Последний пункт</a></li>
-							</ul>
-						</li>
-						<li><a href="#">Второй</a>
-							<ul>
-								<li><a href="#">Первый пункт</a>
-									<ul>
-										<li class="first"><a href="#">Первый пункт</a></li>
-										<li><a href="#">Второй</a></li>
-										<li><a href="#">Третий</a></li>
-										<li><a href="#">Последний пункт</a></li>
-									</ul>
-								</li>
-								<li><a href="#">Второй</a>
-									<ul>
-										<li><a href="#">Первый пункт</a></li>
-										<li><a href="#">Второй</a></li>
-										<li><a href="#">Третий</a></li>
-										<li><a href="#">Последний пункт</a></li>
-									</ul>
-								</li>
-								<li><a href="#">Третий</a></li>
-								<li><a href="#">Последний пункт</a></li>
-							</ul>
-						</li>
-						<li><a href="#">Третий</a></li>
-						<li><a href="#">Последний пункт</a></li>
-					</ul>
-				</li>
-				<li><a href="#">Третий</a></li>
-				<li><a href="#">Последний пункт</a></li>
-			</ul>
-		</div><!-- g -->
-		<div class="g-5">
-			<h2>Горизонтальная навигация</h2>
-			<ul class="nav-h">
-				<li><a href="#">Обычное меню</a></li>
-				<li><a href="#">Второй пункт</a></li>
-				<li><a href="#">Последний пункт</a></li>
-			</ul>
-		</div><!-- g -->
-		<br class="cc" />
+				<ul class="f-nav">
+					<li><a href="#">Первый пункт</a></li>
+					<li><a href="#">Выпадающее меню</a>
+						<ul>
+							<li><a href="#">Первый пункт</a></li>
+							<li>
+								<a href="#"><strong>Второй уровень</strong></a>
+								<ul>
+									<li><a href="#">Первый пункт</a></li>
+									<li><a href="#">Второй</a></li>
+									<li>
+										<a href="#"><strong>Третий уровень</strong></a>
+										<ul>
+											<li><a href="#">Третий уровень</a></li>
+											<li><a href="#">Второй</a></li>
+											<li><a href="#">Третий</a></li>
+											<li><a href="#">Последний пункт</a></li>
+										</ul>
+									</li>
+									<li><a href="#">Последний пункт</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Третий</a></li>
+							<li><a href="#">Последний пункт</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Третий</a></li>
+					<li><a href="#">Последний пункт</a></li>
+				</ul><!-- f-nav -->
+			</div><!-- g-12 -->
+		</section><!-- g-row -->
 
 		<div class="g-12">
 			<p>Вертикальная навигация</p>
-			<ul class="nav-v">
+			<ul class="f-nav-v">
 				<li><a href="#">Обычное</a></li>
 				<li><a href="#">Горизонтальное меню</a>
 					<ul>
@@ -280,7 +331,7 @@
 			</ul>
 			<br>
 			<p>Вертикальная многоуровневая навигация</p>
-			<ul class="nav-v-d">
+			<ul class="f-nav-vd">
 				<li><a href="#">Выпадающее</a></li>
 				<li><a href="#">Вертикальное меню</a>
 					<ul>

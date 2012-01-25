@@ -1,7 +1,6 @@
 /* css-framework documentation styles
 --------------------------------------- */
 
-.grid-demo [class ^= "g-"]			{ text-align: center; background: #fdf6e3; padding: 3px 0; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; }
-.grid-demo:hover > [class ^= "g-"],
-.grid-demo:hover code				{ background: #eee8d5; }
-.grid-demo code						{ border: none; }
+.grid-demo > [class ^= "g-"]				{ text-align: center; background: #fdf6e3; line-height: 27px; border-radius: 3px; }
+.grid-demo .grid-demo > [class ^= "g-"]		{ background: #eee8d5; }
+.grid-demo code								{ border: none; background: none; }
