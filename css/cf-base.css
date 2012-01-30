@@ -174,22 +174,24 @@ a:active							{ outline: none; }
 .f-nav-vd li:hover					{ border-color: #073642; }
 .f-nav li:hover > a,
 .f-nav .active > a,
+.f-nav-v a:hover,
 .f-nav-vd li:hover > a,
+.f-nav-v .active > a,
 .f-nav-vd .active > a				{ background: #073642; color: #fdf6e3; text-decoration: none; }
 .f-nav li:hover > ul,
 .f-nav-vd li:hover > ul				{ display: block; }
 
 /* Vertical Navigation
 ---------------------------------------- */
-.f-nav-v { }
+.f-nav-v							{ margin-left: 0; }
 .f-nav-v li							{ list-style: none; }
-.f-nav-v li li a					{ padding-left: 20px; }
+.f-nav-v ul							{ margin-bottom: 0; }
 .f-nav-v a							{ text-decoration: none; display: block; padding: 3px 10px 2px 10px; }
 .f-nav-v a:hover					{  }
 
 /* Vertical Drop Down Navigation
 ---------------------------------------- */
-.f-nav-vd { }
+.f-nav-vd							{ margin-left: 0;  }
 .f-nav-vd li						{ position: relative; list-style: none; }
 .f-nav-vd a							{ display: block; text-decoration: none; padding: 3px 10px 2px 10px; }
 .f-nav-vd ul						{ display: none; position: absolute; top: 0; left: 100%; width: 250px; background: #eee; }
@@ -231,7 +233,7 @@ small								{ font-size: 0.8em; }
 hr,
 .hr									{ color: #ccc; background-color: #ccc; height: 1px; border: 0; }
 ul,
-ol									{ margin-left: 2em; }
+ol									{ margin-left: 32px; }
 ul li,
 ol li								{ }
 dl									{ }
