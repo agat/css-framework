@@ -362,7 +362,7 @@
 	&lt;/li&gt;
 	&lt;li&gt;&lt;a href="#"&gt;Третий&lt;/a&gt;&lt;/li&gt;
 	&lt;li&gt;&lt;a href="#"&gt;Последний&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</pre>
+&lt;/ul&gt;&lt;!-- f-nav-v --&gt;</pre>
 					</div><!-- g-9 -->
 					<div class="g-3">
 						<ul class="f-nav-v">
@@ -375,77 +375,68 @@
 							</li>
 							<li><a href="#">Третий</a></li>
 							<li><a href="#">Последний</a></li>
-						</ul>
+						</ul><!-- f-nav-v -->
 					</div><!-- g-3 -->
-				</div><!-- g -->
+				</div><!-- g-row -->
 
+				<h3>Вертикальная многоуровневая выпадающая навигация</h3>
+				<p>Получается из вложенного списка и класса <code class="prettyprint">&lt;ul class="f-nav-vd"&gt;...&lt;/ul&gt;</code> на нём:</p>
 
-
-
+				<div class="g-row">
+					<div class="g-3">
+						<ul class="f-nav-vd">
+							<li><a href="#">Первый пункт</a></li>
+							<li><a href="#">Выпадающее меню</a>
+								<ul>
+									<li><a href="#">Первый пункт</a></li>
+									<li>
+										<a href="#"><strong>Второй уровень</strong></a>
+										<ul>
+											<li><a href="#">Первый пункт</a></li>
+											<li><a href="#">Второй</a></li>
+											<li>
+												<a href="#"><strong>Третий уровень</strong></a>
+												<ul>
+													<li><a href="#">Третий уровень</a></li>
+													<li><a href="#">Второй</a></li>
+													<li><a href="#">Третий</a></li>
+													<li><a href="#">Последний пункт</a></li>
+												</ul>
+											</li>
+											<li><a href="#">Последний пункт</a></li>
+										</ul>
+									</li>
+									<li><a href="#">Третий</a></li>
+									<li><a href="#">Последний пункт</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Третий</a></li>
+							<li><a href="#">Последний пункт</a></li>
+						</ul><!-- f-nav-vd -->
+					</div><!-- g-3 -->
+					<div class="g-9">
+<pre class="prettyprint linenums">&lt;ul class="f-nav-vd"&gt;
+	&lt;li&gt;&lt;a href="#"&gt;Выпадающее меню&lt;/a&gt;
+		&lt;ul&gt;
+			&lt;li&gt;&lt;a href="#"&gt;&lt;strong&gt;Второй уровень&lt;/strong&gt;&lt;/a&gt;
+				&lt;ul&gt;
+					&lt;li&gt;&lt;a href="#"&gt;&lt;strong&gt;Третий уровень&lt;/strong&gt;&lt;/a&gt;
+						&lt;ul&gt;
+							&lt;li&gt;&lt;a href="#"&gt;...&lt;/a&gt;&lt;/li&gt;
+						&lt;/ul&gt;
+					&lt;/li&gt;
+				&lt;/ul&gt;
+			&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;&lt;!-- f-nav-vd --&gt;</pre>
+					</div><!-- g-9 -->
+				</div><!-- g-row -->
 
 			</div><!-- g-12 -->
 		</section><!-- g-row -->
 
 		<div class="g-12">
-
-
-			<br>
-			<p>Вертикальная многоуровневая навигация</p>
-			<ul class="f-nav-vd">
-				<li><a href="#">Выпадающее</a></li>
-				<li><a href="#">Вертикальное меню</a>
-					<ul>
-						<li><a href="#">Первый пункт</a>
-							<ul>
-								<li><a href="#">Первый пункт</a>
-									<ul>
-										<li><a href="#">Первый пункт</a></li>
-										<li><a href="#">Второй</a></li>
-										<li><a href="#">Третий</a></li>
-										<li><a href="#">Последний пункт</a></li>
-									</ul>
-								</li>
-								<li><a href="#">Второй</a>
-									<ul>
-										<li><a href="#">Первый пункт</a></li>
-										<li><a href="#">Второй</a></li>
-										<li><a href="#">Третий</a></li>
-										<li><a href="#">Последний пункт</a></li>
-									</ul>
-								</li>
-								<li><a href="#">Третий</a></li>
-								<li><a href="#">Последний пункт</a></li>
-							</ul>
-						</li>
-						<li><a href="#">Второй</a>
-							<ul>
-								<li><a href="#">Первый пункт</a>
-									<ul>
-										<li><a href="#">Первый пункт</a></li>
-										<li><a href="#">Второй</a></li>
-										<li><a href="#">Третий</a></li>
-										<li><a href="#">Последний пункт</a></li>
-									</ul>
-								</li>
-								<li><a href="#">Второй</a>
-									<ul>
-										<li><a href="#">Первый пункт</a></li>
-										<li><a href="#">Второй</a></li>
-										<li><a href="#">Третий</a></li>
-										<li><a href="#">Последний пункт</a></li>
-									</ul>
-								</li>
-								<li><a href="#">Третий</a></li>
-								<li><a href="#">Последний пункт</a></li>
-							</ul>
-						</li>
-						<li><a href="#">Третий</a></li>
-						<li><a href="#">Последний пункт</a></li>
-					</ul>
-				</li>
-				<li><a href="#">Третий</a></li>
-				<li><a href="#">Последний пункт</a></li>
-			</ul>
 
 			<h2>&laquo;Хлебные крошки&raquo;</h2>
 
