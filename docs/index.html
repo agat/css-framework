@@ -24,7 +24,6 @@
 				<h3>Основа</h3>
 				<p>Основой разметки служит родительский блок с классом <code>class="g"</code>. В нём следует расположить контейнер с классом <code>class="g-row"</code>, который разделяет разметку на ряды.</p>
 				<p>Контейнеры с классами <code>class="g-x"</code> позволяют создавать различные конфигурации колонок в рядах.</p>
-
 <pre class="prettyprint linenums">&lt;div class=&quot;g&quot;&gt;
 	&lt;div class=&quot;g-row&quot;&gt;
 		&lt;div class=&quot;g-5&quot;&gt;
@@ -34,11 +33,8 @@
 			...
 		&lt;/div&gt;&lt;!-- g-7 --&gt;
 	&lt;/div&gt;&lt;!-- g-row --&gt;
-&lt;/div&gt;&lt;!-- g --&gt;
-</pre>
-
+&lt;/div&gt;&lt;!-- g --&gt;</pre>
 				<h4>Демонстрация 12-колоночной разметки</h4>
-
 				<div class="g-row grid-demo">
 					<div class="g-1">
 						<code>g-1</code>
@@ -77,7 +73,6 @@
 						<code>g-1</code>
 					</div><!-- g -->
 				</div><!-- g-row -->
-
 				<div class="g-row grid-demo">
 					<div class="g-2">
 						<code>g-2 - 140px</code>
@@ -98,7 +93,6 @@
 						<code>g-2</code>
 					</div><!-- g -->
 				</div><!-- g-row -->
-
 				<div class="g-row grid-demo">
 					<div class="g-3">
 						<code>"g-3" - 220px</code>
@@ -113,7 +107,6 @@
 						<code>"g-3"</code>
 					</div><!-- g -->
 				</div><!-- g-row -->
-
 				<div class="g-row grid-demo">
 					<div class="g-4">
 						<code>"g-4" - 300px</code>
@@ -125,7 +118,6 @@
 						<code>"g-4"</code>
 					</div><!-- g -->
 				</div><!-- g-row -->
-
 				<div class="g-row grid-demo">
 					<div class="g-5">
 						<code>"g-5" - 380px</code>
@@ -134,7 +126,6 @@
 						<code>"g-7"</code>
 					</div><!-- g -->
 				</div><!-- g-row -->
-
 				<div class="g-row grid-demo">
 					<div class="g-6">
 						<code>"g-6" - 460px</code>
@@ -143,7 +134,6 @@
 						<code>"g-6"</code>
 					</div><!-- g -->
 				</div><!-- g-row -->
-
 				<div class="g-row grid-demo">
 					<div class="g-7">
 						<code>"g-7" - 540px</code>
@@ -152,7 +142,6 @@
 						<code>"g-5"</code>
 					</div><!-- g -->
 				</div><!-- g-row -->
-
 				<div class="g-row grid-demo">
 					<div class="g-8">
 						<code>"g-8" - 620px</code>
@@ -161,7 +150,6 @@
 						<code>"g-4"</code>
 					</div><!-- g -->
 				</div><!-- g-row -->
-
 				<div class="g-row grid-demo">
 					<div class="g-9">
 						<code>"g-9" - 700px</code>
@@ -170,7 +158,6 @@
 						<code>"g-3"</code>
 					</div><!-- g -->
 				</div><!-- g-row -->
-
 				<div class="g-row grid-demo">
 					<div class="g-10">
 						<code>"g-10" - 780px</code>
@@ -179,7 +166,6 @@
 						<code>"g-2"</code>
 					</div><!-- g -->
 				</div><!-- g-row -->
-
 				<div class="g-row grid-demo">
 					<div class="g-11">
 						<code>"g-11" - 860px</code>
@@ -188,16 +174,13 @@
 						<code>"g-1"</code>
 					</div><!-- g -->
 				</div><!-- g-row -->
-
 				<div class="g-row grid-demo">
 					<div class="g-12">
 						<code>"g-12" - 940px</code>
 					</div><!-- g -->
 				</div><!-- g-row -->
-
 				<h3>Вложенные колонки</h3>
 				<p>Для создания более сложных разметок вы можете вкладывать контейнеры <code class="prettyprint">&lt;div class=&quot;g-row&quot;&gt;...&lt;/div&gt;</code> друг в друга:</p>
-
 <pre class="prettyprint linenums">&lt;div class=&quot;g&quot;&gt;
 	&lt;div class=&quot;g-row&quot;&gt;				&lt;!-- 1 уровень --&gt;
 		&lt;div class=&quot;g-6&quot;&gt;
@@ -222,11 +205,8 @@
 			&lt;/div&gt;&lt;!-- g-row --&gt;
 		&lt;/div&gt;&lt;!-- g-6 --&gt;
 	&lt;/div&gt;&lt;!-- g-row --&gt;
-&lt;/div&gt;&lt;!-- g --&gt;
-</pre>
-
+&lt;/div&gt;&lt;!-- g --&gt;</pre>
 				<h4>Пример вложенных колонок</h4>
-
 				<div class="g-row grid-demo">
 					<div class="g-6">
 						<div class="g-row grid-demo">
@@ -268,36 +248,29 @@
 						</div><!-- g-row -->
 					</div><!-- g -->
 				</div><!-- g-row -->
-
 			</div><!-- g-12 -->
 		</section><!-- g-row -->
 
 		<section class="g-row">
 			<div class="g-12">
 				<h2>Навигация</h2>
-
 				<h3>Горизонтальная навигация</h3>
 				<p>Для создания простейшей горизонтальной навигации нужно списку задать класс <code class="prettyprint">&lt;ul class="f-nav"&gt;...&lt;/ul&gt;</code>:</p>
-
 <pre class="prettyprint linenums">&lt;ul class=&quot;f-nav&quot;&gt;
 	&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Первый пункт&lt;/a&gt;&lt;/li&gt;
 	&lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;Второй активный&lt;/a&gt;&lt;/li&gt;
 	&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Третий&lt;/a&gt;&lt;/li&gt;
 	&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Последний пункт&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;!-- f-nav --&gt;</pre>
-
 				<p>Активный пункт навигации выделяется с помощью класса <code>active</code>.</p>
 				<p>Получится вот такое навигационное меню:</p>
-
 				<ul class="f-nav">
 					<li><a href="#">Первый пункт</a></li>
 					<li class="active"><a href="#">Второй активный</a></li>
 					<li><a href="#">Третий</a></li>
 					<li><a href="#">Последний пункт</a></li>
 				</ul><!-- f-nav -->
-
 				<p>Если предыдущий пример дополнить вложенными списками, получится многоуровневая выпадающая навигация:</p>
-
 <pre class="prettyprint linenums">&lt;ul class="f-nav"&gt;
 	&lt;li&gt;&lt;a href="#"&gt;Выпадающее меню&lt;/a&gt;
 		&lt;ul&gt;
@@ -312,11 +285,8 @@
 			&lt;/li&gt;
 		&lt;/ul&gt;
 	&lt;/li&gt;
-&lt;/ul&gt;&lt;!-- f-nav --&gt;
-</pre>
-
+&lt;/ul&gt;&lt;!-- f-nav --&gt;</pre>
 				<h4>Пример многоуровневой выпадающей горизонтальной навигации</h4>
-
 				<ul class="f-nav">
 					<li><a href="#">Первый пункт</a></li>
 					<li><a href="#">Выпадающее меню</a>
@@ -346,10 +316,8 @@
 					<li><a href="#">Третий</a></li>
 					<li><a href="#">Последний пункт</a></li>
 				</ul><!-- f-nav -->
-
 				<h3>Вертикальная навигация</h3>
 				<p>Для создания вертикальной навигации нужно списку задать класс <code class="prettyprint">&lt;ul class="f-nav-v"&gt;...&lt;/ul&gt;</code>:</p>
-
 				<div class="g-row">
 					<div class="g-9">
 <pre class="prettyprint linenums">&lt;ul class="f-nav-v"&gt;
@@ -378,10 +346,8 @@
 						</ul><!-- f-nav-v -->
 					</div><!-- g-3 -->
 				</div><!-- g-row -->
-
 				<h3>Вертикальная многоуровневая выпадающая навигация</h3>
 				<p>Получается из вложенного списка и класса <code class="prettyprint">&lt;ul class="f-nav-vd"&gt;...&lt;/ul&gt;</code> на нём:</p>
-
 				<div class="g-row">
 					<div class="g-3">
 						<ul class="f-nav-vd">
@@ -432,20 +398,27 @@
 &lt;/ul&gt;&lt;!-- f-nav-vd --&gt;</pre>
 					</div><!-- g-9 -->
 				</div><!-- g-row -->
-
+				<h3>&laquo;Хлебные крошки&raquo;</h3>
+				<p>Навигация типа - &laquo;хлебные крошки&raquo; создаётся из обычного списка с присвоенным классом <code class="prettyprint">&lt;ul class="f-breadcrumbs"&gt;...&lt;/ul&gt;</code>:</p>
+<pre class="prettyprint linenums">&lt;ul class="f-breadcrumbs"&gt;
+	&lt;li&gt;&lt;a href="#"&gt;Главная&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#"&gt;Категория&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#"&gt;Вложенная категория&lt;/a&gt;&lt;/li&gt;
+	&lt;li class="cur"&gt;Продукт&lt;/li&gt;
+&lt;/ul&gt;&lt;!-- f-breadcrumb --&gt;</pre>
+				<h4>Пример &laquo;хлебных крошек&raquo;</h4>
+				<ul class="f-breadcrumbs">
+					<li><a href="#">Главная</a></li>
+					<li><a href="#">Категория</a></li>
+					<li><a href="#">Вложенная категория</a></li>
+					<li class="cur">Продукт</li>
+				</ul><!-- f-breadcrumb -->
 			</div><!-- g-12 -->
 		</section><!-- g-row -->
 
 		<div class="g-12">
 
-			<h2>&laquo;Хлебные крошки&raquo;</h2>
 
-			<ul class="f-breadcrumbs">
-				<li><a href="#">Главная</a></li>
-				<li><a href="#">Категория</a></li>
-				<li><a href="#">Вложенная категория</a></li>
-				<li class="cur">Продукт</li>
-			</ul><!-- f-breadcrumb -->
 
 			<h2>Постраничные ссылки</h2>
 
