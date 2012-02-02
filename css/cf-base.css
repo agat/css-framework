@@ -96,19 +96,22 @@ section								{ display: block; }
 .ir									{ text-indent: -9999px; overflow: hidden; display: block; }
 .cc									{ clear: both; display: block; height: 0; width: 0; overflow: hidden; visibility: hidden; }
 
-/* CSS3 Pie
----------------------------------------- */
-.bu,
-.i-text								{ behavior: url(css/PIE.htc); position: relative; }
-
 /* Main styles
 ---------------------------------------- */
-html								{ background: #fff; color: #073642; font: 14px/20px Arial, 'Helvetica Neue', Helvetica, sans-serif; }
+html								{ background: #fff; color: #073642; }
 body								{ }
 
 a									{ color: #268bd2; }
 a:visited							{ }
 a:active							{ outline: none; }
+
+/* Base Font
+--------------------------------------- */
+html,
+input,
+button,
+label,
+textarea							{ font: 14px/20px Arial, 'Helvetica Neue', Helvetica, sans-serif; }
 
 /* Grid System
 ---------------------------------------- */
@@ -165,7 +168,7 @@ a:active							{ outline: none; }
 .f-nav > li							{ margin-right: -1px; z-index: 0; }
 .f-nav a							{ text-decoration: none; padding: 3px 10px 2px 10px; display: block; }
 .f-nav-vd ul,
-.f-nav ul							{ margin: 0; display: none; position: absolute; left: -1px; top: 100%; min-width: 250px; background: #eee8d5; }
+.f-nav ul							{ margin: 0; display: none; position: absolute; left: -1px; top: 100%; min-width: 250px; background: #fdf6e3; }
 .f-nav > li:first-child > ul		{ left: 0; }
 .f-nav-vd ul ul,
 .f-nav ul ul						{ left: 100%; top: 0; }
@@ -203,13 +206,13 @@ h1, .h1,
 h2, .h2,
 h3, .h3,
 h4, .h4,
-legend								{ font: bold 24px Arial, 'Helvetica Neue', Helvetica, sans-serif; margin-top: 18px; }
+legend								{ font: bold 26px Arial, 'Helvetica Neue', Helvetica, sans-serif; margin-top: 28px; }
 h1, .h1								{ margin-top: 0; }
-h2, .h2								{ font-size: 20px; }
+h2, .h2								{ font-size: 22px; }
 h3, .h3,
 caption,
-legend								{ font-size: 16px; }
-h4, .h4								{ font-size: 14px; }
+legend								{ font-size: 18px; }
+h4, .h4								{ font-size: 16px; }
 .c h1:first-child,
 .c h2:first-child,
 .c h3:first-child					{ margin-top: 0; }
@@ -261,7 +264,7 @@ hr,
 h1, .h1,
 h2, .h2,
 h3, .h3,
-h4, .h4								{ margin-bottom: 18px; }
+h4, .h4								{ margin-bottom: 14px; }
 
 /* Block with image
 ---------------------------------------- */
@@ -292,11 +295,13 @@ img									{ border: none; max-width: 100%; }
 /* Pager block
 ---------------------------------------- */
 .f-pager							{ text-align: center; }
+.f-pager-left						{ text-align: left; }
+.f-pager-right						{ text-align: right; }
 .f-pager-prev						{ margin-right: 10px; }
 .f-pager-next						{ margin-left: 10px; }
 .f-pager-prev a,
 .f-pager-next a						{ }
-.f-pager-active,
+.f-pager .active strong,
 .f-pager a							{ text-decoration: none; padding: 0 5px; display: block; }
 .f-pager a:hover					{ text-decoration: underline; }
 .f-pager strong,
@@ -325,22 +330,25 @@ td									{ }
 .form-h label						{ float: none; display: block; text-align: left; width: auto; padding: 0 0 2px 0; }
 .form-h .form-inputs				{ padding-left: 0; display: block; }
 select								{ font-size: 12px; }
-textarea							{ overflow: auto; resize: vertical; }
-.i-text								{ border: 1px solid #ccc; border-color: #a0a0a0 #bbb #ccc #bbb; padding: 4px; color: #444; font: 12px/1.2 sans-serif; border-radius: 3px;
+.i-text								{ border: 1px solid #ccc; border-color: #a0a0a0 #bbb #ccc #bbb; padding: 6px 10px; color: #444; border-radius: 3px;
 										-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+textarea							{ overflow: auto; resize: vertical; }
+textarea.i-text						{ padding-right: 6px; }
 label,
 .bu,
 button								{ cursor: pointer; }
 
 /* Button
 ---------------------------------------- */
-.bu									{ display: inline; vertical-align: middle; height: 26px; padding: 6px 10px 5px; border: 1px solid #ccc; border-color: #ccc #bbb #a0a0a0 #bbb; color: #333; text-decoration: none; text-align: center; font: 12px/1.2 sans-serif; width: auto; overflow: visible; border-radius: 3px;
+.bu									{ display: inline-block; vertical-align: middle; padding: 4px 10px; border: 1px solid #ccc; border-color: #ccc #bbb #a0a0a0 #bbb; color: #333; text-decoration: none; text-align: center; width: auto; overflow: visible; border-radius: 3px;
 										background: #eee; background: -webkit-gradient(linear, 0 0, 0 bottom, from(#f9f9f9), to(#e3e3e3)); background: -moz-linear-gradient(#f9f9f9, #e3e3e3); background: linear-gradient(#f9f9f9, #e3e3e3); }
-.bu:active							{ padding: 7px 10px 4px; background: -webkit-gradient(linear, 0 0, 0 bottom, from(#e3e3e3), to(#f9f9f9)); background: -moz-linear-gradient(#e3e3e3, #f9f9f9); background: linear-gradient(#e3e3e3, #f9f9f9); }
+.bu:active							{ padding-top: 5px; padding-bottom: 3px; }
+.i-text,
+.bu:active							{ -webkit-box-shadow: inset 1px 2px 2px rgba(0, 0, 0, 0.1); -moz-box-shadow: inset 1px 2px 2px rgba(0, 0, 0, 0.1); box-shadow: inset 1px 2px 2px rgba(0, 0, 0, 0.1); }
 .bu:hover,
 .bu:focus,
 .i-text:focus,
-textarea:focus						{ border-color: #06c; outline: none; }
+textarea:focus						{ border-color: #268bd2; outline: none; }
 .bu::-moz-focus-inner,
 button::-moz-focus-inner,
 input::-moz-focus-inner				{ padding: 0; border: none; }

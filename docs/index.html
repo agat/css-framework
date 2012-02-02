@@ -413,6 +413,66 @@
 					<li><a href="#">Вложенная категория</a></li>
 					<li class="cur">Продукт</li>
 				</ul><!-- f-breadcrumb -->
+				<h3>Постраничные ссылки</h3>
+				<p>Класс <code class="prettyprint">&lt;div class="f-pager"&gt;...&lt;/div&gt;</code> служит основой для постраничной навигации. Внутри распологается список ссылок.</p>
+				<p>Ссылки &laquo;Вперёд&raquo; и &laquo;Назад&raquo; отделяются от основных классами <code>.f-pager-prev</code> и <code>.f-pager-next</code>. Активный элемент - классом <code>.active</code>.</p>
+<pre class="prettyprint linenums">&lt;div class="f-pager"&gt;
+	&lt;ul&gt;
+		&lt;li class="f-pager-prev"&gt;&lt;a href="#"&gt;&amp;#10094; Назад&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="#"&gt;1&lt;/a&gt;&lt;/li&gt;
+		&lt;li class="active"&gt;&lt;strong&gt;2&lt;/strong&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="#"&gt;3&lt;/a&gt;&lt;/li&gt;
+		&lt;li class="f-pager-next"&gt;&lt;a href="#"&gt;Вперёд &amp;#10095;&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;&lt;!-- f-pager --&gt;</pre>
+				<p>По умолчанию, постраничная навигация отцентрированна:</p>
+				<div class="f-pager">
+					<ul>
+						<li class="f-pager-prev"><a href="#">&#10094; Назад</a></li>
+						<li><a href="#">1</a></li>
+						<li class="active"><strong>2</strong></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li>...</li>
+						<li><a href="#">20</a></li>
+						<li><a href="#">21</a></li>
+						<li><a href="#">22</a></li>
+						<li><a href="#">23</a></li>
+						<li class="f-pager-next"><a href="#">Вперёд &#10095;</a></li>
+					</ul>
+				</div><!-- f-pager -->
+				<p>Её можно выровнять влево, дополнительным классом <code>.f-pager-left</code>:</p>
+				<div class="f-pager f-pager-left">
+					<ul>
+						<li class="f-pager-prev"><a href="#">&#10094; Назад</a></li>
+						<li><a href="#">1</a></li>
+						<li class="active"><strong>2</strong></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li>...</li>
+						<li><a href="#">20</a></li>
+						<li><a href="#">21</a></li>
+						<li><a href="#">22</a></li>
+						<li><a href="#">23</a></li>
+						<li class="f-pager-next"><a href="#">Вперёд &#10095;</a></li>
+					</ul>
+				</div><!-- f-pager -->
+				<p>Или вправо, классом <code>.f-pager-right</code>:</p>
+				<div class="f-pager f-pager-right">
+					<ul>
+						<li class="f-pager-prev"><a href="#">&#10094; Назад</a></li>
+						<li><a href="#">1</a></li>
+						<li class="active"><strong>2</strong></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li>...</li>
+						<li><a href="#">20</a></li>
+						<li><a href="#">21</a></li>
+						<li><a href="#">22</a></li>
+						<li><a href="#">23</a></li>
+						<li class="f-pager-next"><a href="#">Вперёд &#10095;</a></li>
+					</ul>
+				</div><!-- f-pager -->
 			</div><!-- g-12 -->
 		</section><!-- g-row -->
 
@@ -697,7 +757,7 @@
 			</form>
 
 			<h2>Примеры класса для стилизации под кнопоки</h2>
-			<p><a href="#" class="bu">ссылка</a> <button class="bu">тэг button</button> <input type="submit" class="bu" value="тэг input"></p>
+			<p><a href="#" class="bu">ссылка</a> <button class="bu">тэг button</button></p>
 
 			<form class="form form-h" action="/">
 				<fieldset>
