@@ -213,9 +213,10 @@ h3, .h3,
 caption,
 legend								{ font-size: 18px; }
 h4, .h4								{ font-size: 16px; }
-.c h1:first-child,
-.c h2:first-child,
-.c h3:first-child					{ margin-top: 0; }
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child						{ margin-top: 0; }
 blockquote							{ margin-left: 3em; font-style: italic; }
 pre,
 code,
@@ -255,6 +256,7 @@ address,
 pre,
 hr,
 .hr,
+.bwi,
 .f-breadcrumbs,
 .f-pager,
 .form,
@@ -269,8 +271,10 @@ h4, .h4								{ margin-bottom: 14px; }
 /* Block with image
 ---------------------------------------- */
 .bwi								{ }
-.bwi-pic							{ float: left; margin-right: 1em; }
+.bwi-pic							{ float: left; margin-right: 14px; }
 .bwi-text							{ overflow: auto; }
+.bwi-right .bwi-pic					{ float: right; margin-right: 0; margin-left: 14px; }
+
 img									{ border: none; max-width: 100%; }
 
 /* Gallery block
@@ -361,3 +365,7 @@ input::-moz-focus-inner				{ padding: 0; border: none; }
 .f-message p						{ margin-bottom: 0; }
 .f-message-error					{ background: #ffc6bc; border-color: #e5b1a8; }
 .f-message-success					{ background: #d3dbb2; border-color: #bdc49f; }
+
+/* Higlight box
+--------------------------------------- */
+.f-box								{ background: #fffce9; padding: 7px 14px; border-radius: 3px; }
