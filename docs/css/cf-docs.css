@@ -1,6 +1,13 @@
 /* css-framework documentation styles
 --------------------------------------- */
 
-.grid-demo > [class ^= "g-"]				{ text-align: center; background: #fdf6e3; line-height: 27px; border-radius: 3px; }
-.grid-demo .grid-demo > [class ^= "g-"]		{ background: #eee8d5; }
+/* Grid demo
+--------------------------------------- */
+.grid-demo > [class ^= "g-"]				{ text-align: center; background: #eee; line-height: 27px; border-radius: 3px; }
+.grid-demo .grid-demo > [class ^= "g-"]		{ background: #e2e2e2; }
 .grid-demo code								{ border: none; background: none; }
+
+/* Demo box
+--------------------------------------- */
+.f-demo										{ background: #f9f9f9; border: 1px solid #e2e2e2; padding: 14px; border-radius: 3px; margin: 0 -15px 14px -15px; }
+.f-demo > *									{ margin-bottom: 0; }

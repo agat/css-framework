@@ -365,7 +365,3 @@ input::-moz-focus-inner				{ padding: 0; border: none; }
 .f-message p						{ margin-bottom: 0; }
 .f-message-error					{ background: #ffc6bc; border-color: #e5b1a8; }
 .f-message-success					{ background: #d3dbb2; border-color: #bdc49f; }
-
-/* Higlight box
---------------------------------------- */
-.f-box								{ background: #fffce9; padding: 7px 14px; border-radius: 3px; }
