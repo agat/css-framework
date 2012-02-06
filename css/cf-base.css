@@ -279,10 +279,8 @@ img									{ border: none; max-width: 100%; }
 
 /* Gallery block
 ---------------------------------------- */
-.f-gallery							{ margin-left: -20px; }
-.f-gallery-item						{ float: left; margin: 0 0 10px 20px; width: 140px; }
-.f-gallery-item dt					{ font-weight: normal; }
-.f-gallery dd						{ margin: 0 0 2px 0; }
+.f-gallery-item dt					{ font-weight: normal; font-size: 12px; }
+.f-gallery dd						{ margin: 0; }
 .f-gallery dd img					{ display: block; }
 
 /* Breadcrumbs
