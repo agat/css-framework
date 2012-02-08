@@ -9,5 +9,5 @@
 
 /* Demo box
 --------------------------------------- */
-.f-demo										{ background: #f9f9f9; border: 1px solid #e2e2e2; padding: 14px; border-radius: 3px; margin: 0 -15px 14px -15px; }
+.f-demo										{ background: #fcfcfc; border: 1px solid #f3f3f3; padding: 14px; border-radius: 3px; margin: 0 -15px 14px -15px; }
 .f-demo > *									{ margin-bottom: 0; }

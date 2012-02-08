@@ -63,7 +63,7 @@ time,
 tr,
 ul, li, ol,
 var,
-video								{ margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; }
+video								{ margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; text-align: left; }
 
 article,
 aside,
@@ -132,7 +132,7 @@ textarea							{ font: 14px/20px Arial, 'Helvetica Neue', Helvetica, sans-serif;
 .g-3								{ width: 220px; }
 .g-2								{ width: 140px; }
 .g-1								{ width: 60px; }
-[class ^= 'w-']						{ float: left; clear: right; }
+.f-col > [class ^= 'w-']			{ float: left; clear: right; }
 .g-c								{ padding-left: 10px; }
 .g :first-child > .g-c				{ padding-right: 10px; padding-left: 0; }
 .w-5								{ width: 5%; }
@@ -209,9 +209,9 @@ h4, .h4,
 legend								{ font: bold 26px Arial, 'Helvetica Neue', Helvetica, sans-serif; margin-top: 28px; }
 h1, .h1								{ margin-top: 0; }
 h2, .h2								{ font-size: 22px; }
-h3, .h3,
+h3, .h3								{ font-size: 18px; }
 caption,
-legend								{ font-size: 18px; }
+legend,
 h4, .h4								{ font-size: 16px; }
 h1:first-child,
 h2:first-child,
@@ -312,12 +312,16 @@ img									{ border: none; max-width: 100%; }
 
 /* Tables
 ---------------------------------------- */
-table								{ border-collapse: collapse; width: 100%; }
+table								{ border-collapse: collapse; border-spacing: 0; width: 100%; max-width: 100%; }
 caption								{ text-align: center; }
 th,
-td									{ border: 1px solid #ccc; padding: 2px 8px; vertical-align: top; }
-th									{ background: #f4f4f4; font-weight: normal; text-align: left; }
-td									{ }
+td									{ padding: 6px 8px; vertical-align: top; }
+th									{ background: #efefef; font-weight: bold; text-align: left; }
+td,
+tfoot th							{ border-top: 1px solid #e2e2e2; }
+tr:hover th,
+tr:hover td							{ background: #fdf6e3; }
+.table-zebra tbody tr:nth-child(2n)	{ background: #f6f6f6; }
 
 /* Form
 ---------------------------------------- */
