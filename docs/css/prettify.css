@@ -2,47 +2,29 @@
 
 @media screen {
 	.str { color: #080 }
-
 	.kwd { color: #008 }
-
 	.com { color: #93a1a1 }
-
 	.typ { color: #606 }
-
 	.lit { color: #066 }
-
 	.pun, .opn, .clo { color: #839496 }
-
 	.tag { color: #268bd2 }
-
 	.atn { color: #cb4b16 }
-
 	.atv { color: #2aa198 }
-
 	.dec, .var { color: #606 }
-
 	.fun { color: red }
 }
 
 @media print, projection {
 	.str { color: #060 }
-
 	.kwd { color: #006; font-weight: bold }
-
 	.com { color: #600; font-style: italic }
-
 	.typ { color: #404; font-weight: bold }
-
 	.lit { color: #044 }
-
 	.pun, .opn, .clo { color: #440 }
-
 	.tag { color: #006; font-weight: bold }
-
 	.atn { color: #404 }
-
 	.atv { color: #060 }
 }
 
-ol.linenums			{ margin: 0; padding: 0 0 0 30px; }
+ol.linenums			{ margin: 0; padding: 0 0 0 28px; }
 ol.linenums li		{ color: rgba(0, 0, 0, 0.20); }

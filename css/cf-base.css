@@ -44,7 +44,6 @@ kbd,
 label,
 legend,
 mark,
-menu,
 nav,
 object,
 p,
@@ -63,7 +62,7 @@ time,
 tr,
 ul, li, ol,
 var,
-video								{ margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; text-align: left; }
+video								{ margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; text-align: left; text-decoration: none; background: none; }
 
 article,
 aside,
@@ -210,6 +209,7 @@ legend								{ font: bold 26px Arial, 'Helvetica Neue', Helvetica, sans-serif; 
 h1, .h1								{ margin-top: 0; }
 h2, .h2								{ font-size: 22px; }
 h3, .h3								{ font-size: 18px; }
+blockquote,
 caption,
 legend,
 h4, .h4								{ font-size: 16px; }
@@ -217,34 +217,63 @@ h1:first-child,
 h2:first-child,
 h3:first-child,
 h4:first-child						{ margin-top: 0; }
-blockquote							{ margin-left: 3em; font-style: italic; }
+abbr								{ text-transform: uppercase; border-bottom: 1px dotted #ccc; }
+blockquote							{ padding: 5px 3em; position: relative; }
+blockquote p						{ margin: 10px 0 0 0; }
+blockquote p:first-child			{ margin: 0; }
+blockquote:before,
+blockquote:after					{ font-size: 3em; position: absolute; color: #93a1a1; }
+blockquote:before					{ left: 0; top: 0; }
+blockquote:after					{ right: 0; bottom: 0; }
+blockquote cite						{ font-size: small; font-style: normal; color: #839496; }
+blockquote cite:before				{ content: '\2014'; padding-right: .5em; }
+q,
+cite								{ font-style: italic; }
+blockquote:before,
+q:before							{ content: '\00AB'; }
+blockquote:after,
+q:after								{ content: '\00BB'; }
 pre,
 code,
-kbd,
-samp								{ padding: 1px 3px;  border: 1px solid #eee8d5; background: #fdf6e3; font-family: Consolas, "Lucida Console", Monaco, monospace; font-size: .9em; border-radius: 3px; }
+samp								{ padding: 0 3px; border: 1px solid #eee8d5; background: #fdf6e3; border-radius: 3px; }
+samp								{ color: #eee8d5; background: #073642; border-color: #002b36; }
+pre,
+code,
+samp,
+var,
+kbd									{ padding: 0 3px; font-family: Consolas, "Lucida Console", Monaco, monospace; font-size: .9em; }
 pre									{ padding: 7px 9px; -moz-tab-size: 4; -o-tab-size: 4; tab-size: 4; white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
 b,
 strong								{ font-weight: bold; }
+address,
+var,
 i,
 em									{ font-style: italic; }
 dfn									{ font-style: italic; font-weight: bold; }
-del									{ text-decoration: line-through; }
+mark								{ color: #b58900; }
+ins									{ color: #2aa198; }
+ins:before,
+ins:after							{ content: '+'; }
+del									{ color: #dc322f; }
+del:before,
+del:after							{ content: '\2212'; }
 sup,
 sub									{ position: relative; font-size: 0.8em; line-height: 0; }
 sup									{ vertical-align: text-top; }
 sub									{ vertical-align: text-bottom; }
 small								{ font-size: 0.8em; }
 hr,
-.hr									{ color: #ccc; background-color: #ccc; height: 1px; border: 0; }
+.hr									{ background: #eee; height: 2px; border: 0; }
 ul,
-ol									{ margin-left: 32px; }
-ul li,
-ol li								{ }
+ol									{ margin-left: 28px; }
+li									{ }
 dl									{ }
 dl dt								{ }
 dl dd								{ }
+
 .icons a,
 .icon								{ padding: 1px 0 1px 20px; background-repeat: no-repeat; background-position: left center; }
+
 p,
 ul,
 ol,

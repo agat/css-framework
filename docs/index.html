@@ -511,6 +511,168 @@
 					<h4>Заголовок четвертого уровня (H4)</h4>
 					<p>Неустойчивость, как известно, быстро разивается, если экситон возбуждает лептон, однозначно свидетельствуя о неустойчивости процесса в целом.</p>
 				</section><!-- f-demo -->
+				<h3>Таблицы</h3>
+				<p>Дальше вы увидите, какие красивые таблицы получаются с помощью стандартной разметки для таблиц:</p>
+<pre class="prettyprint linenums">&lt;table&gt;
+	&lt;caption&gt;...&lt;/caption&gt;
+	&lt;thead&gt;
+		&lt;tr&gt;
+			&lt;th&gt;...&lt;/th&gt;
+		&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tfoot&gt;
+		&lt;tr&gt;
+			&lt;th&gt;...&lt;/th&gt;
+		&lt;/tr&gt;
+	&lt;/tfoot&gt;
+	&lt;tbody&gt;
+		&lt;tr&gt;
+			&lt;td&gt;...&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;</pre>
+				<div class="f-demo">
+					<table>
+						<caption>5 самых распространённых браузеров - февраль 2012(тег caption)</caption>
+						<thead>
+						<tr>
+							<th class="w-5">&#8470;</th>
+							<th>Название браузера(тег th)</th>
+							<th>%</th>
+						</tr>
+						</thead>
+						<tfoot>
+						<tr>
+							<th colspan="3">Подвал таблицы(тег tfoot)</th>
+						</tr>
+						</tfoot>
+						<tbody>
+						<tr>
+							<td>1</td>
+							<td>Internet Explorer</td>
+							<td>37,45</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>Chrome</td>
+							<td>28,40</td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td>Firefox</td>
+							<td>24,78</td>
+						</tr>
+						<tr>
+							<td>4</td>
+							<td>Safari</td>
+							<td>6,62</td>
+						</tr>
+						<tr>
+							<td>5</td>
+							<td>Opera</td>
+							<td>1,95</td>
+						</tr>
+						</tbody>
+					</table>
+				</div><!-- f-demo -->
+				<p>Для удобства восприятия ячеек таблицы можно раскрасить нечётные ряды с помощью класса <code class="prettyprint">&lt;table class="table-zebra"&gt;...&lt;/table&gt;</code>.</p>
+				<div class="f-demo">
+					<table class="table-zebra">
+						<thead>
+						<tr>
+							<th class="w-5">&#8470;</th>
+							<th>Название браузера(тег th)</th>
+							<th>%</th>
+						</tr>
+						</thead>
+						<tbody>
+						<tr>
+							<td>1</td>
+							<td>Internet Explorer</td>
+							<td>37,45</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>Chrome</td>
+							<td>28,40</td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td>Firefox</td>
+							<td>24,78</td>
+						</tr>
+						<tr>
+							<td>4</td>
+							<td>Safari</td>
+							<td>6,62</td>
+						</tr>
+						<tr>
+							<td>5</td>
+							<td>Opera</td>
+							<td>1,95</td>
+						</tr>
+						</tbody>
+					</table>
+				</div><!-- f-demo -->
+				<h3>Обычные и нумерованные списки.</h3>
+				<div class="g-row">
+					<div class="g-6">
+						<p>Обычный список <code>&lt;ul&gt;</code>:</p>
+						<div class="f-demo">
+							<ul>
+								<li>первый элемент обычного</li>
+								<li>ненумерованного списка</li>
+								<li>третий пункт</li>
+								<li>последний пункт</li>
+							</ul>
+						</div><!-- f-demo -->
+					</div><!-- g-6 -->
+					<div class="g-6">
+						<p>Нумерованный список <code>&lt;ol&gt;</code>:</p>
+						<div class="f-demo">
+							<ol>
+								<li>это нумерованный список</li>
+								<li>второй элемент</li>
+								<li>третий</li>
+								<li>и последний</li>
+							</ol>
+						</div><!-- f-demo -->
+					</div><!-- g-6 -->
+				</div><!-- g-row -->
+				<h2>Теги оформлления контента</h2>
+				<h3>Строчные теги:</h3>
+				<ul>
+					<li>пример <a href="#">ссылки</a>, тег <code>&lt;a&gt;</code></li>
+					<li>пример <i>курсивного</i> и <em>акцентированного</em> текста, теги <code>&lt;i&gt;</code> и <code>&lt;em&gt;</code></li>
+					<li>пример <b>жирного</b> и <strong>акцентированного</strong> текста, тег <code>&lt;b&gt;</code> и <code>&lt;strong&gt;</code> соответственно</li>
+					<li><mark>выделенный</mark> текст с помощью тега <code>&lt;mark&gt;</code></li>
+					<li><small>маленького текста</small> как пример тега <code> &lt;small&gt;</code></li>
+					<li><abbr>аббревиатура</abbr>, как пример тега <code>&lt;abbr&gt;</code></li>
+					<li>пример <cite>цитаты</cite> и <q>выделенной цитаты</q> в тексте, теги <code>&lt;cite&gt;</code> и <code>&lt;q&gt;</code></li>
+					<li><code>исходный код</code> и <dfn>новый термин</dfn> как примеры тегов <code>&lt;code&gt;</code> и <code>&lt;dfn&gt;</code></li>
+					<li>пример горячих клавиш <kbd>&lt;Ctrl&gt;+&lt;S&gt;</kbd>, тег <code>&lt;kbd&gt;</code></li>
+					<li>имя переменной обозначается <var>variableName</var> с помощью тега <code>&lt;var&gt;</code>, а так <samp>текст из консоли</samp>, тег <code>&lt;samp&gt;</code></li>
+					<li><ins>добавленный текст</ins> и <del>удалённый текст</del>, как примеры тегов <code>&lt;ins&gt;</code> и <code>&lt;del&gt;</code></li>
+					<li>текст в <sub>нижнем</sub> и <sup>верхнем</sup> индексе, которые не нарушают высоты строк, теги <code>&lt;sub&gt;</code> и <code>&lt;sup&gt;</code></li>
+				</ul>
+				<h3>Блочные теги</h3>
+				<p>Тег <code>&lt;blockquote&gt;</code> для длинных цитат:</p>
+				<blockquote>
+					<p><strong>Цита́та</strong> — дословная выдержка из какого-либо текста. При этом важно, что цитируемый текст однозначно идентифицируется как вставленный.</p>
+					<p><cite>https://ru.wikipedia.org/wiki/Цитата</cite></p>
+				</blockquote>
+				<p>Пример тега <code>&lt;hr&gt;</code>:</p>
+				<hr>
+				<address>Калининградская обл., г. Черняховск, ул. 22 Января, тег <code>&lt;address&gt;</code></address>
+				<pre>Пример форматированного текста, тег &lt;pre&gt;...&lt;/pre&gt;</pre>
+				<p>Список определений(тег dl).</p>
+
+				<dl>
+					<dt>Первый термин(dt)</dt>
+					<dd>Длинное определение термина(dd)</dd>
+					<dt>Второй термин</dt>
+					<dd>Длинное определение второго термина</dd>
+				</dl>
 				<h3>Картинка и текст</h3>
 				<p>Это пример блока с картинкой и текстом. Блоку задан класс <code>.b-wi</code>. Картинке задан класс <code>.b-wi-pic</code>. Текст находится в контейнере с классом <code>.b-wi-text</code>.</p>
 <pre class="prettyprint linenums">&lt;div class="bwi"&gt;
@@ -605,157 +767,7 @@
 						</dl>
 					</div><!-- f-gallery -->
 				</div><!-- f-demo -->
-				<h3>Таблицы</h3>
-				<p>Дальше вы увидите, какие красивые таблицы получаются с помощью стандартной разметки для таблиц:</p>
-<pre class="prettyprint linenums">&lt;table&gt;
-	&lt;caption&gt;...&lt;/caption&gt;
-	&lt;thead&gt;
-		&lt;tr&gt;
-			&lt;th&gt;...&lt;/th&gt;
-		&lt;/tr&gt;
-	&lt;/thead&gt;
-	&lt;tfoot&gt;
-		&lt;tr&gt;
-			&lt;th&gt;...&lt;/th&gt;
-		&lt;/tr&gt;
-	&lt;/tfoot&gt;
-	&lt;tbody&gt;
-		&lt;tr&gt;
-			&lt;td&gt;...&lt;/td&gt;
-		&lt;/tr&gt;
-	&lt;/tbody&gt;
-&lt;/table&gt;</pre>
 
-				<div class="f-demo">
-					<table>
-						<caption>5 самых распространённых браузеров - февраль 2012(тег caption)</caption>
-						<thead>
-							<tr>
-								<th class="w-5">&#8470;</th>
-								<th>Название браузера(тег th)</th>
-								<th>%</th>
-							</tr>
-						</thead>
-						<tfoot>
-							<tr>
-								<th colspan="3">Подвал таблицы(тег tfoot)</th>
-							</tr>
-						</tfoot>
-						<tbody>
-							<tr>
-								<td>1</td>
-								<td>Internet Explorer</td>
-								<td>37,45</td>
-							</tr>
-							<tr>
-								<td>2</td>
-								<td>Chrome</td>
-								<td>28,40</td>
-							</tr>
-							<tr>
-								<td>3</td>
-								<td>Firefox</td>
-								<td>24,78</td>
-							</tr>
-							<tr>
-								<td>4</td>
-								<td>Safari</td>
-								<td>6,62</td>
-							</tr>
-							<tr>
-								<td>5</td>
-								<td>Opera</td>
-								<td>1,95</td>
-							</tr>
-						</tbody>
-					</table>
-				</div><!-- f-demo -->
-				<p>Для удобства восприятия ячеек таблицы можно раскрасить нечётные ряды с помощью класса <code class="prettyprint">&lt;table class="table-zebra"&gt;...&lt;/table&gt;</code>.</p>
-				<div class="f-demo">
-					<table class="table-zebra">
-						<thead>
-							<tr>
-								<th class="w-5">&#8470;</th>
-								<th>Название браузера(тег th)</th>
-								<th>%</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>1</td>
-								<td>Internet Explorer</td>
-								<td>37,45</td>
-							</tr>
-							<tr>
-								<td>2</td>
-								<td>Chrome</td>
-								<td>28,40</td>
-							</tr>
-							<tr>
-								<td>3</td>
-								<td>Firefox</td>
-								<td>24,78</td>
-							</tr>
-							<tr>
-								<td>4</td>
-								<td>Safari</td>
-								<td>6,62</td>
-							</tr>
-							<tr>
-								<td>5</td>
-								<td>Opera</td>
-								<td>1,95</td>
-							</tr>
-						</tbody>
-					</table>
-				</div><!-- f-demo -->
-
-				<h2>Обычные и нумерованные списки.</h2>
-
-				<ul>
-					<li>первый элемент обычного</li>
-					<li>ненумерованного списка</li>
-					<li>третий пункт</li>
-					<li>последний пункт</li>
-				</ul>
-
-				<ol>
-					<li>это нумерованный список</li>
-					<li>второй элемент</li>
-					<li>третий</li>
-					<li>и последний</li>
-				</ol>
-
-				<h2>Теги</h2>
-
-				<p><a href="#">ссылка</a> <strong>&lt;strong&gt;</strong> <em>&lt;em&gt;</em> <dfn>&lt;dfn&gt;</dfn> <del>&lt;del&gt;</del> <sup>&lt;sup&gt;</sup> <sub>&lt;sub&gt;</sub> <code>&lt;code&gt;</code></p>
-
-				<blockquote>Тег &lt;blockquote&gt; оформлен вот таким стилем, который вы можете заменить на любой другой.</blockquote>
-
-				<p>Пример тега <code>&lt;hr&gt;</code>:</p>
-
-				<hr>
-
-				<p>css-framework включает так-же стили для тега<code>sup</code> который не нарушают высоты строк.<br />
-				css-framework включает так-же стили для тега<sup>sup</sup> и<sub>sub</sub> которые не нарушают высоты строк.<br />
-				css-framework включает так-же стили для тега <code>sub</code> который не нарушают высоты строк.</p>
-
-				<p>Обыкновенный параграф, что тут ещё можно написать. Практически все элементы в контейнере класса <code>class="c"</code> имеют нижний отступ.</p>
-
-				<p>Тег <code>&lt;address&gt;</code>:</p>
-
-				<address>Калининградская обл., г. Черняховск, ул. 22 Января</address>
-
-				<pre>Пример предформатированного текста</pre>
-
-				<p>Список определений(тег dl).</p>
-
-				<dl>
-					<dt>Первый термин(dt)</dt>
-					<dd>Длинное определение термина(dd)</dd>
-					<dt>Второй термин</dt>
-					<dd>Длинное определение второго термина</dd>
-				</dl>
 
 				<h2>Колонки</h2>
 
