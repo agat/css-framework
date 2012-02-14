@@ -614,9 +614,9 @@
 						</tbody>
 					</table>
 				</div><!-- f-demo -->
-				<h3>Обычные и нумерованные списки.</h3>
+				<h3>Обычные, нумерованные списки и списки определений</h3>
 				<div class="g-row">
-					<div class="g-6">
+					<div class="g-4">
 						<p>Обычный список <code>&lt;ul&gt;</code>:</p>
 						<div class="f-demo">
 							<ul>
@@ -626,8 +626,8 @@
 								<li>последний пункт</li>
 							</ul>
 						</div><!-- f-demo -->
-					</div><!-- g-6 -->
-					<div class="g-6">
+					</div><!-- g-4 -->
+					<div class="g-4">
 						<p>Нумерованный список <code>&lt;ol&gt;</code>:</p>
 						<div class="f-demo">
 							<ol>
@@ -637,24 +637,75 @@
 								<li>и последний</li>
 							</ol>
 						</div><!-- f-demo -->
-					</div><!-- g-6 -->
+					</div><!-- g-4 -->
+					<div class="g-4">
+						<p>Список определений <code>&lt;dl&gt;</code>:</p>
+						<div class="f-demo">
+							<dl>
+								<dt>Первый термин, тег <code>&lt;dt&gt;</code></dt>
+								<dd>Определение термина, тег <code>&lt;dd&gt;</code></dd>
+								<dt>Второй термин</dt>
+								<dd>Длинное определение второго термина</dd>
+							</dl>
+						</div><!-- f-demo -->
+					</div><!-- g-4 -->
 				</div><!-- g-row -->
 				<h2>Теги оформлления контента</h2>
 				<h3>Строчные теги:</h3>
-				<ul>
-					<li>пример <a href="#">ссылки</a>, тег <code>&lt;a&gt;</code></li>
-					<li>пример <i>курсивного</i> и <em>акцентированного</em> текста, теги <code>&lt;i&gt;</code> и <code>&lt;em&gt;</code></li>
-					<li>пример <b>жирного</b> и <strong>акцентированного</strong> текста, тег <code>&lt;b&gt;</code> и <code>&lt;strong&gt;</code> соответственно</li>
-					<li><mark>выделенный</mark> текст с помощью тега <code>&lt;mark&gt;</code></li>
-					<li><small>маленького текста</small> как пример тега <code> &lt;small&gt;</code></li>
-					<li><abbr>аббревиатура</abbr>, как пример тега <code>&lt;abbr&gt;</code></li>
-					<li>пример <cite>цитаты</cite> и <q>выделенной цитаты</q> в тексте, теги <code>&lt;cite&gt;</code> и <code>&lt;q&gt;</code></li>
-					<li><code>исходный код</code> и <dfn>новый термин</dfn> как примеры тегов <code>&lt;code&gt;</code> и <code>&lt;dfn&gt;</code></li>
-					<li>пример горячих клавиш <kbd>&lt;Ctrl&gt;+&lt;S&gt;</kbd>, тег <code>&lt;kbd&gt;</code></li>
-					<li>имя переменной обозначается <var>variableName</var> с помощью тега <code>&lt;var&gt;</code>, а так <samp>текст из консоли</samp>, тег <code>&lt;samp&gt;</code></li>
-					<li><ins>добавленный текст</ins> и <del>удалённый текст</del>, как примеры тегов <code>&lt;ins&gt;</code> и <code>&lt;del&gt;</code></li>
-					<li>текст в <sub>нижнем</sub> и <sup>верхнем</sup> индексе, которые не нарушают высоты строк, теги <code>&lt;sub&gt;</code> и <code>&lt;sup&gt;</code></li>
-				</ul>
+				<table>
+					<tr>
+						<th>Элемент</th>
+						<th>Пример использования</th>
+					</tr>
+					<tr>
+						<td><code>&lt;a href="#"&gt;...&lt;/a&gt;</code></td>
+						<td><a href="#">ссылка</a></td>
+					</tr>
+					<tr>
+						<td><code>&lt;i&gt;</code> и <code>&lt;em&gt;</code></td>
+						<td><i>курсивный</i> и <em>акцентированный</em> текст</td>
+					</tr>
+					<tr>
+						<td><code>&lt;b&gt;</code> и <code>&lt;strong&gt;</code></td>
+						<td><b>жирный</b> и <strong>акцентированный</strong> текст</td>
+					</tr>
+					<tr>
+						<td><code>&lt;mark&gt;</code></td>
+						<td><mark>выделенный</mark> текст</td>
+					</tr>
+					<tr>
+						<td><code> &lt;small&gt;</code></td>
+						<td><small>маленький</small> текст</td>
+					</tr>
+					<tr>
+						<td><code>&lt;abbr title="..."&gt;...&lt;/abbr&gt;</code></td>
+						<td><abbr title="Shoulder of Pork and hAM («свиные лопатки и окорока»)">спам</abbr></td>
+					</tr>
+					<tr>
+						<td><code>&lt;cite&gt;</code> и <code>&lt;q&gt;</code></td>
+						<td><cite>цитата</cite> и <q>выделенная цитата</q></td>
+					</tr>
+					<tr>
+						<td><code>&lt;code&gt;</code> и <code>&lt;dfn&gt;</code></td>
+						<td><code>исходный код</code> и <dfn>новый термин</dfn></td>
+					</tr>
+					<tr>
+						<td><code>&lt;kbd&gt;</code></td>
+						<td>«горячая» клавиша <kbd>&lt;Ctrl&gt;+&lt;S&gt;</kbd></td>
+					</tr>
+					<tr>
+						<td><code>&lt;var&gt;</code> и <code>&lt;samp&gt;</code></td>
+						<td>имя переменной <var>variableName</var> и <samp>текст из консоли</samp></td>
+					</tr>
+					<tr>
+						<td><code>&lt;ins&gt;</code> и <code>&lt;del&gt;</code></td>
+						<td><ins>добавленный текст</ins> и <del>удалённый текст</del></td>
+					</tr>
+					<tr>
+						<td><code>&lt;sub&gt;</code> и <code>&lt;sup&gt;</code></td>
+						<td>текст в <sub>нижнем</sub> и <sup>верхнем</sup> индексе</td>
+					</tr>
+				</table>
 				<h3>Блочные теги</h3>
 				<p>Тег <code>&lt;blockquote&gt;</code> для длинных цитат:</p>
 				<blockquote>
@@ -665,14 +716,6 @@
 				<hr>
 				<address>Калининградская обл., г. Черняховск, ул. 22 Января, тег <code>&lt;address&gt;</code></address>
 				<pre>Пример форматированного текста, тег &lt;pre&gt;...&lt;/pre&gt;</pre>
-				<p>Список определений(тег dl).</p>
-
-				<dl>
-					<dt>Первый термин(dt)</dt>
-					<dd>Длинное определение термина(dd)</dd>
-					<dt>Второй термин</dt>
-					<dd>Длинное определение второго термина</dd>
-				</dl>
 				<h3>Картинка и текст</h3>
 				<p>Это пример блока с картинкой и текстом. Блоку задан класс <code>.b-wi</code>. Картинке задан класс <code>.b-wi-pic</code>. Текст находится в контейнере с классом <code>.b-wi-text</code>.</p>
 <pre class="prettyprint linenums">&lt;div class="bwi"&gt;
@@ -712,59 +755,59 @@
 &lt;/div&gt;&lt;!-- f-gallery --&gt;</pre>
 				<div class="f-demo">
 					<div class="g-row f-gallery">
-						<dl class="g-2">
-							<dd><img width="140" height="80" alt="" src="http://dummyimage.com/140x80/ccc/999.gif"></dd>
-							<dt>Название картинки</dt>
-						</dl>
-						<dl class="g-2">
-							<dd><img width="140" height="80" alt="" src="http://dummyimage.com/140x80/ccc/999.gif"></dd>
-							<dt>Название картинки</dt>
-						</dl>
-						<dl class="g-2">
-							<dd><img width="140" height="80" alt="" src="http://dummyimage.com/140x80/ccc/999.gif"></dd>
-							<dt>Название картинки</dt>
-						</dl>
-						<dl class="g-2">
-							<dd><img width="140" height="80" alt="" src="http://dummyimage.com/140x80/ccc/999.gif"></dd>
-							<dt>Название картинки</dt>
-						</dl>
-						<dl class="g-2">
-							<dd><img width="140" height="80" alt="" src="http://dummyimage.com/140x80/ccc/999.gif"></dd>
-							<dt>Название картинки</dt>
-						</dl>
-						<dl class="g-2">
-							<dd><img width="140" height="80" alt="" src="http://dummyimage.com/140x80/ccc/999.gif"></dd>
-							<dt>Название картинки</dt>
-						</dl>
+						<div class="g-2">
+							<a href="#"><img src="http://placehold.it/140x80" width="140" height="80" alt="pic" />
+								<small>Название картинки</small></a>
+						</div><!-- g-2 -->
+						<div class="g-2">
+							<a href="#"><img src="http://placehold.it/140x80" width="140" height="80" alt="pic" />
+								<small>Название картинки</small></a>
+						</div><!-- g-2 -->
+						<div class="g-2">
+							<a href="#"><img src="http://placehold.it/140x80" width="140" height="80" alt="pic" />
+								<small>Название картинки</small></a>
+						</div><!-- g-2 -->
+						<div class="g-2">
+							<a href="#"><img src="http://placehold.it/140x80" width="140" height="80" alt="pic" />
+								<small>Название картинки</small></a>
+						</div><!-- g-2 -->
+						<div class="g-2">
+							<a href="#"><img src="http://placehold.it/140x80" width="140" height="80" alt="pic" />
+								<small>Название картинки</small></a>
+						</div><!-- g-2 -->
+						<div class="g-2">
+							<a href="#"><img src="http://placehold.it/140x80" width="140" height="80" alt="pic" />
+								<small>Название картинки</small></a>
+						</div><!-- g-2 -->
 					</div><!-- f-gallery -->
 				</div><!-- f-demo -->
 				<p>Эти элементы комбинируются со знакомымми уже нам классами макета страницы <code>.g-row, .g-1, .g-2, .g-3</code> и т.д.. Позволяющими задавать любую ширину мультимедиа-элементам.</p>
 				<div class="f-demo">
 					<div class="g-row f-gallery">
-						<dl class="g-5">
-							<dd><img src="http://placehold.it/380x190" width="380" height="190" alt="pic" /></dd>
-							<dt>Название картинки</dt>
-						</dl>
-						<dl class="g-4">
-							<dd><img src="http://placehold.it/300x80" width="300" height="80" alt="pic" /></dd>
-							<dt>Название картинки</dt>
-						</dl>
-						<dl class="g-3">
-							<dd><img src="http://placehold.it/220x80" width="220" height="80" alt="pic" /></dd>
-							<dt>Название картинки</dt>
-						</dl>
-						<dl class="g-2">
-							<dd><img width="140" height="80" alt="" src="http://dummyimage.com/140x80/ccc/999.gif"></dd>
-							<dt>Название картинки</dt>
-						</dl>
-						<dl class="g-2">
-							<dd><img width="140" height="80" alt="" src="http://dummyimage.com/140x80/ccc/999.gif"></dd>
-							<dt>Название картинки</dt>
-						</dl>
-						<dl class="g-2">
-							<dd><img width="140" height="80" alt="" src="http://dummyimage.com/140x80/ccc/999.gif"></dd>
-							<dt>Название картинки</dt>
-						</dl>
+						<div class="g-5">
+							<a href="#"><img src="http://placehold.it/380x190" width="380" height="190" alt="pic" />
+								<small>Название картинки</small></a>
+						</div><!-- g-5 -->
+						<div class="g-4">
+							<a href="#"><img src="http://placehold.it/300x80" width="300" height="80" alt="pic" />
+								<small>Название картинки</small></a>
+						</div><!-- g-4 -->
+						<div class="g-3">
+							<a href="#"><img src="http://placehold.it/220x80" width="220" height="80" alt="pic" />
+								<small>Название картинки</small></a>
+						</div><!-- g-4 -->
+						<div class="g-2">
+							<a href="#"><img src="http://placehold.it/140x80" width="140" height="80" alt="pic" />
+								<small>Название картинки</small></a>
+						</div><!-- g-2 -->
+						<div class="g-2">
+							<a href="#"><img src="http://placehold.it/140x80" width="140" height="80" alt="pic" />
+								<small>Название картинки</small></a>
+						</div><!-- g-2 -->
+						<div class="g-2">
+							<a href="#"><img src="http://placehold.it/140x80" width="140" height="80" alt="pic" />
+								<small>Название картинки</small></a>
+						</div><!-- g-2 -->
 					</div><!-- f-gallery -->
 				</div><!-- f-demo -->
 
@@ -936,5 +979,23 @@
 		<script>
 			prettyPrint();
 		</script>
+
+		<div role="accordion">
+			<section>
+				<h3>Heading 1</h3>
+				<div>
+					<p>Lorem ipsum dolor sit amet...</p>
+				</div>
+			</section>
+			<details>
+				<summary>Heading 2</summary>
+				<section>
+					<p>Lorem ipsum dolor sit amet...</p>
+					<p>Lorem ipsum dolor sit amet...</p>
+				</section>
+			</details>
+		</div><!-- accordion -->
+
+
 	</body>
 </html>

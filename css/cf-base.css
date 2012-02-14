@@ -217,7 +217,7 @@ h1:first-child,
 h2:first-child,
 h3:first-child,
 h4:first-child						{ margin-top: 0; }
-abbr								{ text-transform: uppercase; border-bottom: 1px dotted #ccc; }
+abbr								{ border-bottom: 1px dotted #ccc; }
 blockquote							{ padding: 5px 3em; position: relative; }
 blockquote p						{ margin: 10px 0 0 0; }
 blockquote p:first-child			{ margin: 0; }
@@ -243,6 +243,8 @@ samp,
 var,
 kbd									{ padding: 0 3px; font-family: Consolas, "Lucida Console", Monaco, monospace; font-size: .9em; }
 pre									{ padding: 7px 9px; -moz-tab-size: 4; -o-tab-size: 4; tab-size: 4; white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
+code,
+samp								{ line-height: 0; }
 b,
 strong								{ font-weight: bold; }
 address,
@@ -268,8 +270,9 @@ ul,
 ol									{ margin-left: 28px; }
 li									{ }
 dl									{ }
-dl dt								{ }
-dl dd								{ }
+dl dt								{ font-weight: bold; }
+dl dd								{ margin: 0 0 0 7px; }
+dl dd:before						{ content: '\2014'; padding-right: .5em; color: #839496; }
 
 .icons a,
 .icon								{ padding: 1px 0 1px 20px; background-repeat: no-repeat; background-position: left center; }
@@ -308,9 +311,8 @@ img									{ border: none; max-width: 100%; }
 
 /* Gallery block
 ---------------------------------------- */
-.f-gallery dt						{ font-weight: normal; font-size: 12px; }
-.f-gallery dd						{ margin: 0; }
-.f-gallery dd img					{ display: block; }
+.f-gallery a						{ text-decoration: none; }
+.f-gallery img						{ display: block; }
 
 /* Breadcrumbs
 --------------------------------------- */
@@ -325,9 +327,9 @@ img									{ border: none; max-width: 100%; }
 
 /* Pager block
 ---------------------------------------- */
-.f-pager							{ text-align: center; }
-.f-pager-left						{ text-align: left; }
-.f-pager-right						{ text-align: right; }
+.f-pager ul							{ text-align: center; }
+.f-pager-left ul					{ text-align: left; }
+.f-pager-right ul					{ text-align: right; }
 .f-pager-prev						{ margin-right: 10px; }
 .f-pager-next						{ margin-left: 10px; }
 .f-pager-prev a,
