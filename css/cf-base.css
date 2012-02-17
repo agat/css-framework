@@ -312,7 +312,9 @@ img									{ border: none; max-width: 100%; }
 /* Gallery block
 ---------------------------------------- */
 .f-gallery a						{ text-decoration: none; }
-.f-gallery img						{ display: block; }
+.f-gallery a:hover					{ text-decoration: underline; }
+.f-gallery img						{ display: block; background: #fff; padding: 4px; border: 1px solid #eee; border-radius: 3px; }
+.f-gallery small					{ display: block; padding: 0 5px; }
 
 /* Breadcrumbs
 --------------------------------------- */

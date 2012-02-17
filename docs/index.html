@@ -4,10 +4,13 @@
 		<meta charset="utf-8">
 		<title>Демонстрация css-framework'а</title>
 
+		<script src="../js/jquery.js"></script>
+		<script src="../js/jquery.accordion.js"></script>
+
 		<link href="../css/cf-base.css" rel="stylesheet">
+
 		<link href="css/cf-docs.css" rel="stylesheet">
 		<link href="css/prettify.css" rel="stylesheet">
-
 		<script src="js/prettify.js"></script>
 	</head>
 	<body class="g">
@@ -744,39 +747,39 @@
 					</div><!-- bwi -->
 				</div><!-- f-demo -->
 				<h3>Галерея</h3>
-				<p>Для группировки мультимедиа-контента предусмотрен класс <code>.f-gallery</code> и html-структура <code>dl</code> списка:</p>
+				<p>Для набора изображений предусмотрен класс <code>.f-gallery</code>:</p>
 <pre class="prettyprint linenums">&lt;div class="g-row f-gallery"&gt;
 	...
-	&lt;dl class="g-2"&gt;
-		&lt;dd&gt;&lt;img width="140" height="80" alt="" src="..."&gt;&lt;/dd&gt;
-		&lt;dt&gt;Название картинки&lt;/dt&gt;
-	&lt;/dl&gt;
+	&lt;div class="g-2"&gt;
+		&lt;a href="#"&gt;&lt;img src="http://placehold.it/130x80" width="140" height="80" alt="pic" /&gt;
+ 		&lt;small&gt;Название картинки&lt;/small&gt;&lt;/a&gt;
+	&lt;/div&gt;
 	...
 &lt;/div&gt;&lt;!-- f-gallery --&gt;</pre>
 				<div class="f-demo">
 					<div class="g-row f-gallery">
 						<div class="g-2">
-							<a href="#"><img src="http://placehold.it/140x80" width="140" height="80" alt="pic" />
+							<a href="#"><img src="http://placehold.it/130x80" width="130" height="80" alt="pic" />
 								<small>Название картинки</small></a>
 						</div><!-- g-2 -->
 						<div class="g-2">
-							<a href="#"><img src="http://placehold.it/140x80" width="140" height="80" alt="pic" />
+							<a href="#"><img src="http://placehold.it/130x80" width="130" height="80" alt="pic" />
 								<small>Название картинки</small></a>
 						</div><!-- g-2 -->
 						<div class="g-2">
-							<a href="#"><img src="http://placehold.it/140x80" width="140" height="80" alt="pic" />
+							<a href="#"><img src="http://placehold.it/130x80" width="130" height="80" alt="pic" />
 								<small>Название картинки</small></a>
 						</div><!-- g-2 -->
 						<div class="g-2">
-							<a href="#"><img src="http://placehold.it/140x80" width="140" height="80" alt="pic" />
+							<a href="#"><img src="http://placehold.it/130x80" width="130" height="80" alt="pic" />
 								<small>Название картинки</small></a>
 						</div><!-- g-2 -->
 						<div class="g-2">
-							<a href="#"><img src="http://placehold.it/140x80" width="140" height="80" alt="pic" />
+							<a href="#"><img src="http://placehold.it/130x80" width="130" height="80" alt="pic" />
 								<small>Название картинки</small></a>
 						</div><!-- g-2 -->
 						<div class="g-2">
-							<a href="#"><img src="http://placehold.it/140x80" width="140" height="80" alt="pic" />
+							<a href="#"><img src="http://placehold.it/130x80" width="130" height="80" alt="pic" />
 								<small>Название картинки</small></a>
 						</div><!-- g-2 -->
 					</div><!-- f-gallery -->
@@ -785,27 +788,27 @@
 				<div class="f-demo">
 					<div class="g-row f-gallery">
 						<div class="g-5">
-							<a href="#"><img src="http://placehold.it/380x190" width="380" height="190" alt="pic" />
+							<a href="#"><img src="http://placehold.it/370x190" width="370" height="190" alt="pic" />
 								<small>Название картинки</small></a>
 						</div><!-- g-5 -->
 						<div class="g-4">
-							<a href="#"><img src="http://placehold.it/300x80" width="300" height="80" alt="pic" />
+							<a href="#"><img src="http://placehold.it/290x80" width="290" height="80" alt="pic" />
 								<small>Название картинки</small></a>
 						</div><!-- g-4 -->
 						<div class="g-3">
-							<a href="#"><img src="http://placehold.it/220x80" width="220" height="80" alt="pic" />
+							<a href="#"><img src="http://placehold.it/210x80" width="210" height="80" alt="pic" />
 								<small>Название картинки</small></a>
 						</div><!-- g-4 -->
 						<div class="g-2">
-							<a href="#"><img src="http://placehold.it/140x80" width="140" height="80" alt="pic" />
+							<a href="#"><img src="http://placehold.it/130x80" width="130" height="80" alt="pic" />
 								<small>Название картинки</small></a>
 						</div><!-- g-2 -->
 						<div class="g-2">
-							<a href="#"><img src="http://placehold.it/140x80" width="140" height="80" alt="pic" />
+							<a href="#"><img src="http://placehold.it/130x80" width="130" height="80" alt="pic" />
 								<small>Название картинки</small></a>
 						</div><!-- g-2 -->
 						<div class="g-2">
-							<a href="#"><img src="http://placehold.it/140x80" width="140" height="80" alt="pic" />
+							<a href="#"><img src="http://placehold.it/130x80" width="130" height="80" alt="pic" />
 								<small>Название картинки</small></a>
 						</div><!-- g-2 -->
 					</div><!-- f-gallery -->
@@ -988,12 +991,20 @@
 				</div>
 			</section>
 			<details>
-				<summary>Heading 2</summary>
+				<header>Heading 2</header>
 				<section>
 					<p>Lorem ipsum dolor sit amet...</p>
 					<p>Lorem ipsum dolor sit amet...</p>
 				</section>
 			</details>
+			<div>
+				<div>Heading 2</div>
+				<div>
+					<p>Lorem ipsum dolor sit amet...</p>
+					<p>Lorem ipsum dolor sit amet...</p>
+					<p>Lorem ipsum dolor sit amet...</p>
+				</div>
+			</div>
 		</div><!-- accordion -->
 
 
