@@ -813,81 +813,98 @@
 						</div><!-- g-2 -->
 					</div><!-- f-gallery -->
 				</div><!-- f-demo -->
-
-
-				<h2>Колонки</h2>
-
-				<h3>2 колонки</h3>
-
-				<div class="g">
-					<div class="w-50">
-						<div class="g-c">
+				<h3>Колонки</h3>
+				<p>Для создания колонок с одинакогой шириной сожержимого и фиксированным расстоянием между ними применяется родительский элемент <code>.f-col-x</code> с вложенными <code>.f-column</code>. Где <code>x</code> может быть 1, 2, 3 или 4.</p>
+				<h4>2 колонки</h4>
+				<p>Для создания 2-ух колонок(шириной 50%/50%) требуется родительский элемент <code>.f-col-2</code> с вложенными 2 элементами <code>.f-column</code>.</p>
+<pre class="prettyprint linenums">&lt;div class="f-col-2"&gt;
+	&lt;div class="f-column"&gt;
+		...
+	&lt;/div&gt;&lt;!-- f-column --&gt;
+	&lt;div class="f-column"&gt;
+		...
+	&lt;/div&gt;&lt;!-- f-column --&gt;
+&lt;/div&gt;&lt;!-- f-col-2 --&gt;</pre>
+				<div class="f-demo">
+					<div class="f-col-2">
+						<div class="f-column">
 							<p>Это 2 колонки. Каждая колонка шириной 50%.</p>
-						</div><!-- g-c -->
-					</div><!-- w-50 -->
-					<div class="w-50">
-						<div class="g-c">
+						</div><!-- f-column -->
+						<div class="f-column">
 							<p>Это 2 колонки. Каждая колонка шириной 50%.</p>
-						</div><!-- g-c -->
-					</div><!-- w-50 -->
-				</div><!-- g -->
-
+						</div><!-- f-column -->
+					</div><!-- f-col-2 -->
+				</div><!-- f-demo -->
 				<h3>3 колонки</h3>
-
-				<div class="g">
-					<div class="w-67">
-						<div class="g-c">
-							<div class="w-50">
-								<div class="g-c">
-									<p>Это 3 колонки. Каждая колонка шириной 33%.</p>
-								</div><!-- g-c -->
-							</div><!-- w-50 -->
-							<div class="w-50">
-								<div class="g-c">
-									<p>Это 3 колонки. Каждая колонка шириной 33%.</p>
-								</div><!-- g-c -->
-							</div><!-- w-50 -->
-						</div><!-- g-c -->
-					</div><!-- w-67 -->
-					<div class="w-33">
-						<div class="g-c">
+				<p>Для создания 3-ёх колонок(шириной 33.3%/33.3%/33.3%) требуется родительский элемент <code>.f-col-3</code> с вложенными элементами <code>.f-column</code> вот таким образом.</p>
+<pre class="prettyprint linenums">&lt;div class="f-col-3"&gt;
+	&lt;div class="f-column"&gt;
+		&lt;div class="f-column"&gt;
+			...
+		&lt;/div&gt;&lt;!-- f-column --&gt;
+		&lt;div class="f-column"&gt;
+			...
+		&lt;/div&gt;&lt;!-- f-column --&gt;
+	&lt;/div&gt;&lt;!-- f-column --&gt;
+	&lt;div class="f-column"&gt;
+		...
+	&lt;/div&gt;&lt;!-- f-column --&gt;
+&lt;/div&gt;&lt;!-- f-col-3 --&gt;</pre>
+				<div class="f-demo">
+					<div class="f-col-3">
+						<div class="f-column">
+							<div class="f-column">
+								<p>Это 3 колонки. Каждая колонка шириной 33%.</p>
+							</div><!-- f-column -->
+							<div class="f-column">
+								<p>Это 3 колонки. Каждая колонка шириной 33%.</p>
+							</div><!-- f-column -->
+						</div><!-- f-column -->
+						<div class="f-column">
 							<p>Это 3 колонки. Каждая колонка шириной 33%.</p>
-						</div><!-- g-c -->
-					</div><!-- w-50 -->
-				</div><!-- g -->
-
+						</div><!-- f-column -->
+					</div><!-- f-col-3 -->
+				</div><!-- f-demo -->
 				<h3>4 колонки</h3>
-
-				<div class="g">
-					<div class="w-50">
-						<div class="g-c">
-							<div class="w-50">
-								<div class="g-c">
-									<p>Это 4 колонки. Каждая колонка шириной 25%.</p>
-								</div><!-- g-c -->
-							</div><!-- w-50 -->
-							<div class="w-50">
-								<div class="g-c">
-									<p>Это 4 колонки. Каждая колонка шириной 25%.</p>
-								</div><!-- g-c -->
-							</div><!-- w-50 -->
-						</div><!-- g-c -->
-					</div><!-- w-50 -->
-					<div class="w-50">
-						<div class="g-c">
-							<div class="w-50">
-								<div class="g-c">
-									<p>Это 4 колонки. Каждая колонка шириной 25%.</p>
-								</div><!-- g-c -->
-							</div><!-- w-50 -->
-							<div class="w-50">
-								<div class="g-c">
-									<p>Это 4 колонки. Каждая колонка шириной 25%.</p>
-								</div><!-- g-c -->
-							</div><!-- w-50 -->
-						</div><!-- g-c -->
-					</div><!-- w-50 -->
-				</div><!-- g -->
+				<p>Для создания 4-ёх колонок(шириной 25%/25%/25%/25%) требуется родительский элемент <code>.f-col-4</code> с вложенными элементами <code>.f-column</code>.</p>
+<pre class="prettyprint linenums">&lt;div class="f-col-4"&gt;
+	&lt;div class="f-column"&gt;
+		&lt;div class="f-column"&gt;
+			...
+		&lt;/div&gt;&lt;!-- f-column --&gt;
+		&lt;div class="f-column"&gt;
+			...
+		&lt;/div&gt;&lt;!-- f-column --&gt;
+	&lt;/div&gt;&lt;!-- f-column --&gt;
+	&lt;div class="f-column"&gt;
+		&lt;div class="f-column"&gt;
+			...
+		&lt;/div&gt;&lt;!-- f-column --&gt;
+		&lt;div class="f-column"&gt;
+			...
+		&lt;/div&gt;&lt;!-- f-column --&gt;
+	&lt;/div&gt;&lt;!-- f-column --&gt;
+&lt;/div&gt;&lt;!-- f-col-4 --&gt;</pre>
+				<div class="f-demo">
+					<div class="f-col-4">
+						<div class="f-column">
+							<div class="f-column">
+								<p>Это 4 колонки. Каждая колонка шириной 25%.</p>
+							</div><!-- f-column -->
+							<div class="f-column">
+								<p>Это 4 колонки. Каждая колонка шириной 25%.</p>
+							</div><!-- f-column -->
+						</div><!-- f-column -->
+						<div class="f-column">
+							<div class="f-column">
+								<p>Это 4 колонки. Каждая колонка шириной 25%.</p>
+							</div><!-- f-column -->
+							<div class="f-column">
+								<p>Это 4 колонки. Каждая колонка шириной 25%.</p>
+							</div><!-- f-column -->
+						</div><!-- f-column -->
+					</div><!-- f-col-4 -->
+				</div><!-- f-demo -->
 
 				<h2>Примеры форм и сообщений</h2>
 
