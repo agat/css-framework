@@ -653,8 +653,8 @@
 						</div><!-- f-demo -->
 					</div><!-- g-4 -->
 				</div><!-- g-row -->
-				<h2>Теги оформлления контента</h2>
-				<h3>Строчные теги:</h3>
+				<h3>Теги оформлления контента</h3>
+				<h4>Строчные теги:</h4>
 				<table>
 					<tr>
 						<th>Элемент</th>
@@ -719,6 +719,11 @@
 				<hr>
 				<address>Калининградская обл., г. Черняховск, ул. 22 Января, тег <code>&lt;address&gt;</code></address>
 				<pre>Пример форматированного текста, тег &lt;pre&gt;...&lt;/pre&gt;</pre>
+			</div><!-- g-12 -->
+		</section><!-- g-row -->
+		<section class="g-row">
+			<div class="g-12">
+				<h2>Иллюстрации</h2>
 				<h3>Картинка и текст</h3>
 				<p>Это пример блока с картинкой и текстом. Блоку задан класс <code>.b-wi</code>. Картинке задан класс <code>.b-wi-pic</code>. Текст находится в контейнере с классом <code>.b-wi-text</code>.</p>
 <pre class="prettyprint linenums">&lt;div class="bwi"&gt;
@@ -813,7 +818,11 @@
 						</div><!-- g-2 -->
 					</div><!-- f-gallery -->
 				</div><!-- f-demo -->
-				<h3>Колонки</h3>
+			</div><!-- g-12 -->
+		</section><!-- g-row -->
+		<section class="g-row">
+			<div class="g-12">
+				<h2>Колонки</h2>
 				<p>Для создания колонок с одинакогой шириной сожержимого и фиксированным расстоянием между ними применяется родительский элемент <code>.f-col-x</code> с вложенными <code>.f-column</code>. Где <code>x</code> может быть 1, 2, 3 или 4.</p>
 				<h4>2 колонки</h4>
 				<p>Для создания 2-ух колонок(шириной 50%/50%) требуется родительский элемент <code>.f-col-2</code> с вложенными 2 элементами <code>.f-column</code>.</p>
@@ -836,7 +845,7 @@
 					</div><!-- f-col-2 -->
 				</div><!-- f-demo -->
 				<h3>3 колонки</h3>
-				<p>Для создания 3-ёх колонок(шириной 33.3%/33.3%/33.3%) требуется родительский элемент <code>.f-col-3</code> с вложенными элементами <code>.f-column</code> вот таким образом.</p>
+				<p>Для создания 3-ёх колонок(каждая шириной 33.3%) требуется родительский элемент <code>.f-col-3</code> с вложенными элементами <code>.f-column</code> вот таким образом.</p>
 <pre class="prettyprint linenums">&lt;div class="f-col-3"&gt;
 	&lt;div class="f-column"&gt;
 		&lt;div class="f-column"&gt;
@@ -866,7 +875,7 @@
 					</div><!-- f-col-3 -->
 				</div><!-- f-demo -->
 				<h3>4 колонки</h3>
-				<p>Для создания 4-ёх колонок(шириной 25%/25%/25%/25%) требуется родительский элемент <code>.f-col-4</code> с вложенными элементами <code>.f-column</code>.</p>
+				<p>Для создания 4-ёх колонок(каждая шириной 25%) требуется родительский элемент <code>.f-col-4</code> с вложенными элементами <code>.f-column</code>.</p>
 <pre class="prettyprint linenums">&lt;div class="f-col-4"&gt;
 	&lt;div class="f-column"&gt;
 		&lt;div class="f-column"&gt;
@@ -905,23 +914,54 @@
 						</div><!-- f-column -->
 					</div><!-- f-col-4 -->
 				</div><!-- f-demo -->
+			</div><!-- g-12 -->
+		</section><!-- g-row -->
+		<section class="g-row">
+			<div class="g-12">
+				<h2>Формы и сообщения</h2>
+				<h3>Сообщения</h3>
+				<p>Текст про сообщения, пример кода.</p>
+				<div class="g-row">
+					<div class="g-6">
+						<div class="f-message">
+							<span class="close"></span>
+							<strong>Внимание</strong>, текст простого сообщения
+						</div><!--f-message -->
+						<div class="f-message">
+							<span class="close"></span>
+							<h5>Заголовок</h5>
+							<p>Текст простого сообщения</p>
+						</div><!--f-message -->
+					</div><!-- g-6 -->
+					<div class="g-6">
+						<p>Текст про сообщения, пример кода.</p>
+					</div><!-- g-6 -->
+				</div><!-- g-row -->
+				<div class="g-row">
+					<div class="g-6">
+						<div class="f-message f-message-error">
+							<span class="close"></span>
+							Текст сообщения об ошибке
+						</div><!-- f-message-->
+					</div><!-- g-6 -->
+					<div class="g-6">
 
-				<h2>Примеры форм и сообщений</h2>
+					</div><!-- g-6 -->
+				</div><!-- g-row -->
+				<div class="g-row">
+					<div class="g-6">
+						<div class="f-message f-message-success">
+							<span class="close"></span>
+							Текст сообщения об успехе
+						</div><!-- f-message -->
+					</div><!-- g-6 -->
+					<div class="g-6">
 
-				<div class="f-message">
-					<span class="f-message-close">&times;</span>
-					<p>Текст простого сообщения</p>
-				</div><!--f-message -->
+					</div><!-- g-6 -->
+				</div><!-- g-row -->
 
-				<div class="f-message f-message-error">
-					<span class="f-message-close">&times;</span>
-					<p>Текст сообщения об ошибке</p>
-				</div><!-- f-message-->
 
-				<div class="f-message f-message-success">
-					<span class="f-message-close">&times;</span>
-					<p>Текст сообщения об успехе</p>
-				</div><!-- f-message -->
+
 
 				<form class="form" action="/">
 					<fieldset>
