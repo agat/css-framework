@@ -920,43 +920,64 @@
 			<div class="g-12">
 				<h2>Формы и сообщения</h2>
 				<h3>Сообщения</h3>
-				<p>Текст про сообщения, пример кода.</p>
+				<p>Блок с классом <code>.f-message</code> предназначен для вывода сообщений.</p>
+				<p>Самый простой пример сообщения:</p>
 				<div class="g-row">
-					<div class="g-6">
+					<div class="g-7">
+<pre class="prettyprint linenums">&lt;div class="f-message"&gt;
+	&lt;span class="close"&gt;&lt;/span&gt;
+	&lt;strong&gt;Внимание&lt;/strong&gt;, текст простого сообщения
+&lt;/div&gt;&lt;!--f-message --&gt;</pre>
+					</div><!-- g-7 -->
+					<div class="g-5">
 						<div class="f-message">
 							<span class="close"></span>
 							<strong>Внимание</strong>, текст простого сообщения
 						</div><!--f-message -->
+					</div><!-- g-5 -->
+				</div><!-- g-row -->
+				<p>Сообщение с заголовком, текстом и кнопками, используется дополнительный элемент <code>.f-message-actions</code>:</p>
+				<div class="g-row">
+					<div class="g-7">
+<pre class="prettyprint linenums">&lt;div class="f-message"&gt;
+	&lt;span class="close"&gt;&lt;/span&gt;
+	&lt;h5&gt;Заголовок сообщения&lt;/h5&gt;
+	&lt;p&gt;Пример сообщения с заголовком и кнопками&lt;/p&gt;
+	&lt;p class="f-message-actions"&gt;
+		&lt;a class="bu" href="#"&gt;Да&lt;/a&gt;
+		&lt;a class="bu" href="#"&gt;Отмена&lt;/a&gt;
+	&lt;/p&gt;
+&lt;/div&gt;&lt;!--f-message --&gt;</pre>
+					</div><!-- g-7 -->
+					<div class="g-5">
 						<div class="f-message">
 							<span class="close"></span>
-							<h5>Заголовок</h5>
-							<p>Текст простого сообщения</p>
+							<h5>Заголовок сообщения</h5>
+							<p>Пример сообщения с заголовком и кнопками</p>
+							<p class="f-message-actions"><a class="bu" href="#">Да</a> <a class="bu" href="#">Отмена</a></p>
 						</div><!--f-message -->
-					</div><!-- g-6 -->
-					<div class="g-6">
-						<p>Текст про сообщения, пример кода.</p>
-					</div><!-- g-6 -->
+					</div><!-- g-5 -->
 				</div><!-- g-row -->
 				<div class="g-row">
+					<div class="g-6">
+
+					</div><!-- g-6 -->
 					<div class="g-6">
 						<div class="f-message f-message-error">
 							<span class="close"></span>
 							Текст сообщения об ошибке
 						</div><!-- f-message-->
 					</div><!-- g-6 -->
+				</div><!-- g-row -->
+				<div class="g-row">
 					<div class="g-6">
 
 					</div><!-- g-6 -->
-				</div><!-- g-row -->
-				<div class="g-row">
 					<div class="g-6">
 						<div class="f-message f-message-success">
 							<span class="close"></span>
 							Текст сообщения об успехе
 						</div><!-- f-message -->
-					</div><!-- g-6 -->
-					<div class="g-6">
-
 					</div><!-- g-6 -->
 				</div><!-- g-row -->
 
