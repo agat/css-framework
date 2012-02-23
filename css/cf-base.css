@@ -377,9 +377,9 @@ input::-moz-focus-inner				{ padding: 0; border: none; }
 
 /* Message block
 ---------------------------------------- */
-.f-message							{ padding: 12px 27px 12px 12px; background: #feffe3; border: 1px solid #eff3d5; color: #5c5d46; position: relative; border-radius: 3px; }
+.f-message							{ padding: 8px 27px 8px 12px; background: #feffe3; border: 1px solid #eff3d5; color: #5c5d46; position: relative; border-radius: 3px; }
 .f-message h5						{ font-size: 16px; }
-.f-message .close					{ position: absolute; right: 8px; top: 4px; font-weight: bold; font-size: 18px; cursor: pointer; opacity: 0.2; }
+.f-message .close					{ position: absolute; right: 10px; top: 9px; font-weight: bold; font-size: 18px; cursor: pointer; opacity: 0.2; }
 .f-message p						{ margin-bottom: 4px; }
 .f-message :last-child,
 .f-message *						{ margin-bottom: 0; }
