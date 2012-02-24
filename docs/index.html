@@ -918,8 +918,7 @@
 		</section><!-- g-row -->
 		<section class="g-row">
 			<div class="g-12">
-				<h2>Формы и сообщения</h2>
-				<h3>Сообщения</h3>
+				<h2>Сообщения</h2>
 				<p>Блок с классом <code>.f-message</code> предназначен для вывода сообщений.</p>
 				<p>Самый простой пример сообщения:</p>
 				<div class="g-row">
@@ -986,37 +985,64 @@
 						</div><!-- f-message -->
 					</div><!-- g-5 -->
 				</div><!-- g-row -->
+			</div><!-- g-12 -->
+		</section><!-- g-row -->
+		<section class="g-row">
+			<div class="g-12">
+				<h2>Формы</h2>
 
 
+				<p>
+					<label for="iem">E-mail:</label> <input id="iem" type="text" class="g-2" placeholder="@"> <button class="bu">Send</button>
+				</p>
 
-
-				<form class="form" action="/">
+				<form action="/">
 					<fieldset>
 						<legend>Вертикальная форма(legend)</legend>
-						<p>
-							<label for="i-name">Имя:</label>
-							<span class="form-inputs"><input id="i-name" type="text" class="i-text"></span>
-						</p>
-						<p>
-							<label for="i-forname">Фамилия:</label>
-							<span class="form-inputs"><input id="i-forname" type="text" class="i-text"></span>
-						</p>
-						<p>
-							<label>Пол:</label>
-							<span class="form-inputs"><input type="radio" name="sex"> мужской<br /><input type="radio" name="sex"> женский</span>
-						</p>
-						<p>
+						<div class="f-row">
+							<label for="iname">Имя:</label>
+							<div class="f-input">
+								<input id="iname" type="text" class="g-3">
+							</div><!-- f-input -->
+						</div><!-- f-row -->
+						<div class="f-row">
+							<label for="iforname">Фамилия:</label>
+							<div class="f-input">
+								<input id="iforname" type="text" class="g-4">
+							</div><!-- f-input -->
+						</div><!-- f-row -->
+						<div class="f-row">
+							<label for="ilogin">Поле с подсказками:</label>
+							<div class="f-input">
+								<input id="ilogin" type="text" class="g-2"> основной комметарий
+								<p class="f-input-help">Подсказка или дополнительный комментарий к логину...</p>
+							</div><!-- f-input -->
+						</div><!-- f-row -->
+						<div class="f-row">
+							<label>Радио-кнопки:</label>
+							<div class="f-input">
+								<label><input type="radio" name="sex"> одна</label> за <label><input type="radio" name="sex"> другой</label>
+							</div><!-- f-input -->
+						</div><!-- f-row -->
+						<div class="f-row">
+							<label>Радио-кнопки:</label>
+							<div class="f-input">
+								<label><input type="radio" name="sex"> одна</label> под<br>
+								<label><input type="radio" name="sex"> другой</label>
+							</div><!-- f-input -->
+						</div><!-- f-row -->
+						<div class="f-row">
 							<label for="i-profession">Профессия:</label>
-							<span class="form-inputs"><select id="i-profession"><option>Профессиональный киллер</option></select></span>
-						</p>
-						<p>
-							<label for="i-checkbox">Беру работу на дом:</label>
-							<span class="form-inputs"><input id="i-checkbox" type="checkbox" class="i-checkbox"></span>
-						</p>
-						<p>
+							<div class="f-input"><select id="i-profession"><option>Профессиональный киллер</option></select></div>
+						</div><!-- f-row -->
+						<div class="f-row">
+							<label for="i-checkbox">Чекбоксы:</label>
+							<div class="f-input"><input id="i-checkbox" type="checkbox" class="i-checkbox"></div>
+						</div><!-- f-row -->
+						<div class="f-row">
 							<label for="comments">Комментарий:</label>
-							<span class="form-inputs"><textarea id="comments" class="i-text" rows="4" cols="50"></textarea></span>
-						</p>
+							<div class="f-input"><textarea id="comments" class="i-text" rows="4" cols="50"></textarea></div>
+						</div><!-- f-row -->
 					</fieldset>
 
 					<div class="form-actions">
