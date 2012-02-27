@@ -362,6 +362,11 @@ label,
 .bu,
 button								{ cursor: pointer; }
 
+.f-radio,
+.f-check							{ display: inline-block; padding: 4px 0 0 0; }
+.f-radio input,
+.f-check input						{ margin: 2px; }
+
 /* Button
 ---------------------------------------- */
 .bu									{ display: inline-block; vertical-align: top; padding: 3px 9px; border: 1px solid; border-color: #ccc #bbb #a0a0a0 #bbb; color: #333; text-decoration: none; text-align: center; width: auto; overflow: visible; border-radius: 3px;
@@ -376,7 +381,7 @@ input[type="text"]:focus,
 textarea:focus						{ border-color: #268bd2; outline: none; }
 .bu:focus,
 input[type="text"]:focus,
-textarea:focus						{ -webkit-box-shadow: 0 0 10px rgba(38, 139, 210, .5); -moz-box-shadow: 0 0 10px rgba(38, 139, 210, .5); box-shadow: 0 0 10px rgba(38, 139, 210, .5); }
+textarea:focus						{ -webkit-box-shadow: 0 0 5px rgba(38, 139, 210, .3); -moz-box-shadow: 0 0 5px rgba(38, 139, 210, .3); box-shadow: 0 0 5px rgba(38, 139, 210, .3); }
 .bu::-moz-focus-inner,
 button::-moz-focus-inner,
 input::-moz-focus-inner				{ padding: 0; border: none; }

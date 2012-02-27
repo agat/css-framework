@@ -993,7 +993,7 @@
 
 
 				<p>
-					<label for="iem">E-mail:</label> <input id="iem" type="text" class="g-2" placeholder="@"> <button class="bu">Send</button>
+					<label for="iem">E-mail:</label> <input id="iem" type="text" class="g-2" placeholder="@"> <label class="f-check"><input type="checkbox" name="check0"> переключатель</label> <button class="bu">Кнопка</button>
 				</p>
 
 				<form action="/">
@@ -1021,14 +1021,14 @@
 						<div class="f-row">
 							<label>Радио-кнопки:</label>
 							<div class="f-input">
-								<label><input type="radio" name="sex"> одна</label> за <label><input type="radio" name="sex"> другой</label>
+								<label class="f-radio"><input type="radio" name="sex"> одна</label> за <label class="f-radio"><input type="radio" name="sex"> другой</label>
 							</div><!-- f-input -->
 						</div><!-- f-row -->
 						<div class="f-row">
 							<label>Радио-кнопки:</label>
 							<div class="f-input">
-								<label><input type="radio" name="sex"> одна</label> под<br>
-								<label><input type="radio" name="sex"> другой</label>
+								<label class="f-radio"><input type="radio" name="sex"> одна</label> под<br>
+								<label class="f-radio"><input type="radio" name="sex"> другой</label>
 							</div><!-- f-input -->
 						</div><!-- f-row -->
 						<div class="f-row">
@@ -1036,11 +1036,20 @@
 							<div class="f-input"><select id="i-profession"><option>Профессиональный киллер</option></select></div>
 						</div><!-- f-row -->
 						<div class="f-row">
-							<label for="i-checkbox">Чекбоксы:</label>
-							<div class="f-input"><input id="i-checkbox" type="checkbox" class="i-checkbox"></div>
+							<label>Флажки:</label>
+							<div class="f-input">
+								<label class="f-check"><input type="checkbox" name="check1"> флажки </label> в <label class="f-check"><input type="checkbox" name="check2"> ряд</label>
+							</div><!-- f-input -->
 						</div><!-- f-row -->
 						<div class="f-row">
-							<label for="comments">Комментарий:</label>
+							<label>Флажки:</label>
+							<div class="f-input">
+								<label class="f-check"><input type="checkbox" name="check3"> один</label> под<br>
+								<label class="f-check"><input type="checkbox" name="check4"> другим</label>
+							</div><!-- f-input -->
+						</div><!-- f-row -->
+						<div class="f-row">
+							<label for="comments">Текстовое поле:</label>
 							<div class="f-input"><textarea id="comments" class="i-text" rows="4" cols="50"></textarea></div>
 						</div><!-- f-row -->
 					</fieldset>
