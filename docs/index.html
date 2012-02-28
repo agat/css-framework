@@ -1032,8 +1032,14 @@
 							</div><!-- f-input -->
 						</div><!-- f-row -->
 						<div class="f-row">
-							<label for="i-profession">Профессия:</label>
-							<div class="f-input"><select id="i-profession"><option>Профессиональный киллер</option></select></div>
+							<label for="iselect">Раскрывающийся список:</label>
+							<div class="f-input">
+								<select id="iselect" class="g-4">
+									<option>Первый элемент</option>
+									<option>Второй элемент</option>
+									<option>Третий элемент</option>
+								</select>
+							</div><!-- f-input -->
 						</div><!-- f-row -->
 						<div class="f-row">
 							<label>Флажки:</label>
@@ -1050,50 +1056,39 @@
 						</div><!-- f-row -->
 						<div class="f-row">
 							<label for="comments">Текстовое поле:</label>
-							<div class="f-input"><textarea id="comments" class="i-text" rows="4" cols="50"></textarea></div>
+							<div class="f-input">
+								<textarea id="comments" class="i-text" rows="4" cols="50"></textarea>
+							</div><!-- f-input -->
 						</div><!-- f-row -->
+						<div class="f-actions">
+							<div class="form-inputs"><input type="submit" value="Сохранить" class="bu"></div>
+						</div><!-- f-actions -->
 					</fieldset>
+				</form>
 
-					<div class="form-actions">
-						<div class="form-inputs"><input type="submit" value="Сохранить" class="bu"></div>
-					</div>
+				<form class="f-hor" action="/">
+					<fieldset>
+						<legend>Горизонтальная форма(legend)</legend>
+						<div class="f-row">
+							<label for="i-name2">Поле ввода:</label>
+							<div class="f-input">
+								<input id="i-name2" type="text" class="i-text">
+							</div>
+						</div><!-- f-row -->
+						<div class="f-row">
+							<label for="i-name2">Текстовое поле:</label>
+							<div class="f-input">
+								<textarea id="comments" class="i-text" rows="4" cols="50"></textarea>
+							</div><!-- f-input -->
+						</div><!-- f-row -->
+						<div class="f-actions">
+							<div class="form-inputs"><input type="submit" value="Сохранить" class="bu"></div>
+						</div><!-- f-actions -->
+					</fieldset>
 				</form>
 
 				<h2>Примеры класса для стилизации под кнопоки</h2>
 				<p><a href="#" class="bu">ссылка</a> <button class="bu">тэг button</button></p>
-
-				<form class="form form-h" action="/">
-					<fieldset>
-						<legend>Горизонтальная форма(legend)</legend>
-						<p>
-							<label for="i-name2">Имя:</label>
-							<span class="form-inputs"><input id="i-name2" type="text" class="i-text"></span>
-						</p>
-						<p>
-							<label for="i-forname2">Фамилия:</label>
-							<span class="form-inputs"><input id="i-forname2" type="text" class="i-text"></span>
-						</p>
-						<p>
-							<label>Пол:</label>
-							<span class="form-inputs"><input type="radio" name="sex"> мужской <input type="radio" name="sex"> женский</span>
-						</p>
-						<p>
-							<label for="i-profession2">Профессия:</label>
-							<span class="form-inputs"><select id="i-profession2"><option>Профессиональный киллер</option></select></span>
-						</p>
-						<p>
-							<label for="i-checkbox2">Беру работу на дом: <input id="i-checkbox2" type="checkbox" class="i-checkbox"></label>
-						</p>
-						<p>
-							<label for="comments2">Комментарий:</label>
-							<span class="form-inputs"><textarea id="comments2" class="i-text" rows="4" cols="50"></textarea></span>
-						</p>
-					</fieldset>
-
-					<div class="form-actions">
-						<div class="form-inputs"><input type="submit" value="Сохранить" class="bu"></div>
-					</div>
-				</form>
 
 			</div><!-- g-12 -->
 		</section><!-- g-row -->

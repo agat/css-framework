@@ -110,6 +110,7 @@ a:active							{ outline: none; }
 --------------------------------------- */
 html								{ font: 14px/20px Arial, 'Helvetica Neue', Helvetica, sans-serif; }
 input,
+select,
 .bu,
 button,
 label,
@@ -345,21 +346,28 @@ tr:hover td							{ background: #fdf6e3; }
 /* Form
 ---------------------------------------- */
 form								{ font-size: 13px; line-height: 17px; }
-legend								{ margin: 0; padding: 0 0 20px 0; }
-.f-row								{ margin: 0 0 10px 0; }
+fieldset							{ margin: 28px 0; }
+legend								{ margin: 0; padding: 0 0 14px 0; }
+.f-row								{ margin: 0 0 14px 0; }
 .f-row > label,
 .f-label							{ float: left; text-align: right; width: 140px; padding: 4px 15px 0 0; }
 .f-input							{ display: table; }
-.f-input-help						{ font-size: 12px; color: #93a1a1; padding-top: 3px; }
-.form-actions						{ padding-top: 18px; border-top: 1px solid #ccc; }
+.f-input-help						{ font-size: 12px; color: #93a1a1; padding-top: 3px; margin: 0; }
+.f-actions							{ padding: 14px 0 0 155px; margin: 0 0 28px 0; border-top: 1px solid #ccc; }
 
-select								{ font-size: 12px; }
+.f-hor .f-row > label,
+.f-hor .f-label						{ float: none; text-align: left; width: auto; display: block; padding: 0 0 4px; }
+.f-hor .f-actions					{ padding-left: 0; }
+
+select,
 textarea,
 input[type="text"]					{ border: 1px solid; border-color: #a0a0a0 #bbb #ccc #bbb; height: 25px; padding: 3px 6px; color: #444; border-radius: 3px;
 										-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 textarea							{ overflow: auto; resize: vertical; padding-right: 3px; height: auto; }
-label,
+
 .bu,
+label,
+select,
 button								{ cursor: pointer; }
 
 .f-radio,
@@ -367,11 +375,10 @@ button								{ cursor: pointer; }
 .f-radio input,
 .f-check input						{ margin: 2px; }
 
-/* Button
----------------------------------------- */
-.bu									{ display: inline-block; vertical-align: top; padding: 3px 9px; border: 1px solid; border-color: #ccc #bbb #a0a0a0 #bbb; color: #333; text-decoration: none; text-align: center; width: auto; overflow: visible; border-radius: 3px;
-										background: #eee; background: -webkit-gradient(linear, 0 0, 0 bottom, from(#f9f9f9), to(#e3e3e3)); background: -moz-linear-gradient(#f9f9f9, #e3e3e3); background: linear-gradient(#f9f9f9, #e3e3e3); }
+.bu									{ display: inline-block; vertical-align: top; padding: 3px 9px; color: #333; text-decoration: none; text-align: center; width: auto; overflow: visible; border-radius: 3px; }
 .bu:active							{ padding-top: 4px; padding-bottom: 2px; }
+.bu,
+select								{ border: 1px solid; border-color: #ccc #bbb #a0a0a0 #bbb; background: #eee; background: -webkit-gradient(linear, 0 0, 0 bottom, from(#f9f9f9), to(#e3e3e3)); background: -moz-linear-gradient(#f9f9f9, #e3e3e3); background: linear-gradient(#f9f9f9, #e3e3e3); }
 textarea,
 input[type="text"],
 .bu:active							{ -webkit-box-shadow: inset 1px 2px 2px rgba(0, 0, 0, 0.1); -moz-box-shadow: inset 1px 2px 2px rgba(0, 0, 0, 0.1); box-shadow: inset 1px 2px 2px rgba(0, 0, 0, 0.1); }
