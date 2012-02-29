@@ -990,31 +990,80 @@
 		<section class="g-row">
 			<div class="g-12">
 				<h2>Формы</h2>
-
-
+				<p>css-framework располагает 3-мя типами форм:</p>
+				<ul>
+					<li>простая</li>
+					<li>вертикальная</li>
+					<li>горизонтальная</li>
+				</ul>
+				<p>Благодаря минимальному количеству дополнительных классов вы можете создавать различные конфирурации из полей ввода.</p>
+				<h3>Текстовые поля</h3>
+				<div class="g-row">
+					<div class="g-5">
+						<p>Для создания текстового поля достаточно написать:</p>
+						<pre class="prettyprint linenums">&lt;input type="text"&gt;</pre>
+					</div><!-- g-5 -->
+					<div class="g-7">
+						<p>Получиться вот такое симпатичное поле ввода:</p>
+						<p><input type="text"></p>
+					</div><!-- g-7 -->
+				</div><!-- g-row -->
+				<h3>Кнопки</h3>
+				<div class="g-row">
+					<div class="g-5">
+						<p>Для создания кнопок применяется класс <code>.bu</code></p>
+<pre class="prettyprint linenums">&lt;button class="bu"&gt;Button&lt;/button&gt;
+&lt;span class="bu"&gt;Span&lt;/span&gt;
+&lt;a href="#" class="bu"&gt;Ссылка&lt;/a&gt;</pre>
+					</div><!-- g-5 -->
+					<div class="g-7">
+						<p>Этот класс можно назначать на тэги <code>button</code>, <code>span</code>, <code>a</code>:</p>
+						<p><button class="bu">Button</button> <span class="bu">Span</span> <a href="#" class="bu">Ссылка</a></p>
+					</div><!-- g-7 -->
+				</div><!-- g-row -->
+				<h3>Радио-кнопки и флажки</h3>
+				<h3>Раскрывающийся список</h3>
+				<h3>Размеры полей ввода</h3>
+				<p>Чтобы задать ширину, воспользуемся классами <code>.g-x</code>.</p>
+				<div class="g-row">
+					<div class="g-6">
+						<p>Где <code>x</code> может меняться от 1 до 12.</p>
+						<p>Размеры можно задавать кнопкам, раскрывающимся спискам и текстовым полям:</p>
+<pre class="prettyprint linenums">&lt;button class="bu g-1"&gt;.g-1&lt;/button&gt;
+&lt;input type="text" class="g-2" value=".g-2"&gt;
+&lt;input type="text" class="g-3" value=".g-3"&gt;
+&lt;select class="g-4"&gt;&lt;option&gt;.g-4&lt;/option&gt;&lt;/select&gt;
+&lt;textarea class="g-5"&gt;.g-5&lt;/textarea&gt;</pre>
+					</div><!-- g-6 -->
+					<div class="g-6">
+						<p><button class="bu g-1">.g-1</button></p>
+						<p><input type="text" class="g-2" value=".g-2"></p>
+						<p><input type="text" class="g-3" value=".g-3"></p>
+						<p><select class="g-4"><option>.g-4</option></select></p>
+						<p><textarea class="g-5">.g-5</textarea></p>
+					</div><!-- g-6 -->
+				</div><!-- g-row -->
+				<h3>Простая форма</h3>
+				<p>Рассмотрим простую форму в одну строку.</p>
+<pre class="prettyprint linenums">&lt;label&gt;Метка: &lt;input type="text" class="g-2"&gt;&lt;/label&gt; &lt;label class="f-check"&gt;&lt;input type="checkbox"&gt; переключатель&lt;/label&gt; &lt;button class="bu"&gt;Кнопка&lt;/button&gt;</pre>
+				<p>Выглядеть она будет вот так:</p>
 				<p>
-					<label for="iem">E-mail:</label> <input id="iem" type="text" class="g-2" placeholder="@"> <label class="f-check"><input type="checkbox" name="check0"> переключатель</label> <button class="bu">Кнопка</button>
+					<label>Метка: <input type="text" class="g-2"></label> <label class="f-check"><input type="checkbox"> переключатель</label> <button class="bu">Кнопка</button>
 				</p>
 
 				<form action="/">
 					<fieldset>
-						<legend>Вертикальная форма(legend)</legend>
+						<legend>Вертикальная форма</legend>
 						<div class="f-row">
-							<label for="iname">Имя:</label>
+							<label for="iname">Поле ввода:</label>
 							<div class="f-input">
-								<input id="iname" type="text" class="g-3">
-							</div><!-- f-input -->
-						</div><!-- f-row -->
-						<div class="f-row">
-							<label for="iforname">Фамилия:</label>
-							<div class="f-input">
-								<input id="iforname" type="text" class="g-4">
+								<input id="iname" type="text" class="g-4">
 							</div><!-- f-input -->
 						</div><!-- f-row -->
 						<div class="f-row">
 							<label for="ilogin">Поле с подсказками:</label>
 							<div class="f-input">
-								<input id="ilogin" type="text" class="g-2"> основной комметарий
+								<input id="ilogin" type="text" class="g-2"> <span class="f-input-inline">основной комметарий</span>
 								<p class="f-input-help">Подсказка или дополнительный комментарий к логину...</p>
 							</div><!-- f-input -->
 						</div><!-- f-row -->
@@ -1057,7 +1106,7 @@
 						<div class="f-row">
 							<label for="comments">Текстовое поле:</label>
 							<div class="f-input">
-								<textarea id="comments" class="i-text" rows="4" cols="50"></textarea>
+								<textarea id="comments" class="g-4" rows="4" cols="50"></textarea>
 							</div><!-- f-input -->
 						</div><!-- f-row -->
 						<div class="f-actions">
@@ -1066,7 +1115,7 @@
 					</fieldset>
 				</form>
 
-				<form class="f-hor" action="/">
+				<form class="f-horizontal" action="/">
 					<fieldset>
 						<legend>Горизонтальная форма(legend)</legend>
 						<div class="f-row">
