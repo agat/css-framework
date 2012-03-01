@@ -10,8 +10,7 @@
 /* Demo box
 --------------------------------------- */
 .f-demo										{ background: #fcfcfc; border: 1px solid #f3f3f3; padding: 14px; border-radius: 3px; margin: 0 -15px 14px -15px; }
-.f-demo > *,
-.f-demo p:last-child						{ margin-bottom: 0; }
+.f-demo :last-child							{ margin-bottom: 0; }
 
 /* Columns demo
 --------------------------------------- */

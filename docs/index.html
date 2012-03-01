@@ -990,13 +990,6 @@
 		<section class="g-row">
 			<div class="g-12">
 				<h2>Формы</h2>
-				<p>css-framework располагает 3-мя типами форм:</p>
-				<ul>
-					<li>простая</li>
-					<li>вертикальная</li>
-					<li>горизонтальная</li>
-				</ul>
-				<p>Благодаря минимальному количеству дополнительных классов вы можете создавать различные конфирурации из полей ввода.</p>
 				<h3>Текстовые поля</h3>
 				<div class="g-row">
 					<div class="g-5">
@@ -1017,12 +1010,41 @@
 &lt;a href="#" class="bu"&gt;Ссылка&lt;/a&gt;</pre>
 					</div><!-- g-5 -->
 					<div class="g-7">
-						<p>Этот класс можно назначать на тэги <code>button</code>, <code>span</code>, <code>a</code>:</p>
+						<p>Этот класс можно назначать на тэги <code>&lt;button&gt;</code>, <code>&lt;span&gt;</code>, <code>&lt;a&gt;</code>:</p>
 						<p><button class="bu">Button</button> <span class="bu">Span</span> <a href="#" class="bu">Ссылка</a></p>
 					</div><!-- g-7 -->
 				</div><!-- g-row -->
 				<h3>Радио-кнопки и флажки</h3>
+				<p>Простейшая конструкция из минимального набора наобходимых элементов, таких как <code>&lt;label&gt;</code> и <code>&lt;input&gt;</code>.</p>
+				<p>Радио-кнопки помечаются классом <code>.f-radio</code> на элементе <code>&lt;label&gt;</code>. Флажки классом <code>.f-check</code>.</p>
+				<div class="g-row">
+					<div class="g-7">
+<pre class="prettyprint linenums">&lt;label class="f-radio"&gt;&lt;input type="radio"&gt; радио-кнопка&lt;/label&gt;
+&lt;label class="f-check"&gt;&lt;input type="checkbox"&gt; флажок&lt;/label&gt;</pre>
+					</div><!-- g-7 -->
+					<div class="g-5">
+						<p><label class="f-radio"><input type="radio"> радио-кнопка</label><br>
+						<label class="f-check"><input type="checkbox"> флажок</label></p>
+					</div><!-- g-5 -->
+				</div><!-- g-row -->
 				<h3>Раскрывающийся список</h3>
+				<p>Никаких классов, только <code>&lt;select&gt;</code> и <code>&lt;option&gt;</code>.</p>
+				<div class="g-row">
+					<div class="g-6">
+<pre class="prettyprint linenums">&lt;select&gt;
+	&lt;option&gt;Раскрывающийся список&lt;/option&gt;
+	&lt;option&gt;Второй элемент&lt;/option&gt;
+	&lt;option&gt;Третий элемент&lt;/option&gt;
+&lt;/select&gt;</pre>
+					</div><!-- g-6 -->
+					<div class="g-6">
+						<select>
+							<option>Раскрывающийся список</option>
+							<option>Второй элемент</option>
+							<option>Третий элемент</option>
+						</select>
+					</div><!-- g-6 -->
+				</div><!-- g-row -->
 				<h3>Размеры полей ввода</h3>
 				<p>Чтобы задать ширину, воспользуемся классами <code>.g-x</code>.</p>
 				<div class="g-row">
@@ -1047,73 +1069,80 @@
 				<p>Рассмотрим простую форму в одну строку.</p>
 <pre class="prettyprint linenums">&lt;label&gt;Метка: &lt;input type="text" class="g-2"&gt;&lt;/label&gt; &lt;label class="f-check"&gt;&lt;input type="checkbox"&gt; переключатель&lt;/label&gt; &lt;button class="bu"&gt;Кнопка&lt;/button&gt;</pre>
 				<p>Выглядеть она будет вот так:</p>
-				<p>
+				<p class="f-demo">
 					<label>Метка: <input type="text" class="g-2"></label> <label class="f-check"><input type="checkbox"> переключатель</label> <button class="bu">Кнопка</button>
 				</p>
+				<div class="g-row">
+					<div class="g-7">
+						<form action="/">
+							<fieldset>
+								<legend>Вертикальная форма</legend>
+								<div class="f-row">
+									<label for="iname">Поле ввода:</label>
+									<div class="f-input">
+										<input id="iname" type="text" class="g-4">
+									</div><!-- f-input -->
+								</div><!-- f-row -->
+								<div class="f-row">
+									<label for="ilogin">Поле с подсказками:</label>
+									<div class="f-input">
+										<input id="ilogin" type="text" class="g-2"> <span class="f-input-inline">основной комметарий</span>
+										<p class="f-input-help">Подсказка или дополнительный комментарий к логину...</p>
+									</div><!-- f-input -->
+								</div><!-- f-row -->
+								<div class="f-row">
+									<label>Радио-кнопки:</label>
+									<div class="f-input">
+										<label class="f-radio"><input type="radio"> одна</label> за <label class="f-radio"><input type="radio" name="sex"> другой</label>
+									</div><!-- f-input -->
+								</div><!-- f-row -->
+								<div class="f-row">
+									<label>Радио-кнопки:</label>
+									<div class="f-input">
+										<label class="f-radio"><input type="radio" name="sex"> одна</label> под<br>
+										<label class="f-radio"><input type="radio" name="sex"> другой</label>
+									</div><!-- f-input -->
+								</div><!-- f-row -->
+								<div class="f-row">
+									<label for="select">Раскрывающийся список:</label>
+									<div class="f-input">
+										<select id="select" class="g-4">
+											<option>Первый элемент</option>
+											<option>Второй элемент</option>
+											<option>Третий элемент</option>
+										</select>
+									</div><!-- f-input -->
+								</div><!-- f-row -->
+								<div class="f-row">
+									<label>Флажки:</label>
+									<div class="f-input">
+										<label class="f-check"><input type="checkbox"> флажки </label> в <label class="f-check"><input type="checkbox" name="check2"> ряд</label>
+									</div><!-- f-input -->
+								</div><!-- f-row -->
+								<div class="f-row">
+									<label>Флажки:</label>
+									<div class="f-input">
+										<label class="f-check"><input type="checkbox" name="check3"> один</label> под<br>
+										<label class="f-check"><input type="checkbox" name="check4"> другим</label>
+									</div><!-- f-input -->
+								</div><!-- f-row -->
+								<div class="f-row">
+									<label for="comments">Текстовое поле:</label>
+									<div class="f-input">
+										<textarea id="comments" class="g-4" rows="4" cols="50"></textarea>
+									</div><!-- f-input -->
+								</div><!-- f-row -->
+								<div class="f-actions">
+									<div class="form-inputs"><input type="submit" value="Сохранить" class="bu"></div>
+								</div><!-- f-actions -->
+							</fieldset>
+						</form>
+					</div><!-- g-7 -->
+					<div class="g-5">
 
-				<form action="/">
-					<fieldset>
-						<legend>Вертикальная форма</legend>
-						<div class="f-row">
-							<label for="iname">Поле ввода:</label>
-							<div class="f-input">
-								<input id="iname" type="text" class="g-4">
-							</div><!-- f-input -->
-						</div><!-- f-row -->
-						<div class="f-row">
-							<label for="ilogin">Поле с подсказками:</label>
-							<div class="f-input">
-								<input id="ilogin" type="text" class="g-2"> <span class="f-input-inline">основной комметарий</span>
-								<p class="f-input-help">Подсказка или дополнительный комментарий к логину...</p>
-							</div><!-- f-input -->
-						</div><!-- f-row -->
-						<div class="f-row">
-							<label>Радио-кнопки:</label>
-							<div class="f-input">
-								<label class="f-radio"><input type="radio" name="sex"> одна</label> за <label class="f-radio"><input type="radio" name="sex"> другой</label>
-							</div><!-- f-input -->
-						</div><!-- f-row -->
-						<div class="f-row">
-							<label>Радио-кнопки:</label>
-							<div class="f-input">
-								<label class="f-radio"><input type="radio" name="sex"> одна</label> под<br>
-								<label class="f-radio"><input type="radio" name="sex"> другой</label>
-							</div><!-- f-input -->
-						</div><!-- f-row -->
-						<div class="f-row">
-							<label for="iselect">Раскрывающийся список:</label>
-							<div class="f-input">
-								<select id="iselect" class="g-4">
-									<option>Первый элемент</option>
-									<option>Второй элемент</option>
-									<option>Третий элемент</option>
-								</select>
-							</div><!-- f-input -->
-						</div><!-- f-row -->
-						<div class="f-row">
-							<label>Флажки:</label>
-							<div class="f-input">
-								<label class="f-check"><input type="checkbox" name="check1"> флажки </label> в <label class="f-check"><input type="checkbox" name="check2"> ряд</label>
-							</div><!-- f-input -->
-						</div><!-- f-row -->
-						<div class="f-row">
-							<label>Флажки:</label>
-							<div class="f-input">
-								<label class="f-check"><input type="checkbox" name="check3"> один</label> под<br>
-								<label class="f-check"><input type="checkbox" name="check4"> другим</label>
-							</div><!-- f-input -->
-						</div><!-- f-row -->
-						<div class="f-row">
-							<label for="comments">Текстовое поле:</label>
-							<div class="f-input">
-								<textarea id="comments" class="g-4" rows="4" cols="50"></textarea>
-							</div><!-- f-input -->
-						</div><!-- f-row -->
-						<div class="f-actions">
-							<div class="form-inputs"><input type="submit" value="Сохранить" class="bu"></div>
-						</div><!-- f-actions -->
-					</fieldset>
-				</form>
+					</div><!-- g-5 -->
+				</div><!-- g-row -->
+
 
 				<form class="f-horizontal" action="/">
 					<fieldset>
@@ -1135,9 +1164,6 @@
 						</div><!-- f-actions -->
 					</fieldset>
 				</form>
-
-				<h2>Примеры класса для стилизации под кнопоки</h2>
-				<p><a href="#" class="bu">ссылка</a> <button class="bu">тэг button</button></p>
 
 			</div><!-- g-12 -->
 		</section><!-- g-row -->

@@ -192,13 +192,13 @@ h1, .h1,
 h2, .h2,
 h3, .h3,
 h4, .h4,
-legend								{ font: bold 26px Arial, 'Helvetica Neue', Helvetica, sans-serif; margin-top: 28px; }
+legend								{ font: bold 26px Arial, 'Helvetica Neue', Helvetica, sans-serif; margin-top: 20px; }
 h1, .h1								{ margin-top: 0; }
 h2, .h2								{ font-size: 22px; }
+legend,
 h3, .h3								{ font-size: 18px; }
 blockquote,
 caption,
-legend,
 h4, .h4								{ font-size: 16px; }
 h1:first-child,
 h2:first-child,
@@ -285,7 +285,7 @@ hr,
 h1, .h1,
 h2, .h2,
 h3, .h3,
-h4, .h4								{ margin-bottom: 14px; }
+h4, .h4								{ margin-bottom: 10px; }
 
 /* Block with image
 ---------------------------------------- */
@@ -350,14 +350,15 @@ fieldset							{ margin: 28px 0; }
 legend								{ margin: 0; padding: 0 0 14px 0; }
 .f-row								{ margin: 0 0 14px 0; }
 .f-row > label,
-.f-label							{ float: left; text-align: right; width: 140px; padding: 4px 15px 0 0; }
-.f-input							{ display: table; }
+.f-label							{ float: left; text-align: right; width: 200px; padding: 4px 0 0 0; }
+.f-input							{ margin: 0 0 0 220px; }
 .f-input-help						{ font-size: 12px; color: #93a1a1; padding-top: 3px; margin: 0; }
 .f-input-inline						{ margin-left: 5px; }
-.f-actions							{ padding: 14px 0 0 155px; margin: 0 0 28px 0; border-top: 1px solid #ccc; }
+.f-actions							{ padding: 14px 0 0 220px; margin: 0 0 28px 0; border-top: 1px solid #ccc; }
 
 .f-horizontal .f-row > label,
 .f-horizontal .f-label				{ float: none; text-align: left; width: auto; display: block; padding: 0 0 4px; }
+.f-horizontal .f-input				{ margin: 0; }
 .f-horizontal .f-actions			{ padding-left: 0; }
 
 select,
