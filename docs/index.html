@@ -1086,7 +1086,7 @@
 								<div class="f-row">
 									<label for="ilogin">Поле с подсказками:</label>
 									<div class="f-input">
-										<input id="ilogin" type="text" class="g-2"> <span class="f-input-inline">основной комметарий</span>
+										<input id="ilogin" type="text" class="g-2"> <span class="f-input-inline">Основной комметарий</span>
 										<p class="f-input-help">Подсказка или дополнительный комментарий к логину...</p>
 									</div><!-- f-input -->
 								</div><!-- f-row -->
@@ -1127,9 +1127,9 @@
 									</div><!-- f-input -->
 								</div><!-- f-row -->
 								<div class="f-row">
-									<label for="comments">Текстовое поле:</label>
+									<label for="textarea">Текстовое поле:</label>
 									<div class="f-input">
-										<textarea id="comments" class="g-4" rows="4" cols="50"></textarea>
+										<textarea id="textarea" class="g-4" rows="4" cols="50"></textarea>
 									</div><!-- f-input -->
 								</div><!-- f-row -->
 								<div class="f-actions">
@@ -1139,10 +1139,41 @@
 						</form>
 					</div><!-- g-7 -->
 					<div class="g-5">
-
+						<br>
+						<br>
+						<p>Основной компонент фомы, это контейнер с классом <code>.f-row</code> и двумя элементами внутри. Метки и элемента с классом <code>.f-input</code>:</p>
+<pre class="prettyprint linenums">&lt;div class="f-row"&gt;
+	&lt;label&gt;...&lt;/label&gt;
+	&lt;div class="f-input"&gt;
+	...
+	&lt;/div&gt;&lt;!-- f-input --&gt;
+&lt;/div&gt;&lt;!-- f-row --&gt;</pre>
+						<p>В элементе <code>.f-input</code> размещаются поля ввода, радио-кнопки и др..</p>
+						<p>Комментарии и пояснения создаются классами <code>.f-input-inline</code> и <code>.f-input-help</code>:</p>
+<pre class="prettyprint linenums">&lt;div class="f-input"&gt;
+	&lt;input type="text"&gt;
+	&lt;span class="f-input-inline"&gt;
+		Основной комметарий
+	&lt;/span&gt;
+	&lt;p class="f-input-help"&gt;
+		Подсказка...
+	&lt;/p&gt;
+&lt;/div&gt;</pre>
 					</div><!-- g-5 -->
 				</div><!-- g-row -->
-
+				<h2>Состояния полей ввода</h2>
+				<h3>Заблокированые</h3>
+				<div class="f-row">
+					<label>Заблокированное:</label>
+					<div class="f-input">
+						<input type="text" class="g-3" disabled="disabled" value="Текстовое поле ввода">
+						<select class="g-2" disabled="disabled"><option>Список</option></select>
+						<label class="f-check"><input type="checkbox" disabled="disabled"> флажок</label>
+						<label class="f-radio"><input type="radio" disabled="disabled"> радио-кнопка</label>
+						<button class="bu" disabled="disabled">Кнопка</button>
+						<textarea class="g-4" rows="4" cols="50" disabled="disabled">Текстовое поле ввода</textarea>
+					</div><!-- f-input -->
+				</div><!-- f-row -->
 
 				<form class="f-horizontal" action="/">
 					<fieldset>

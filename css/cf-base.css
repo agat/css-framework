@@ -343,7 +343,7 @@ tr:hover th,
 tr:hover td							{ background: #fdf6e3; }
 .table-zebra tbody tr:nth-child(2n)	{ background: #f6f6f6; }
 
-/* Form
+/* Forms
 ---------------------------------------- */
 form								{ font-size: 13px; line-height: 17px; }
 fieldset							{ margin: 28px 0; }
@@ -361,6 +361,8 @@ legend								{ margin: 0; padding: 0 0 14px 0; }
 .f-horizontal .f-input				{ margin: 0; }
 .f-horizontal .f-actions			{ padding-left: 0; }
 
+/* Inputs
+--------------------------------------- */
 select,
 textarea,
 input[type="text"]					{ border: 1px solid; border-color: #a0a0a0 #bbb #ccc #bbb; height: 25px; padding: 3px 6px; color: #444; border-radius: 3px;
@@ -372,28 +374,47 @@ label,
 select,
 button								{ cursor: pointer; }
 
+.bu									{ display: inline-block; vertical-align: top; padding: 3px 9px; color: #333; text-decoration: none; text-align: center; overflow: visible; border-radius: 3px; }
+.bu:active							{ padding-top: 4px; padding-bottom: 2px; }
+.bu,
+select								{ border: 1px solid; border-color: #ccc #bbb #a0a0a0 #bbb;
+										background: #eee; background: -webkit-gradient(linear, 0 0, 0 bottom, from(#f9f9f9), to(#e3e3e3)); background: -moz-linear-gradient(#f9f9f9, #e3e3e3); background: linear-gradient(#f9f9f9, #e3e3e3); }
+textarea,
+input[type="text"]					{ background: #fff; }
+textarea,
+input[type="text"],
+.bu:active							{ -webkit-box-shadow: inset 1px 2px 2px rgba(0, 0, 0, 0.1); -moz-box-shadow: inset 1px 2px 2px rgba(0, 0, 0, 0.1); box-shadow: inset 1px 2px 2px rgba(0, 0, 0, 0.1); }
+
+.bu::-moz-focus-inner,
+button::-moz-focus-inner,
+input::-moz-focus-inner				{ padding: 0; border: none; }
+
+/* Checkbox and Radio
+--------------------------------------- */
 .f-radio,
 .f-check							{ display: inline-block; padding: 4px 0 0 0; }
 .f-radio input,
 .f-check input						{ margin: 2px; }
 
-.bu									{ display: inline-block; vertical-align: top; padding: 3px 9px; color: #333; text-decoration: none; text-align: center; overflow: visible; border-radius: 3px; }
-.bu:active							{ padding-top: 4px; padding-bottom: 2px; }
-.bu,
-select								{ border: 1px solid; border-color: #ccc #bbb #a0a0a0 #bbb; background: #eee; background: -webkit-gradient(linear, 0 0, 0 bottom, from(#f9f9f9), to(#e3e3e3)); background: -moz-linear-gradient(#f9f9f9, #e3e3e3); background: linear-gradient(#f9f9f9, #e3e3e3); }
-textarea,
-input[type="text"],
-.bu:active							{ -webkit-box-shadow: inset 1px 2px 2px rgba(0, 0, 0, 0.1); -moz-box-shadow: inset 1px 2px 2px rgba(0, 0, 0, 0.1); box-shadow: inset 1px 2px 2px rgba(0, 0, 0, 0.1); }
-.bu:hover,
+/* Active state
+--------------------------------------- */
+
+/* Focus state
+--------------------------------------- */
 .bu:focus,
 input[type="text"]:focus,
 textarea:focus						{ border-color: #268bd2; outline: none; }
 .bu:focus,
 input[type="text"]:focus,
 textarea:focus						{ -webkit-box-shadow: 0 0 5px rgba(38, 139, 210, .3); -moz-box-shadow: 0 0 5px rgba(38, 139, 210, .3); box-shadow: 0 0 5px rgba(38, 139, 210, .3); }
-.bu::-moz-focus-inner,
-button::-moz-focus-inner,
-input::-moz-focus-inner				{ padding: 0; border: none; }
+
+/* Disabled state
+--------------------------------------- */
+.bu.disabled,
+.bu[disabled],
+textarea[disabled],
+select[disabled],
+input[disabled]						{ opacity: 0.75; cursor: not-allowed; }
 
 /* Message block
 ---------------------------------------- */
