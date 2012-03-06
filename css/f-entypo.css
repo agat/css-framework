@@ -14,4 +14,4 @@
 
 /* Icons
 --------------------------------------- */
-.ico								{ padding: 0px; font: 16px 'EntypoRegular'; }
+.f-ico								{ font: 30px/0 'EntypoRegular'; display: inline-block; width: 16px; height: 16px; vertical-align: text-top; text-align: center; overflow: hidden; }

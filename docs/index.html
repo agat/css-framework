@@ -7,9 +7,10 @@
 		<script src="../js/jquery.js"></script>
 		<script src="../js/jquery.accordion.js"></script>
 
-		<link href="../css/cf-base.css" rel="stylesheet">
+		<link href="../css/f-base.css" rel="stylesheet">
+		<link href="../css/f-entypo.css" rel="stylesheet">
 
-		<link href="css/cf-docs.css" rel="stylesheet">
+		<link href="css/f-docs.css" rel="stylesheet">
 		<link href="css/prettify.css" rel="stylesheet">
 		<script src="js/prettify.js"></script>
 	</head>
@@ -1078,29 +1079,29 @@
 							<fieldset>
 								<legend>Вертикальная форма</legend>
 								<div class="f-row">
-									<label for="iname">Поле ввода:</label>
+									<label for="text">Поле ввода:</label>
 									<div class="f-input">
-										<input id="iname" type="text" class="g-4">
+										<input id="text" type="text" class="g-4">
 									</div><!-- f-input -->
 								</div><!-- f-row -->
 								<div class="f-row">
-									<label for="ilogin">Поле с подсказками:</label>
+									<label for="text2">Поле с подсказками:</label>
 									<div class="f-input">
-										<input id="ilogin" type="text" class="g-2"> <span class="f-input-inline">Основной комметарий</span>
-										<p class="f-input-help">Подсказка или дополнительный комментарий к логину...</p>
-									</div><!-- f-input -->
-								</div><!-- f-row -->
-								<div class="f-row">
-									<label>Радио-кнопки:</label>
-									<div class="f-input">
-										<label class="f-radio"><input type="radio"> одна</label> за <label class="f-radio"><input type="radio" name="sex"> другой</label>
+										<input id="text2" type="text" class="g-2"> <span class="f-input-comment">Основной комметарий</span>
+										<p class="f-input-help">Подсказка или дополнительный комментарий...</p>
 									</div><!-- f-input -->
 								</div><!-- f-row -->
 								<div class="f-row">
 									<label>Радио-кнопки:</label>
 									<div class="f-input">
-										<label class="f-radio"><input type="radio" name="sex"> одна</label> под<br>
-										<label class="f-radio"><input type="radio" name="sex"> другой</label>
+										<label class="f-radio"><input type="radio"> одна</label> за <label class="f-radio"><input type="radio"> другой</label>
+									</div><!-- f-input -->
+								</div><!-- f-row -->
+								<div class="f-row">
+									<label>Радио-кнопки:</label>
+									<div class="f-input">
+										<label class="f-radio"><input type="radio"> одна</label> под<br>
+										<label class="f-radio"><input type="radio"> другой</label>
 									</div><!-- f-input -->
 								</div><!-- f-row -->
 								<div class="f-row">
@@ -1116,14 +1117,14 @@
 								<div class="f-row">
 									<label>Флажки:</label>
 									<div class="f-input">
-										<label class="f-check"><input type="checkbox"> флажки </label> в <label class="f-check"><input type="checkbox" name="check2"> ряд</label>
+										<label class="f-check"><input type="checkbox"> флажки </label> в <label class="f-check"><input type="checkbox"> ряд</label>
 									</div><!-- f-input -->
 								</div><!-- f-row -->
 								<div class="f-row">
 									<label>Флажки:</label>
 									<div class="f-input">
-										<label class="f-check"><input type="checkbox" name="check3"> один</label> под<br>
-										<label class="f-check"><input type="checkbox" name="check4"> другим</label>
+										<label class="f-check"><input type="checkbox"> один</label> под<br>
+										<label class="f-check"><input type="checkbox"> другим</label>
 									</div><!-- f-input -->
 								</div><!-- f-row -->
 								<div class="f-row">
@@ -1133,7 +1134,7 @@
 									</div><!-- f-input -->
 								</div><!-- f-row -->
 								<div class="f-actions">
-									<div class="form-inputs"><input type="submit" value="Сохранить" class="bu"></div>
+									<div class="form-inputs"><button type="submit" class="bu">Кнопка</button></div>
 								</div><!-- f-actions -->
 							</fieldset>
 						</form>
@@ -1152,7 +1153,7 @@
 						<p>Комментарии и пояснения создаются классами <code>.f-input-inline</code> и <code>.f-input-help</code>:</p>
 <pre class="prettyprint linenums">&lt;div class="f-input"&gt;
 	&lt;input type="text"&gt;
-	&lt;span class="f-input-inline"&gt;
+	&lt;span class="f-input-comment"&gt;
 		Основной комметарий
 	&lt;/span&gt;
 	&lt;p class="f-input-help"&gt;
@@ -1161,41 +1162,127 @@
 &lt;/div&gt;</pre>
 					</div><!-- g-5 -->
 				</div><!-- g-row -->
-				<h2>Состояния полей ввода</h2>
-				<h3>Заблокированые</h3>
-				<div class="f-row">
-					<label>Заблокированное:</label>
-					<div class="f-input">
-						<input type="text" class="g-3" disabled="disabled" value="Текстовое поле ввода">
-						<select class="g-2" disabled="disabled"><option>Список</option></select>
-						<label class="f-check"><input type="checkbox" disabled="disabled"> флажок</label>
-						<label class="f-radio"><input type="radio" disabled="disabled"> радио-кнопка</label>
-						<button class="bu" disabled="disabled">Кнопка</button>
-						<textarea class="g-4" rows="4" cols="50" disabled="disabled">Текстовое поле ввода</textarea>
-					</div><!-- f-input -->
-				</div><!-- f-row -->
-
-				<form class="f-horizontal" action="/">
-					<fieldset>
-						<legend>Горизонтальная форма(legend)</legend>
+				<div class="g-row">
+					<div class="g-7">
+						<form class="f-horizontal" action="/">
+							<fieldset>
+								<legend>Горизонтальная форма</legend>
+								<div class="f-row">
+									<label for="text3">Поле ввода:</label>
+									<div class="f-input">
+										<input id="text3" type="text" class="g-6">
+									</div><!-- f-input -->
+								</div><!-- f-row -->
+								<div class="f-row">
+									<label for="textarea2">Текстовое поле:</label>
+									<div class="f-input">
+										<textarea id="textarea2" class="g-6" rows="4" cols="50"></textarea>
+									</div><!-- f-input -->
+								</div><!-- f-row -->
+								<div class="f-actions">
+									<div class="form-inputs"><button type="submit" class="bu">Кнопка</button></div>
+								</div><!-- f-actions -->
+							</fieldset>
+						</form><!-- f-horizontal -->
+					</div><!-- g-7 -->
+					<div class="g-5">
+						<br>
+						<br>
+						<p>Отличается от вертикальной формы наличием дополнительного родительского класса <code>.f-horizontal</code>:</p>
+<pre class="prettyprint linenums">&lt;form class="f-horizontal"&gt;
+	&lt;div class="f-row"&gt;...&lt;/div&gt;
+&lt;/form&gt;&lt;!--f-horizontal --&gt;</pre>
+					</div><!-- g-5 -->
+				</div><!-- g-row -->
+				<h3>Состояния полей ввода</h3>
+				<div class="g-row">
+					<div class="g-9">
 						<div class="f-row">
-							<label for="i-name2">Поле ввода:</label>
+							<label>Заблокированные поля:</label>
 							<div class="f-input">
-								<input id="i-name2" type="text" class="i-text">
-							</div>
-						</div><!-- f-row -->
-						<div class="f-row">
-							<label for="i-name2">Текстовое поле:</label>
+								<input type="text" class="g-4" disabled value="Поле ввода">
+							</div><!-- f-input -->
 							<div class="f-input">
-								<textarea id="comments" class="i-text" rows="4" cols="50"></textarea>
+								<select class="g-4" disabled><option>Список</option></select>
+							</div><!-- f-input -->
+							<div class="f-input">
+								<label class="f-check"><input type="checkbox" disabled> флажок</label>
+							</div><!-- f-input -->
+							<div class="f-input">
+								<label class="f-radio"><input type="radio" disabled> радио-кнопка</label>
+							</div><!-- f-input -->
+							<div class="f-input">
+								<button class="bu" disabled="disabled">Кнопка</button>
+							</div><!-- f-input -->
+							<div class="f-input">
+								<textarea class="g-4" rows="4" cols="50" disabled>Текстовое поле ввода</textarea>
 							</div><!-- f-input -->
 						</div><!-- f-row -->
-						<div class="f-actions">
-							<div class="form-inputs"><input type="submit" value="Сохранить" class="bu"></div>
-						</div><!-- f-actions -->
-					</fieldset>
-				</form>
-
+					</div><!-- g-9 -->
+					<div class="g-3">
+						<p>Поля ввода блокируются добавлением бинарного атрибута <code>disabled</code>:</p>
+<pre class="prettyprint">&lt;input
+	type="text"
+	disabled
+&gt;</pre>
+					</div><!-- g-3 -->
+				</div><!-- g-row -->
+				<div class="g-row">
+					<div class="g-9">
+						<div class="f-row">
+							<label>Валидные поля:</label>
+							<div class="f-input valid">
+								<input type="text" class="g-4" value="Поле ввода"> <span class="f-input-comment">Валидное значение</span>
+							</div><!-- f-input -->
+							<div class="f-input valid">
+								<select class="g-4"><option>Список</option></select> <span class="f-input-comment"><span class="f-ico">W</span> Валидная иконка</span>
+							</div><!-- f-input -->
+							<div class="f-input valid">
+								<label class="f-check"><input type="checkbox"> флажок</label> <span class="f-input-comment"><span class="f-ico">W</span></span>
+							</div><!-- f-input -->
+							<div class="f-input valid">
+								<label class="f-radio"><input type="radio"> радио-кнопка</label> <span class="f-input-comment"><span class="f-ico">W</span></span>
+							</div><!-- f-input -->
+							<div class="f-input valid">
+								<textarea class="g-4" rows="4" cols="50">Текстовое поле ввода</textarea> <span class="f-input-comment"><span class="f-ico">W</span></span>
+							</div><!-- f-input -->
+						</div><!-- f-row -->
+					</div><!-- g-9 -->
+					<div class="g-3">
+						<p>Валидные поля обозначаются добавлением класса <code>.valid</code> к элементу <code>.f-input</code>:</p>
+<pre class="prettyprint">&lt;div
+   class="f-input valid"
+&gt;</pre>
+					</div><!-- g-3 -->
+				</div><!-- g-row -->
+				<div class="g-row">
+					<div class="g-9">
+						<div class="f-row">
+							<label>Невалидные поля:</label>
+							<div class="f-input invalid">
+								<input type="text" class="g-4" value="Поле ввода"> <span class="f-input-comment">Невалидное значение</span>
+							</div><!-- f-input -->
+							<div class="f-input invalid">
+								<select class="g-4"><option>Список</option></select> <span class="f-input-comment"><span class="f-ico">X</span> Невалидная иконка</span>
+							</div><!-- f-input -->
+							<div class="f-input invalid">
+								<label class="f-check"><input type="checkbox"> флажок</label> <span class="f-input-comment"><span class="f-ico">X</span></span>
+							</div><!-- f-input -->
+							<div class="f-input invalid">
+								<label class="f-radio"><input type="radio"> радио-кнопка</label> <span class="f-input-comment"><span class="f-ico">X</span></span>
+							</div><!-- f-input -->
+							<div class="f-input invalid">
+								<textarea class="g-4" rows="4" cols="50">Текстовое поле ввода</textarea> <span class="f-input-comment"><span class="f-ico">X</span></span>
+							</div><!-- f-input -->
+						</div><!-- f-row -->
+					</div><!-- g-9 -->
+					<div class="g-3">
+						<p>Невалидные поля обозначаются добавлением класса <code>.invalid</code> к элементу <code>.f-input</code>:</p>
+<pre class="prettyprint">&lt;div
+   class="f-input invalid"
+&gt;</pre>
+					</div><!-- g-3 -->
+				</div><!-- g-row -->
 			</div><!-- g-12 -->
 		</section><!-- g-row -->
 
