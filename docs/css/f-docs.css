@@ -14,7 +14,7 @@
 
 /* Columns demo
 --------------------------------------- */
-.f-demo .f-column						{ background: #eee; position: relative; overflow: hidden; }
-.f-demo .f-column p						{ padding: 5px 10px; }
-.f-demo .f-column:after					{ left: 0; top: 0; width: 10px; bottom: 0; content: ''; background: #ccc; position: absolute; display: block; }
-.f-demo .f-column:first-child:after		{ left: auto; right: 0; border: none; }
+.f-demo .f-column							{ background: #eee; position: relative; overflow: hidden; }
+.f-demo .f-column p							{ padding: 5px 10px; }
+.f-demo .f-column:after						{ left: 0; top: 0; width: 10px; bottom: 0; content: ''; background: #ccc; position: absolute; display: block; }
+.f-demo .f-column:first-child:after			{ left: auto; right: 0; border: none; }
