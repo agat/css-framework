@@ -1,0 +1,91 @@
+// Grid mixins
+// ---------------------------------------
+
+// Grid row width
+.gridRow (@column: 1) {
+	width: (@column * @gridColumnWidth) + (@gridGutterWidth * (@column - 1));
+}
+
+
+// CSS Utilites
+// ---------------------------------------
+// Clearfix
+
+.clearfix {
+	zoom: 1;
+	&:before,
+	&:after {
+		display: table;
+		content: '';
+	}
+	&:after {
+		clear: both;
+	}
+}
+
+.buttonBg(@colorStart, @colorEnd) {
+	#gradient > .vertical(@colorStart, @colorEnd);
+
+	&:hover {
+		#gradient > .vertical(darken(@colorStart, 10%), darken(@colorEnd, 10%));
+	}
+}
+
+// CSS3 mixins
+// ---------------------------------------
+
+// Box sizing
+.box-sizing(@boxmodel: border-box) {
+	-webkit-box-sizing: @boxmodel;
+	-moz-box-sizing: @boxmodel;
+	box-sizing: @boxmodel;
+}
+
+// User select
+.user-select(@select) {
+	-webkit-user-select: @select;
+	-moz-user-select: @select;
+	-ms-user-select: @select;
+	user-select: @select;
+}
+
+// Border Radius
+.border-radius(@radius: @baseBorderRadius) {
+	-moz-border-radius: @radius;
+	border-radius: @radius;
+}
+
+// Drop shadows
+.box-shadow(@shadow: 0 1px 3px rgba(0, 0, 0, .25)) {
+	-webkit-box-shadow: @shadow;
+	-moz-box-shadow: @shadow;
+	box-shadow: @shadow;
+}
+
+// Gradients
+#gradient {
+	.horizontal (@startColor: @colorWhite, @endColor: @colorLighter) {
+		background-color: @endColor;
+		background-repeat: repeat-x;
+		background-image: -moz-linear-gradient(left, @startColor, @endColor);
+		background-image: -ms-linear-gradient(left, @startColor, @endColor);
+		background-image: -webkit-gradient(linear, left top, right top, color-stop(0%, @startColor), color-stop(100%, @endColor));
+		background-image: -webkit-linear-gradient(left, @startColor, @endColor);
+		background-image: -o-linear-gradient(left, @startColor, @endColor);
+		filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=1)", @startColor, @endColor));
+		-ms-filter: %("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=1)", @startColor, @endColor);
+		background-image: linear-gradient(left, @startColor, @endColor);
+	}
+	.vertical (@startColor: @colorWhite, @endColor: @colorLighter) {
+		background-color: @endColor;
+		background-repeat: repeat-x;
+		background-image: -moz-linear-gradient(@startColor, @endColor);
+		background-image: -ms-linear-gradient(@startColor, @endColor);
+		background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, @startColor), color-stop(100%, @endColor));
+		background-image: -webkit-linear-gradient(@startColor, @endColor);
+		background-image: -o-linear-gradient(@startColor, @endColor);
+		filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=0)", @startColor, @endColor));
+		-ms-filter: %("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=0)", @startColor, @endColor);
+		background-image: linear-gradient(@startColor, @endColor);
+	}
+}

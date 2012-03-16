@@ -1,0 +1,92 @@
+// Typography
+// ---------------------------------------
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4								{ #font > .base(bold, @h1Size, 1.3); margin-top: @baseLineHeight; color: @headerColor; }
+h1, .h1								{ margin-top: 0; }
+h2, .h2								{ font-size: @h2Size; }
+h3, .h3								{ font-size: @h3Size; }
+blockquote,
+h4, .h4								{ font-size: @h4Size; }
+h5, .h5								{ font-size: @h5Size; }
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child,
+h5:first-child						{ margin-top: 0; }
+abbr								{ border-bottom: 1px dotted @colorLighter; }
+blockquote							{ padding: 5px 3em; position: relative; }
+blockquote p						{ margin: @baseLineHeight/2 0 0 0; }
+blockquote p:first-child			{ margin: 0; }
+blockquote:before,
+blockquote:after					{ font-size: 3em; position: absolute; color: @colorLighter; }
+blockquote:before					{ left: 0; top: 0; }
+blockquote:after					{ right: 0; bottom: 0; }
+blockquote cite						{ font-size: small; font-style: normal; color: @colorGray; }
+blockquote cite:before				{ content: '\2014'; padding-right: .5em; }
+q,
+cite								{ font-style: italic; }
+blockquote:before,
+q:before							{ content: '\00AB'; }
+blockquote:after,
+q:after								{ content: '\00BB'; }
+pre,
+code,
+samp								{ border: 1px solid darken(@sourceBg, 3); background: @sourceBg; .border-radius; }
+samp								{ color: @sourceBg; background: @sourceBgInversed; border-color: lighten(@sourceBgInversed, 3); }
+pre,
+code,
+samp,
+var,
+kbd									{ padding: 0 4px; font-family: @fontMonospace; font-size: .9em; }
+pre									{ padding: 7px 9px; -moz-tab-size: 4; -o-tab-size: 4; tab-size: 4; white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
+code,
+samp								{ line-height: 0; }
+b,
+strong								{ font-weight: bold; }
+address,
+var,
+i,
+em									{ font-style: italic; }
+dfn									{ font-style: italic; font-weight: bold; }
+mark								{ color: @colorOrange; }
+ins									{ color: @colorGreen; }
+ins:before,
+ins:after							{ content: '+'; }
+del									{ color: @colorRed; }
+del:before,
+del:after							{ content: '\2212'; }
+sup,
+sub									{ position: relative; font-size: 0.8em; line-height: 0; }
+sup									{ vertical-align: text-top; }
+sub									{ vertical-align: text-bottom; }
+small								{ font-size: 0.8em; }
+hr,
+.hr									{ background: @colorLight; height: 2px; border: 0; }
+ul,
+ol									{ margin-left: 28px; }
+li									{ }
+dl									{ }
+dl dt								{ font-weight: bold; }
+dl dd								{ margin: 0 0 0 7px; }
+dl dd:before						{ content: '\2014'; padding-right: .5em; color: #839496; }
+
+// TODO: raznesti eto po failam
+p,
+ul,
+ol,
+dl,
+blockquote,
+address,
+pre,
+hr,
+.hr,
+.form,
+.form legend,
+.form fieldset,
+.f-message,
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4								{ margin-bottom: @baseBottomSpacing; }

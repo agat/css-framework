@@ -1,0 +1,35 @@
+/* Navigation
+---------------------------------------- */
+.f-nav								{ margin: 0 0 @baseBottomSpacing 0; position: relative; z-index: @zIndexNav; .clearfix; border-bottom: 1px solid @fNavBorderColor; }
+.f-nav > li							{ float: left; display: block; position: relative; list-style: none; margin: 0  @baseBottomSpacing/2 -1px 0; }
+.f-nav > li > a						{ text-decoration: none; padding: 1px 10px 0; display: block; line-height: @fNavHeight; border-bottom: 1px solid transparent; background: @fNavBg; .border-radius(@baseBorderRadius @baseBorderRadius 0 0); }
+.f-nav > li > a:hover				{ background: @fNavHoverBg; color: @fNavHoverColor; }
+.f-nav > .active > a:hover,
+.f-nav > .active > a				{ padding: 0 10px; border: 1px solid @fNavBorderColor; border-bottom: 1px solid @fNavActiveBg; background: @fNavActiveBg; color: @fNavActiveColor; }
+
+/* Vertical navigation
+---------------------------------------- */
+.f-nav-list							{ border: none; }
+.f-nav-list > li					{ float: none; margin: 0;  }
+.f-nav-list > .active > a,
+.f-nav-list > .active > a:hover,
+.f-nav-list > li > a				{ border: 1px solid @fNavBorderColor; .border-radius(0); }
+.f-nav-list > .active > a,
+.f-nav-list > .active > a:hover,
+.f-nav-list > li + li > a			{ border-top: none; }
+.f-nav-list > li:first-child > a	{ .border-radius(@baseBorderRadius @baseBorderRadius 0 0); }
+.f-nav-list > li:last-child > a		{ .border-radius(0 0 @baseBorderRadius @baseBorderRadius); }
+
+// TODO: добавить бар к документации
+
+// Top fixed navigation bar
+// ---------------------------------------
+.f-nav-bar							{ position: fixed; left: 0; right: 0; top: 0; .box-shadow; z-index: @zIndexNavBar; border: 1px solid darken(@fNavBarBg, 5%); color: @fNavBarTextColor; #gradient > .vertical(lighten(@fNavBarBg, 5%), darken(@fNavBarBg, 10%)); }
+.f-nav-bar .f-nav-bar-body			{ .gridRow(12); margin: auto; .box-sizing; .clearfix; padding: 0 7px 0 0; }
+.f-nav-bar .f-nav					{ margin: 0; float: left; border: none; }
+.f-nav-bar .f-nav > li				{ margin: 0; }
+.f-nav-bar .f-nav > li > a			{ color: @fNavBarTextColor; text-shadow: -1px -1px 0 @fNavBarTextColorShadow; line-height: @fNavBarHeight; background: none; border: none; padding: 0 10px; }
+.f-nav-bar .f-nav > li > a:hover,
+.f-nav-bar .f-nav > .active > a		{ color: @fNavBarTextColorActive; background: none; text-shadow: 1px 1px 0 @fNavBarTextColorShadowActive; border: none; }
+.f-nav-bar-title					{ padding: 0 15px 0 0; font-size: @fNavBarTitleTextSize; line-height: @fNavBarHeight - 3; color: @fNavBarTextColorActive; float: left; text-shadow: 1px 1px 1px @fNavBarTextColorShadowActive; }
+.f-nav-bar-title a					{ color: @fNavBarTextColorActive; text-decoration: none; }

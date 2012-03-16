@@ -1,0 +1,12 @@
+/* Tables
+---------------------------------------- */
+table								{ border-collapse: collapse; border-spacing: 0; width: 100%; max-width: 100%; margin: 0 0 @baseBottomSpacing 0; }
+caption								{ font-size: 1.2em; font-weight: bold; text-align: center; margin: 0 0 @baseBottomSpacing 0; }
+th,
+td									{ padding: 6px 8px; vertical-align: top; }
+th									{ background: @fTableHeaderBg; font-weight: bold; text-align: left; }
+td,
+tfoot th							{ border-top: 1px solid @fTableBorderColor; }
+tr:hover th,
+tr:hover td							{ background: @fTableHoverBg; }
+.table-zebra tbody tr:nth-child(2n)	{ background: lighten(@fTableHeaderBg, 2%); }

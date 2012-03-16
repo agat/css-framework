@@ -1,0 +1,12 @@
+/* Columns System
+--------------------------------------- */
+.f-column			 				{ padding-left: @gridGutterWidth/2; float: left; .box-sizing; }
+.f-column:first-child				{ padding-right: @gridGutterWidth/2; padding-left: 0; }
+.f-col-2,
+.f-col-3,
+.f-col-4							{ .clearfix; }
+.f-col-4 .f-column,
+.f-col-3 .f-column .f-column,
+.f-col-2 .f-column					{ width: 50%; }
+.f-col-3 > .f-column:first-child	{ width: 67%; }
+.f-col-3 > .f-column				{ width: 33%; }

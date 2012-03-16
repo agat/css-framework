@@ -1,0 +1,109 @@
+// Colors
+// ---------------------------------------
+
+// Base colors
+@backgroundColor:	#fff;
+@textColor:			#444;
+
+// Links
+@linkColor:         #268bd2;
+@linkColorHover:	darken(@linkColor, 10);
+@linkColorVisited:	darken(@linkColor, 20);
+
+// Colors
+@colorOrange:		#cb4b16;
+@colorYellowLight:	#fdf6e3;
+@colorRed:			#dc322f;
+@colorGreen:		#859900;
+@colorBlue:			#268bd2;
+
+@colorWhite:		#fff;
+@colorLight:		#eee;
+@colorLighter:		#ccc;
+@colorGray:			#888;
+@colorDarker:		#666;
+@colorDark:			#333;
+@colorBlack:		#000;
+
+@headerColor:		@colorDark;
+@sourceBg:			@colorYellowLight;
+@sourceBgInversed:	#073642;
+
+// Fonts & text
+// ---------------------------------------
+
+// Font Stacks
+@fontSansSerif:		Arial, 'Helvetica Neue', Helvetica, sans-serif;
+@fontMonospace:		Consolas, 'Lucida Console', Monaco, monospace;
+
+#font {
+	.base(@weight: normal, @size: @baseFontSize, @lineHeight: @baseLineHeight) {
+		font: @weight @size~"/"@lineHeight @baseFont;
+	}
+	.monospace(@weight: normal, @size: @baseFontSize, @lineHeight: @baseLineHeight) {
+		font: @weight @size~"/"@lineHeight @fontMonospace;
+	}
+}
+
+// Base fonts
+@baseFont:			@fontSansSerif;
+@baseFontSize:		13px;
+@baseLineHeight:	18px;
+
+// Text size
+@h1Size:			24px;
+@h2Size:			@h1Size - 3;
+@h3Size:			@h2Size - 3;
+@h4Size:			@h3Size - 3;
+@h5Size:			@h4Size - 1;
+
+// Other
+@baseBorderRadius:	3px;
+@baseBottomSpacing:	@baseLineHeight - 6;
+
+// Z-indexes
+@zIndexNavBar:		2010;
+@zIndexNav:			2000;
+
+// Grid
+@gridColumns:       12;
+@gridColumnWidth:   60px;
+@gridGutterWidth:   20px;
+@siteWidth:         (@gridColumns * @gridColumnWidth) + (@gridGutterWidth * (@gridColumns - 1));
+
+// Components variables
+// ---------------------------------------
+
+// Navigation
+// ---------------------------------------
+@fNavHeight:					28px;
+@fNavBorderColor:				@colorLighter;
+@fNavBg:						@colorWhite;
+@fNavHoverColor:				@colorBlack;
+@fNavHoverBg:					@colorLighter;
+@fNavActiveColor:				@colorBlack;
+@fNavActiveBg:					@colorWhite;
+@fNavBarHeight:					36px;
+@fNavBarTextColor:				@colorLighter;
+@fNavBarTextColorShadow:		@colorBlack;
+@fNavBarTextColorActive:		@colorWhite;
+@fNavBarTextColorShadowActive:	@colorBlack;
+@fNavBarTitleTextSize:			@h2Size;
+@fNavBarBg:						@colorDark;
+
+// Tables
+// ---------------------------------------
+@fTableHeaderBg:				lighten(@colorLight, 2%);
+@fTableHoverBg:					@colorYellowLight;
+@fTableBorderColor:				@colorLight;
+
+// Buttons
+// ---------------------------------------
+@fBuBgStart:					@colorWhite;
+@fBuBgEnd:						#ddd;
+@fBuInfoBgStart:				lighten(@colorBlue, 20%);
+@fBuInfoBgEnd:					@colorBlue;
+@fBuSuccessBgStart:				lighten(@colorGreen, 10%);
+@fBuSuccessBgEnd:				@colorGreen;
+@fBuWarningBgStart:				lighten(@colorRed, 20%);
+@fBuWarningBgEnd:				@colorRed;

@@ -1,6 +1,9 @@
 /* css-framework documentation styles
 --------------------------------------- */
 
+body				{ padding: 50px 0 0 0; }
+section.g-row		{ padding: 50px 0 0 0; }
+
 /* Grid demo
 --------------------------------------- */
 .grid-demo > [class ^= "g-"]				{ text-align: center; background: #eee; line-height: 27px; border-radius: 3px; }
