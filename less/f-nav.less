@@ -1,24 +1,42 @@
 /* Navigation
 ---------------------------------------- */
-.f-nav								{ margin: 0 0 @baseBottomSpacing 0; position: relative; z-index: @zIndexNav; .clearfix; border-bottom: 1px solid @fNavBorderColor; }
-.f-nav > li							{ float: left; display: block; position: relative; list-style: none; margin: 0  @baseBottomSpacing/2 -1px 0; }
-.f-nav > li > a						{ text-decoration: none; padding: 1px 10px 0; display: block; line-height: @fNavHeight; border-bottom: 1px solid transparent; background: @fNavBg; .border-radius(@baseBorderRadius @baseBorderRadius 0 0); }
-.f-nav > li > a:hover				{ background: @fNavHoverBg; color: @fNavHoverColor; }
+.f-nav								{ margin: 0 0 @baseBottomSpacing 0; position: relative; .clearfix; }
+.f-nav > li							{ float: left; position: relative; list-style: none; margin: 0 @baseLineHeight 0 0; }
+.f-nav > li > a						{ text-decoration: none; display: block; line-height: @fNavHeight; }
+.f-nav > li > a:hover				{ color: @fNavHoverColor; }
 .f-nav > .active > a:hover,
-.f-nav > .active > a				{ padding: 0 10px; border: 1px solid @fNavBorderColor; border-bottom: 1px solid @fNavActiveBg; background: @fNavActiveBg; color: @fNavActiveColor; }
+.f-nav > .active > a				{ color: @fNavActiveColor; }
+
+/* Tabs navigation
+---------------------------------------- */
+.f-nav-tabs								{ border-bottom: 1px solid @fNavBorderColor; }
+.f-nav-tabs > li						{ margin: 0 @baseBottomSpacing/2 -1px 0; }
+.f-nav-tabs > li > a					{ padding: 1px 10px 0; border-bottom: 1px solid transparent; .border-radius(@baseBorderRadius @baseBorderRadius 0 0); }
+.f-nav-tabs > li > a:hover				{ background: @fNavHoverBg; border-color: @fNavBorderColor; }
+.f-nav-tabs > .active > a:hover,
+.f-nav-tabs > .active > a				{ padding: 0 10px; border: 1px solid @fNavBorderColor; border-bottom: 1px solid @fNavActiveBg; background: @fNavActiveBg; }
 
 /* Vertical navigation
 ---------------------------------------- */
-.f-nav-list							{ border: none; }
-.f-nav-list > li					{ float: none; margin: 0;  }
-.f-nav-list > .active > a,
+.f-nav-list								{ margin: 0 0 @baseBottomSpacing 0; }
+.f-nav-list > li						{ float: none; margin: 0; list-style: none; }
+.f-nav-list > li > a					{ display: block; text-decoration: none; padding: 0 11px; line-height: @fNavHeight; }
+.f-nav-list > li > a:hover				{ color: @fNavHoverColor; }
 .f-nav-list > .active > a:hover,
-.f-nav-list > li > a				{ border: 1px solid @fNavBorderColor; .border-radius(0); }
-.f-nav-list > .active > a,
-.f-nav-list > .active > a:hover,
-.f-nav-list > li + li > a			{ border-top: none; }
-.f-nav-list > li:first-child > a	{ .border-radius(@baseBorderRadius @baseBorderRadius 0 0); }
-.f-nav-list > li:last-child > a		{ .border-radius(0 0 @baseBorderRadius @baseBorderRadius); }
+.f-nav-list > .active > a				{ color: @fNavActiveColor; }
+
+/* Vertical tabs navigation
+---------------------------------------- */
+.f-nav-list.f-nav-tabs							{ border-bottom: none; }
+.f-nav-list.f-nav-tabs > li						{  }
+.f-nav-list.f-nav-tabs > .active > a,
+.f-nav-list.f-nav-tabs > .active > a:hover,
+.f-nav-list.f-nav-tabs > li > a					{ padding: 0 10px; border: 1px solid @fNavBorderColor; .border-radius(0); }
+.f-nav-list.f-nav-tabs > .active > a,
+.f-nav-list.f-nav-tabs > .active > a:hover,
+.f-nav-list.f-nav-tabs > li + li > a			{ border-top: none; }
+.f-nav-list.f-nav-tabs > li:first-child > a		{ .border-radius(@baseBorderRadius @baseBorderRadius 0 0); }
+.f-nav-list.f-nav-tabs > li:last-child > a		{ .border-radius(0 0 @baseBorderRadius @baseBorderRadius); }
 
 // TODO: добавить бар к документации
 

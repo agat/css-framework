@@ -285,7 +285,7 @@
 	&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Третий&lt;/a&gt;&lt;/li&gt;
 	&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Последний пункт&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;!-- f-nav --&gt;</pre>
-				<p>Активный пункт навигации выделяется с помощью класса <code>active</code>.</p>
+				<p>Активный пункт навигации выделяется с помощью класса <code>.active</code>.</p>
 				<p>Получится вот такое навигационное меню:</p>
 				<ul class="f-nav">
 					<li><a href="#">Первый пункт</a></li>
@@ -293,24 +293,52 @@
 					<li><a href="#">Третий</a></li>
 					<li><a href="#">Последний пункт</a></li>
 				</ul><!-- f-nav -->
+				<h4>Горизонтальные вкладки</h4>
+				<p>Существует дополнительный класс <code>.f-nav-tabs</code>, который изменяет дизайн горизонтальной навигации:</p>
+<pre class="prettyprint linenums">&lt;ul class=&quot;f-nav f-nav-tabs&quot;&gt;
+	...
+&lt;/ul&gt;&lt;!-- f-nav-tabs --&gt;</pre>
+				<ul class="f-nav f-nav-tabs">
+					<li><a href="#">Первый пункт</a></li>
+					<li class="active"><a href="#">Второй активный</a></li>
+					<li><a href="#">Третий</a></li>
+					<li><a href="#">Последний пункт</a></li>
+				</ul><!-- f-nav-tabs -->
 				<h3>Вертикальная навигация</h3>
-				<p>Для создания вертикальной навигации нужно списку задать класс <code class="prettyprint">&lt;ul class="f-nav-v"&gt;...&lt;/ul&gt;</code>:</p>
+				<p>Для создания вертикальной навигации нужно списку задать класс <code>.f-nav-list</code>:</p>
 				<div class="g-row">
 					<div class="g-9">
-<pre class="prettyprint linenums">&lt;ul class="f-nav-v"&gt;
+<pre class="prettyprint linenums">&lt;ul class="f-nav-list"&gt;
 	&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Первый пункт&lt;/a&gt;&lt;/li&gt;
 	&lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;Второй активный&lt;/a&gt;&lt;/li&gt;
 	&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Третий&lt;/a&gt;&lt;/li&gt;
 	&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Последний пункт&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;!-- f-nav-v --&gt;</pre>
+&lt;/ul&gt;&lt;!-- f-nav-list --&gt;</pre>
 					</div><!-- g-9 -->
 					<div class="g-3">
-						<ul class="f-nav f-nav-list">
+						<ul class="f-nav-list">
 							<li><a href="#">Первый пункт</a></li>
 							<li class="active"><a href="#">Второй активный</a></li>
 							<li><a href="#">Третий</a></li>
 							<li><a href="#">Последний пункт</a></li>
-						</ul><!-- f-nav-v -->
+						</ul><!-- f-nav-list -->
+					</div><!-- g-3 -->
+				</div><!-- g-row -->
+				<h4>Вертикальные вкладки</h4>
+				<div class="g-row">
+					<div class="g-9">
+						<p>Для создания вертикальной навигации в виде вкладок дополните предыдущий пример классом <code>.f-nav-tabs</code>:</p>
+<pre class="prettyprint linenums">&lt;ul class="f-nav-list f-nav-tabs"&gt;
+	...
+&lt;/ul&gt;&lt;!-- f-nav-tabs --&gt;</pre>
+					</div><!-- g-9 -->
+					<div class="g-3">
+						<ul class="f-nav-list f-nav-tabs">
+							<li><a href="#">Первый пункт</a></li>
+							<li class="active"><a href="#">Второй активный</a></li>
+							<li><a href="#">Третий</a></li>
+							<li><a href="#">Последний пункт</a></li>
+						</ul><!-- f-nav-tabs -->
 					</div><!-- g-3 -->
 				</div><!-- g-row -->
 				<h3>&laquo;Хлебные крошки&raquo;</h3>
