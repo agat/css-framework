@@ -877,9 +877,7 @@ input[disabled] {
 .f-nav {
   margin: 0 0 12px 0;
   position: relative;
-  z-index: 2000;
   zoom: 1;
-  border-bottom: 1px solid #cccccc;
 }
 .f-nav:before,
 .f-nav:after {
@@ -891,59 +889,93 @@ input[disabled] {
 }
 .f-nav > li {
   float: left;
-  display: block;
   position: relative;
   list-style: none;
-  margin: 0 6px -1px 0;
+  margin: 0 18px 0 0;
 }
 .f-nav > li > a {
   text-decoration: none;
-  padding: 1px 10px 0;
   display: block;
   line-height: 28px;
-  border-bottom: 1px solid transparent;
-  background: #ffffff;
-  -moz-border-radius: 3px 3px 0 0;
-  border-radius: 3px 3px 0 0;
 }
 .f-nav > li > a:hover {
-  background: #cccccc;
   color: #000000;
 }
 .f-nav > .active > a:hover,
 .f-nav > .active > a {
+  color: #000000;
+}
+/* Tabs navigation
+---------------------------------------- */
+.f-nav-tabs {
+  border-bottom: 1px solid #cccccc;
+}
+.f-nav-tabs > li {
+  margin: 0 6px -1px 0;
+}
+.f-nav-tabs > li > a {
+  padding: 1px 10px 0;
+  border-bottom: 1px solid transparent;
+  -moz-border-radius: 3px 3px 0 0;
+  border-radius: 3px 3px 0 0;
+}
+.f-nav-tabs > li > a:hover {
+  background: #eeeeee;
+  border-color: #cccccc;
+}
+.f-nav-tabs > .active > a:hover,
+.f-nav-tabs > .active > a {
   padding: 0 10px;
   border: 1px solid #cccccc;
   border-bottom: 1px solid #ffffff;
   background: #ffffff;
-  color: #000000;
 }
 /* Vertical navigation
 ---------------------------------------- */
 .f-nav-list {
-  border: none;
+  margin: 0 0 12px 0;
 }
 .f-nav-list > li {
   float: none;
   margin: 0;
+  list-style: none;
 }
-.f-nav-list > .active > a,
-.f-nav-list > .active > a:hover,
 .f-nav-list > li > a {
+  display: block;
+  text-decoration: none;
+  padding: 0 11px;
+  line-height: 28px;
+}
+.f-nav-list > li > a:hover {
+  color: #000000;
+}
+.f-nav-list > .active > a:hover,
+.f-nav-list > .active > a {
+  color: #000000;
+}
+/* Vertical tabs navigation
+---------------------------------------- */
+.f-nav-list.f-nav-tabs {
+  border-bottom: none;
+}
+.f-nav-list.f-nav-tabs > .active > a,
+.f-nav-list.f-nav-tabs > .active > a:hover,
+.f-nav-list.f-nav-tabs > li > a {
+  padding: 0 10px;
   border: 1px solid #cccccc;
   -moz-border-radius: 0;
   border-radius: 0;
 }
-.f-nav-list > .active > a,
-.f-nav-list > .active > a:hover,
-.f-nav-list > li + li > a {
+.f-nav-list.f-nav-tabs > .active > a,
+.f-nav-list.f-nav-tabs > .active > a:hover,
+.f-nav-list.f-nav-tabs > li + li > a {
   border-top: none;
 }
-.f-nav-list > li:first-child > a {
+.f-nav-list.f-nav-tabs > li:first-child > a {
   -moz-border-radius: 3px 3px 0 0;
   border-radius: 3px 3px 0 0;
 }
-.f-nav-list > li:last-child > a {
+.f-nav-list.f-nav-tabs > li:last-child > a {
   -moz-border-radius: 0 0 3px 3px;
   border-radius: 0 0 3px 3px;
 }
