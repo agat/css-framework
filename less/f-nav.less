@@ -1,29 +1,29 @@
 /* Navigation
 ---------------------------------------- */
-.f-nav								{ margin: 0 0 @baseBottomSpacing 0; position: relative; .clearfix; }
-.f-nav > li							{ float: left; position: relative; list-style: none; margin: 0 @baseLineHeight 0 0; }
-.f-nav > li > a						{ text-decoration: none; display: block; line-height: @fNavHeight; }
-.f-nav > li > a:hover				{ color: @fNavHoverColor; }
+.f-nav								{ margin: 0 0 @bottom_spacing 0; position: relative; .clearfix; }
+.f-nav > li							{ float: left; position: relative; list-style: none; margin: 0 @line_height 0 0; }
+.f-nav > li > a						{ text-decoration: none; display: block; line-height: @nav_height; }
+.f-nav > li > a:hover				{ color: @nav_hover_color; }
 .f-nav > .active > a:hover,
-.f-nav > .active > a				{ color: @fNavActiveColor; }
+.f-nav > .active > a				{ color: @nav_active_color; }
 
 /* Tabs navigation
 ---------------------------------------- */
-.f-nav-tabs								{ border-bottom: 1px solid @fNavBorderColor; }
-.f-nav-tabs > li						{ margin: 0 @baseBottomSpacing/2 -1px 0; }
-.f-nav-tabs > li > a					{ padding: 1px 10px 0; border-bottom: 1px solid transparent; .border-radius(@baseBorderRadius @baseBorderRadius 0 0); }
-.f-nav-tabs > li > a:hover				{ background: @fNavHoverBg; border-color: @fNavBorderColor; }
+.f-nav-tabs								{ border-bottom: 1px solid @nav_border_color; }
+.f-nav-tabs > li						{ margin: 0 @bottom_spacing/2 -1px 0; }
+.f-nav-tabs > li > a					{ padding: 1px 10px 0; border-bottom: 1px solid transparent; .border-radius(@border_radius @border_radius 0 0); }
+.f-nav-tabs > li > a:hover				{ background: @nav_hover_bg; border-color: @nav_border_color; }
 .f-nav-tabs > .active > a:hover,
-.f-nav-tabs > .active > a				{ padding: 0 10px; border: 1px solid @fNavBorderColor; border-bottom: 1px solid @fNavActiveBg; background: @fNavActiveBg; }
+.f-nav-tabs > .active > a				{ padding: 0 10px; border: 1px solid @nav_border_color; border-bottom: 1px solid @nav_active_bg; background: @nav_active_bg; }
 
 /* Vertical navigation
 ---------------------------------------- */
-.f-nav-list								{ margin: 0 0 @baseBottomSpacing 0; }
+.f-nav-list								{ margin: 0 0 @bottom_spacing 0; }
 .f-nav-list > li						{ float: none; margin: 0; list-style: none; }
-.f-nav-list > li > a					{ display: block; text-decoration: none; padding: 0 11px; line-height: @fNavHeight; }
-.f-nav-list > li > a:hover				{ color: @fNavHoverColor; }
+.f-nav-list > li > a					{ display: block; text-decoration: none; padding: 0 11px; line-height: @nav_height; }
+.f-nav-list > li > a:hover				{ color: @nav_hover_color; }
 .f-nav-list > .active > a:hover,
-.f-nav-list > .active > a				{ color: @fNavActiveColor; }
+.f-nav-list > .active > a				{ color: @nav_active_color; }
 
 /* Vertical tabs navigation
 ---------------------------------------- */
@@ -31,27 +31,27 @@
 .f-nav-list.f-nav-tabs > li						{  }
 .f-nav-list.f-nav-tabs > .active > a,
 .f-nav-list.f-nav-tabs > .active > a:hover,
-.f-nav-list.f-nav-tabs > li > a					{ padding: 0 10px; border: 1px solid @fNavBorderColor; .border-radius(0); }
+.f-nav-list.f-nav-tabs > li > a					{ padding: 0 10px; border: 1px solid @nav_border_color; .border-radius(0); }
 .f-nav-list.f-nav-tabs > .active > a,
 .f-nav-list.f-nav-tabs > .active > a:hover,
 .f-nav-list.f-nav-tabs > li + li > a			{ border-top: none; }
-.f-nav-list.f-nav-tabs > li:first-child > a		{ .border-radius(@baseBorderRadius @baseBorderRadius 0 0); }
-.f-nav-list.f-nav-tabs > li:last-child > a		{ .border-radius(0 0 @baseBorderRadius @baseBorderRadius); }
+.f-nav-list.f-nav-tabs > li:first-child > a		{ .border-radius(@border_radius @border_radius 0 0); }
+.f-nav-list.f-nav-tabs > li:last-child > a		{ .border-radius(0 0 @border_radius @border_radius); }
 
 // TODO: добавить бар к документации
 
 // Navigation bar
 // ---------------------------------------
-.f-nav-bar							{ position: relative; .box-shadow; z-index: @zIndexNavBar; border: 1px solid darken(@fNavBarBg, 5%); color: @fNavBarTextColor; #gradient > .vertical(lighten(@fNavBarBg, 5%), darken(@fNavBarBg, 10%)); .border-radius; }
-.f-nav-bar .f-nav-bar-body			{ .gridRow(12); margin: auto; height: @fNavBarHeight; line-height: @fNavBarHeight; .box-sizing; .clearfix; }
+.f-nav-bar							{ position: relative; .box-shadow; z-index: @z_ndex_nav_bar; border: 1px solid darken(@nav_bar_bg, 5%); color: @nav_bar_text_color; #gradient > .vertical(lighten(@nav_bar_bg, 5%), darken(@nav_bar_bg, 10%)); .border-radius; }
+.f-nav-bar .f-nav-bar-body			{ .gridRow(12); margin: auto; height: @nav_bar_height; line-height: @nav_bar_height; .box-sizing; .clearfix; }
 .f-nav-bar .f-nav					{ margin: 0; float: left; }
 .f-nav-bar .f-nav > li				{ margin: 0; }
-.f-nav-bar .f-nav > li > a			{ color: @fNavBarTextColor; line-height: @fNavBarHeight; text-shadow: -1px -1px 0 @fNavBarTextColorShadow; padding: 0 10px; }
+.f-nav-bar .f-nav > li > a			{ color: @nav_bar_text_color; line-height: @nav_bar_height; text-shadow: -1px -1px 0 @nav_bar_text_colorShadow; padding: 0 10px; }
 .f-nav-bar .f-nav > li > a:hover,
-.f-nav-bar .f-nav > .active > a		{ color: @fNavBarTextColorActive; text-shadow: 1px 1px 0 @fNavBarTextColorShadowActive; }
-.f-nav-bar-title					{ padding: 0 15px; font-size: @fNavBarTitleTextSize; line-height: @fNavBarHeight - 3; color: @fNavBarTextColorActive; float: left; text-shadow: 1px 1px 1px @fNavBarTextColorShadowActive; }
-.f-nav-bar-title a					{ color: @fNavBarTextColorActive; text-decoration: none; }
+.f-nav-bar .f-nav > .active > a		{ color: @nav_bar_text_colorActive; text-shadow: 1px 1px 0 @nav_bar_text_color_shadow_active; }
+.f-nav-bar-title					{ padding: 0 15px; font-size: @nav_bar_title_text_size; line-height: @nav_bar_height - 3; color: @nav_bar_text_colorActive; float: left; text-shadow: 1px 1px 1px @nav_bar_text_color_shadow_active; }
+.f-nav-bar-title a					{ color: @nav_bar_text_colorActive; text-decoration: none; }
 
 // Top fixed navigation bar
 // ---------------------------------------
-.f-nav-bar-fixed					{ position: fixed; left: 0; right: 0; top: 0; z-index: @zIndexNavBar; .border-radius(0); }
+.f-nav-bar-fixed					{ position: fixed; left: 0; right: 0; top: 0; z-index: @z_ndex_nav_bar; .border-radius(0); }

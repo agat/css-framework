@@ -3,27 +3,27 @@
 h1, .h1,
 h2, .h2,
 h3, .h3,
-h4, .h4								{ #font > .base(bold, @h1Size, 1.3); margin-top: @baseLineHeight; color: @headerColor; }
+h4, .h4								{ #font > .base(bold, @h1_size, 1.3); margin-top: @line_height; color: @header_color; }
 h1, .h1								{ margin-top: 0; }
-h2, .h2								{ font-size: @h2Size; }
-h3, .h3								{ font-size: @h3Size; }
+h2, .h2								{ font-size: @h2_size; }
+h3, .h3								{ font-size: @h3_size; }
 blockquote,
-h4, .h4								{ font-size: @h4Size; }
-h5, .h5								{ font-size: @h5Size; }
+h4, .h4								{ font-size: @h4_size; }
+h5, .h5								{ font-size: @h5_size; }
 h1:first-child,
 h2:first-child,
 h3:first-child,
 h4:first-child,
 h5:first-child						{ margin-top: 0; }
-abbr								{ border-bottom: 1px dotted @colorLighter; }
+abbr								{ border-bottom: 1px dotted @color_lighter; }
 blockquote							{ padding: 5px 3em; position: relative; }
-blockquote p						{ margin: @baseLineHeight/2 0 0 0; }
+blockquote p						{ margin: @line_height/2 0 0 0; }
 blockquote p:first-child			{ margin: 0; }
 blockquote:before,
-blockquote:after					{ font-size: 3em; position: absolute; color: @colorLighter; }
+blockquote:after					{ font-size: 3em; position: absolute; color: @color_lighter; }
 blockquote:before					{ left: 0; top: 0; }
 blockquote:after					{ right: 0; bottom: 0; }
-blockquote cite						{ font-size: small; font-style: normal; color: @colorGray; }
+blockquote cite						{ font-size: small; font-style: normal; color: @color_gray; }
 blockquote cite:before				{ content: '\2014'; padding-right: .5em; }
 q,
 cite								{ font-style: italic; }
@@ -33,13 +33,13 @@ blockquote:after,
 q:after								{ content: '\00BB'; }
 pre,
 code,
-samp								{ border: 1px solid darken(@sourceBg, 3); background: @sourceBg; .border-radius; }
-samp								{ color: @sourceBg; background: @sourceBgInversed; border-color: lighten(@sourceBgInversed, 3); }
+samp								{ border: 1px solid darken(@source_bg, 3); background: @source_bg; .border-radius; }
+samp								{ color: @source_bg; background: @source_bg_inversed; border-color: lighten(@source_bg_inversed, 3); }
 pre,
 code,
 samp,
 var,
-kbd									{ padding: 0 4px; font-family: @fontMonospace; font-size: .9em; }
+kbd									{ padding: 0 4px; font-family: @font_monospace; font-size: .9em; }
 pre									{ padding: 7px 9px; -moz-tab-size: 4; -o-tab-size: 4; tab-size: 4; white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
 code,
 samp								{ line-height: 0; }
@@ -50,11 +50,11 @@ var,
 i,
 em									{ font-style: italic; }
 dfn									{ font-style: italic; font-weight: bold; }
-mark								{ color: @colorOrange; }
-ins									{ color: @colorGreen; }
+mark								{ color: @color_orange; }
+ins									{ color: @color_green; }
 ins:before,
 ins:after							{ content: '+'; }
-del									{ color: @colorRed; }
+del									{ color: @color_red; }
 del:before,
 del:after							{ content: '\2212'; }
 sup,
@@ -63,7 +63,7 @@ sup									{ vertical-align: text-top; }
 sub									{ vertical-align: text-bottom; }
 small								{ font-size: 0.8em; }
 hr,
-.hr									{ background: @colorLight; height: 2px; border: 0; }
+.hr									{ background: @color_light; height: 2px; border: 0; }
 ul,
 ol									{ margin-left: 28px; }
 li									{ }
@@ -89,4 +89,4 @@ hr,
 h1, .h1,
 h2, .h2,
 h3, .h3,
-h4, .h4								{ margin-bottom: @baseBottomSpacing; }
+h4, .h4								{ margin-bottom: @bottom_spacing; }

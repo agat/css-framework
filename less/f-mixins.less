@@ -3,7 +3,7 @@
 
 // Grid row width
 .gridRow (@column: 1) {
-	width: (@column * @gridColumnWidth) + (@gridGutterWidth * (@column - 1));
+	width: (@column * @grid_column_width) + (@grid_gutter_width * (@column - 1));
 }
 
 
@@ -50,7 +50,7 @@
 }
 
 // Border Radius
-.border-radius(@radius: @baseBorderRadius) {
+.border-radius(@radius: @border_radius) {
 	-moz-border-radius: @radius;
 	border-radius: @radius;
 }
@@ -64,7 +64,7 @@
 
 // Gradients
 #gradient {
-	.horizontal (@startColor: @colorWhite, @endColor: @colorLighter) {
+	.horizontal (@startColor: @color_white, @endColor: @color_lighter) {
 		background-color: @endColor;
 		background-repeat: repeat-x;
 		background-image: -moz-linear-gradient(left, @startColor, @endColor);
@@ -76,7 +76,7 @@
 		-ms-filter: %("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=1)", @startColor, @endColor);
 		background-image: linear-gradient(left, @startColor, @endColor);
 	}
-	.vertical (@startColor: @colorWhite, @endColor: @colorLighter) {
+	.vertical (@startColor: @color_white, @endColor: @color_lighter) {
 		background-color: @endColor;
 		background-repeat: repeat-x;
 		background-image: -moz-linear-gradient(@startColor, @endColor);
