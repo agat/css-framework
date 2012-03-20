@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html xmlns="http://www.w3.org/1999/html">
 	<head>
 		<meta charset="utf-8">
 		<title>Демонстрация css-framework'а</title>
@@ -16,11 +16,8 @@
 		<script src="js/jquery.nav.min.js"></script>
 	</head>
 	<body class="g">
-		<div class="f-nav-bar">
+		<div class="f-nav-bar f-nav-bar-fixed">
 			<div class="f-nav-bar-body">
-				<div class="f-nav-bar-title">
-					<a href="#">css-framework</a>
-				</div><!-- f-nav-bar-fixed-title -->
 				<ul class="f-nav" id="nav">
 					<li><a href="#grid">Макет страницы</a></li>
 					<li><a href="#navigation">Навигация</a></li>
@@ -31,7 +28,6 @@
 				</ul><!-- f-nav -->
 			</div><!-- f-nav-bar-body -->
 		</div><!-- f-nav-bar -->
-
 		<div class="g-row">
 			<div class="g-12">
 				<h1>css-framework</h1>
@@ -341,6 +337,38 @@
 						</ul><!-- f-nav-tabs -->
 					</div><!-- g-3 -->
 				</div><!-- g-row -->
+				<h3>Навигационная панель</h3>
+				<p>Состоит из двух главных элементов, <code>.f-nav-bar</code> и дочернего <code>.f-nav-bar-body</code>. Внутри можно разместить логотип(<code>.f-nav-bar-title</code>) и навигацию(<code>.f-nav</code>):</p>
+<pre class="prettyprint linenums">&lt;div class="f-nav-bar"&gt;
+	&lt;div class="f-nav-bar-body"&gt;
+		&lt;div class="f-nav-bar-title"&gt;
+			&lt;a href="#"&gt;css-framework&lt;/a&gt;
+		&lt;/div&gt;&lt;!-- f-nav-bar-title --&gt;
+		&lt;ul class="f-nav"&gt;
+			&lt;li&gt;&lt;a href="#"&gt;...&lt;/a&gt;&lt;/li&gt;
+		&lt;/ul&gt;&lt;!-- f-nav --&gt;
+	&lt;/div&gt;&lt;!-- f-nav-bar-body --&gt;
+&lt;/div&gt;&lt;!-- f-nav-bar --&gt;</pre>
+				<div class="f-nav-bar">
+					<div class="f-nav-bar-body">
+						<div class="f-nav-bar-title">
+							<a href="#">css-framework</a>
+						</div><!-- f-nav-bar-title -->
+						<ul class="f-nav">
+							<li><a href="#grid">Макет страницы</a></li>
+							<li class="active"><a href="#navigation">Навигация</a></li>
+							<li><a href="#typography">Типографика</a></li>
+							<li><a href="#images">Иллюстрации</a></li>
+							<li><a href="#columns">Колонки</a></li>
+							<li><a href="#forms">Формы</a></li>
+						</ul><!-- f-nav -->
+					</div><!-- f-nav-bar-body -->
+				</div><!-- f-nav-bar -->
+				<h4>Фиксированная навигационная панель</h4>
+				<p>При желании, навигационная панель можно зафиксировать в верхней части окна, дополнив её классом <code>.f-nav-bar-fixed</code>:</p>
+<pre class="prettyprint linenums">&lt;div class="f-nav-bar f-nav-bar-fixed"&gt;
+	...
+&lt;/div&gt;&lt;!-- f-nav-bar-fixed --&gt;</pre>
 				<h3>&laquo;Хлебные крошки&raquo;</h3>
 				<p>Навигация типа - &laquo;хлебные крошки&raquo; создаётся из обычного списка с присвоенным классом <code class="prettyprint">&lt;ul class="f-breadcrumbs"&gt;...&lt;/ul&gt;</code>:</p>
 <pre class="prettyprint linenums">&lt;ul class="f-breadcrumbs"&gt;

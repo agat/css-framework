@@ -908,7 +908,7 @@ input[disabled] {
 /* Tabs navigation
 ---------------------------------------- */
 .f-nav-tabs {
-  border-bottom: 1px solid #cccccc;
+  border-bottom: 1px solid #d9d9d9;
 }
 .f-nav-tabs > li {
   margin: 0 6px -1px 0;
@@ -921,12 +921,12 @@ input[disabled] {
 }
 .f-nav-tabs > li > a:hover {
   background: #eeeeee;
-  border-color: #cccccc;
+  border-color: #d9d9d9;
 }
 .f-nav-tabs > .active > a:hover,
 .f-nav-tabs > .active > a {
   padding: 0 10px;
-  border: 1px solid #cccccc;
+  border: 1px solid #d9d9d9;
   border-bottom: 1px solid #ffffff;
   background: #ffffff;
 }
@@ -962,7 +962,7 @@ input[disabled] {
 .f-nav-list.f-nav-tabs > .active > a:hover,
 .f-nav-list.f-nav-tabs > li > a {
   padding: 0 10px;
-  border: 1px solid #cccccc;
+  border: 1px solid #d9d9d9;
   -moz-border-radius: 0;
   border-radius: 0;
 }
@@ -980,10 +980,7 @@ input[disabled] {
   border-radius: 0 0 3px 3px;
 }
 .f-nav-bar {
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
+  position: relative;
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
@@ -1000,15 +997,18 @@ input[disabled] {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#404040', endColorstr='#1a1a1a', GradientType=0);
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#404040', endColorstr='#1a1a1a', GradientType=0)";
   background-image: linear-gradient(#404040, #1a1a1a);
+  -moz-border-radius: 3px;
+  border-radius: 3px;
 }
 .f-nav-bar .f-nav-bar-body {
   width: 940px;
   margin: auto;
+  height: 36px;
+  line-height: 36px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   zoom: 1;
-  padding: 0 7px 0 0;
 }
 .f-nav-bar .f-nav-bar-body:before,
 .f-nav-bar .f-nav-bar-body:after {
@@ -1021,28 +1021,23 @@ input[disabled] {
 .f-nav-bar .f-nav {
   margin: 0;
   float: left;
-  border: none;
 }
 .f-nav-bar .f-nav > li {
   margin: 0;
 }
 .f-nav-bar .f-nav > li > a {
   color: #cccccc;
-  text-shadow: -1px -1px 0 #000000;
   line-height: 36px;
-  background: none;
-  border: none;
+  text-shadow: -1px -1px 0 #000000;
   padding: 0 10px;
 }
 .f-nav-bar .f-nav > li > a:hover,
 .f-nav-bar .f-nav > .active > a {
   color: #ffffff;
-  background: none;
   text-shadow: 1px 1px 0 #000000;
-  border: none;
 }
 .f-nav-bar-title {
-  padding: 0 15px 0 0;
+  padding: 0 15px;
   font-size: 21px;
   line-height: 33px;
   color: #ffffff;
@@ -1052,6 +1047,15 @@ input[disabled] {
 .f-nav-bar-title a {
   color: #ffffff;
   text-decoration: none;
+}
+.f-nav-bar-fixed {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 2010;
+  -moz-border-radius: 0;
+  border-radius: 0;
 }
 /* Breadcrumbs
 --------------------------------------- */
