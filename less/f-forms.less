@@ -1,21 +1,21 @@
 /* Forms
 ---------------------------------------- */
 form								{  }
-fieldset							{ margin: 28px 0; }
-legend								{ margin: 0; padding: 0 0 14px 0; }
-.f-row								{ margin: 0 0 14px 0; }
+fieldset							{ margin: (@bottom_spacing * 2) 0; }
+legend								{ margin: 0; padding: 0 0 (@bottom_spacing * 2) 0; font-size: @h3_size; font-weight: bold; }
+.f-row								{ margin: 0 0 @bottom_spacing 0; }
 .f-row > label,
-.f-label							{ float: left; text-align: right; width: 200px; padding: 4px 0 0 0; }
-.f-input							{ margin: 0 0 0 220px; }
-.f-input + .f-input					{ margin-top: 7px; }
-.f-input-help						{ font-size: 12px; color: #999; padding-top: 3px; margin: 0; }
+.f-label							{ float: left; text-align: right; width: @form_label_width; padding: @form_text_vertical_spacing 0 0 0; }
+.f-input							{ margin: 0 0 0 (@form_label_width + @grid_gutter_width); }
+.f-input + .f-input					{ margin-top: (@bottom_spacing / 2); }
+.f-input-help						{ font-size: @form_help_text_size; color: @form_help_color; padding-top: 3px; margin: 0; }
 .f-input-comment,
 .f-input-inline						{ margin-left: 5px; }
-.f-input-comment					{ vertical-align: top; display: inline-block; padding: 4px 0 0 0; }
-.f-actions							{ padding: 14px 0 0 220px; margin: 0 0 28px 0; border-top: 1px solid #ccc; }
+.f-input-comment					{ vertical-align: top; display: inline-block; padding: @form_text_vertical_spacing 0 0 0; }
+.f-actions							{ padding: @bottom_spacing 0 (@bottom_spacing * 2) (@form_label_width + @grid_gutter_width); margin: 0; background: @form_action_bg; .border-radius(0 0 @border_radius @border_radius); }
 
 .f-horizontal .f-row > label,
-.f-horizontal .f-label				{ float: none; text-align: left; width: auto; display: block; padding: 0 0 4px; }
+.f-horizontal .f-label				{ float: none; text-align: left; width: auto; display: block; padding: 0 0 @form_text_vertical_spacing; }
 .f-horizontal .f-input				{ margin: 0; }
 .f-horizontal .f-actions			{ padding-left: 0; }
 
@@ -23,23 +23,23 @@ legend								{ margin: 0; padding: 0 0 14px 0; }
 --------------------------------------- */
 select,
 textarea,
-input[type="text"]					{ border: 1px solid; border-color: #bbb #ccc #ddd; height: 28px; padding: 3px 6px; .box-sizing; }
+input[type="text"]					{ border: 1px solid; border-color: @form_input_border_color; height: 28px; padding: @form_input_vertical_spacing 6px; .box-sizing; }
 .f-bu,
 select,
 input[type="text"],
-textarea							{ display: inline-block; vertical-align: top; border-radius: 3px; #font > .base(); color: @text_color; .border-radius; }
-textarea							{ overflow: auto; resize: vertical; padding-right: 3px; height: auto; }
+textarea							{ display: inline-block; vertical-align: top; #font > .base(); color: @text_color; .border-radius; }
+textarea							{ overflow: auto; resize: vertical; padding-right: @form_input_vertical_spacing; height: auto; }
 .f-bu,
 label,
 select,
 button								{ cursor: pointer; }
-.f-bu								{ text-decoration: none; text-align: center; overflow: visible; padding: 3px 10px; position: relative; z-index: 0; }
-.f-bu:active						{ padding-top: 4px; padding-bottom: 2px; }
+.f-bu								{ text-decoration: none; text-align: center; overflow: visible; padding: @form_input_vertical_spacing 10px; position: relative; z-index: 0; }
+.f-bu:active						{ padding-top: @form_input_vertical_spacing + 1; padding-bottom: @form_input_vertical_spacing - 1; }
 select								{ -webkit-appearance: none; }
 textarea,
-input[type="text"]					{ background: #fff; }
+input[type="text"]					{ background: @color_white; }
 textarea,
-input[type="text"]					{ box-shadow: inset 1px 2px 2px rgba(0, 0, 0, 0.1); }
+input[type="text"]					{ .box-shadow(inset 1px 2px 2px rgba(0, 0, 0, 0.1)); }
 
 .f-bu::-moz-focus-inner,
 button::-moz-focus-inner,
@@ -48,9 +48,9 @@ input::-moz-focus-inner				{ padding: 0; border: none; }
 /* Buttons group
 --------------------------------------- */
 .f-buttons							{  }
-.f-buttons .f-bu					{ margin: 0 0 0 -1px; border-radius: 0; }
-.f-buttons .f-bu:first-child		{ border-radius: 3px 0 0 3px; }
-.f-buttons .f-bu:last-child			{ border-radius: 0 3px 3px 0; }
+.f-buttons .f-bu					{ margin: 0 0 0 -1px; .border-radius(0); }
+.f-buttons .f-bu:first-child		{ .border-radius(@border_radius 0 0 @border_radius); }
+.f-buttons .f-bu:last-child			{ .border-radius(0 @border_radius @border_radius 0); }
 
 /* Backgrounds
 --------------------------------------- */
@@ -63,12 +63,6 @@ select								{ .buttonBg(@bu_bg_start, @bu_bg_end); .box-shadow(inset 0 1px 0 0
 .f-bu-info							{ .buttonBg(@bu_info_bg_start, @bu_info_bg_end); }
 .f-bu-success						{ .buttonBg(@bu_success_bg_start, @bu_success_bg_end); }
 .f-bu-warning						{ .buttonBg(@bu_warning_bg_start, @bu_warning_bg_end); }
-
-/* Base shadow
---------------------------------------- */
-.f-nav-vd ul,
-.f-nav ul,
-.f-dropdown							{ box-shadow: 0 0 7px rgba(0, 0, 0, .2); }
 
 /* Checkbox and Radio
 --------------------------------------- */
