@@ -469,7 +469,7 @@ table {
   margin: 0 0 12px 0;
 }
 caption {
-  font-size: 1.2em;
+  font-size: 18px;
   font-weight: bold;
   text-align: center;
   margin: 0 0 12px 0;
@@ -492,7 +492,7 @@ tr:hover th,
 tr:hover td {
   background: #fdf6e3;
 }
-.table-zebra tbody tr:nth-child(2n) {
+.f-table-zebra tbody tr:nth-child(2n) {
   background: #f8f8f8;
 }
 /* Forms
