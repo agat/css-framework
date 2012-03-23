@@ -121,3 +121,31 @@
 		$('[role=' + sNameSpace + ']')[sNameSpace]();
 	});
 })(jQuery);
+
+/*
+
+ <div role="accordion">
+ <section>
+ <h3>Heading 1</h3>
+ <div>
+ <p>Lorem ipsum dolor sit amet...</p>
+ </div>
+ </section>
+ <details>
+ <header>Heading 2</header>
+ <section>
+ <p>Lorem ipsum dolor sit amet...</p>
+ <p>Lorem ipsum dolor sit amet...</p>
+ </section>
+ </details>
+ <div>
+ <div>Heading 2</div>
+ <div>
+ <p>Lorem ipsum dolor sit amet...</p>
+ <p>Lorem ipsum dolor sit amet...</p>
+ <p>Lorem ipsum dolor sit amet...</p>
+ </div>
+ </div>
+ </div><!-- accordion -->
+
+*/
