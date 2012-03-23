@@ -538,7 +538,7 @@ legend {
   padding: 4px 0 0 0;
 }
 .f-actions {
-  padding: 12px 0 24px 220px;
+  padding: 12px 12px 12px 220px;
   margin: 0;
   background: #f3f3f3;
   -moz-border-radius: 0 0 3px 3px;
@@ -556,7 +556,7 @@ legend {
   margin: 0;
 }
 .f-horizontal .f-actions {
-  padding-left: 0;
+  padding: 12px;
 }
 /* Inputs
 --------------------------------------- */
@@ -602,12 +602,19 @@ button {
   position: relative;
   z-index: 0;
 }
+.f-bu:visited {
+  color: #444444;
+}
 .f-bu:active {
   padding-top: 4px;
   padding-bottom: 2px;
 }
 select {
   -webkit-appearance: none;
+}
+option {
+  background: #ffffff;
+  padding: 3px;
 }
 textarea,
 input[type="text"] {
@@ -642,7 +649,6 @@ input::-moz-focus-inner {
 }
 /* Backgrounds
 --------------------------------------- */
-/* TODO сделать нормальный ховер для обычной кнопки */
 .f-bu,
 select {
   background-color: #d9d9d9;
@@ -757,18 +763,15 @@ select:hover {
 .f-radio,
 .f-check {
   display: inline-block;
-  padding: 4px 0 0 0;
+  padding: 3px 0 0 0;
 }
 .f-radio input,
 .f-check input {
   margin: 2px;
 }
-/* Hover state
---------------------------------------- */
-/*select:hover,
-.f-bu:hover							{ -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, .1); -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, .1); box-shadow: 0 1px 5px rgba(0, 0, 0, .1); z-index: 1; }*/
 /* Focus & Active state
 --------------------------------------- */
+a.f-bu:focus,
 .f-bu:active {
   -webkit-box-shadow: inset 1px 2px 2px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: inset 1px 2px 2px rgba(0, 0, 0, 0.1);
@@ -801,21 +804,25 @@ input[disabled] {
 }
 /* Valid, invalid state
 --------------------------------------- */
+.valid .f-check,
+.valid .f-radio,
 .valid .f-input-comment {
-  color: green;
+  color: #859900;
 }
 .valid select,
 .valid textarea,
 .valid input[type="text"] {
-  border-color: green;
+  border-color: #859900;
 }
+.invalid .f-check,
+.invalid .f-radio,
 .invalid .f-input-comment {
-  color: red;
+  color: #dc322f;
 }
 .invalid select,
 .invalid textarea,
 .invalid input[type="text"] {
-  border-color: red;
+  border-color: #dc322f;
 }
 /* Message block
 ---------------------------------------- */

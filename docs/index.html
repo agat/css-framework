@@ -946,7 +946,7 @@
 				</div><!-- g-row -->
 				<h3>Простая форма</h3>
 				<p>Рассмотрим простую форму в одну строку.</p>
-<pre class="prettyprint linenums">&lt;label&gt;Метка: &lt;input type="text" class="g-2"&gt;&lt;/label&gt; &lt;label class="f-check"&gt;&lt;input type="checkbox"&gt; переключатель&lt;/label&gt; &lt;button class="f-bu"&gt;Кнопка&lt;/button&gt;</pre>
+<pre class="prettyprint">&lt;label&gt;Метка: &lt;input type="text" class="g-2"&gt;&lt;/label&gt; &lt;label class="f-check"&gt;&lt;input type="checkbox"&gt; переключатель&lt;/label&gt; &lt;button class="f-bu"&gt;Кнопка&lt;/button&gt;</pre>
 				<p>Выглядеть она будет вот так:</p>
 				<p class="f-demo">
 					<label>Метка: <input type="text" class="g-2"></label> <label class="f-check"><input type="checkbox"> переключатель</label> <button class="f-bu">Кнопка</button>
@@ -1075,7 +1075,7 @@
 				</div><!-- g-row -->
 				<h3>Состояния полей ввода</h3>
 				<div class="g-row">
-					<div class="g-9">
+					<div class="g-8">
 						<div class="f-row">
 							<label>Заблокированные поля:</label>
 							<div class="f-input">
@@ -1097,70 +1097,67 @@
 								<textarea class="g-4" rows="4" cols="50" disabled>Текстовое поле ввода</textarea>
 							</div><!-- f-input -->
 						</div><!-- f-row -->
-					</div><!-- g-9 -->
-					<div class="g-3">
+					</div><!-- g-8 -->
+					<div class="g-4">
 						<p>Поля ввода блокируются добавлением бинарного атрибута <code>disabled</code>:</p>
-<pre class="prettyprint">&lt;input
-	type="text"
-	disabled
-&gt;</pre>
+<pre class="prettyprint">&lt;input type="text" disabled &gt;</pre>
 					</div><!-- g-3 -->
 				</div><!-- g-row -->
 				<div class="g-row">
-					<div class="g-9">
+					<div class="g-8">
 						<div class="f-row">
 							<label>Валидные поля:</label>
 							<div class="f-input valid">
-								<input type="text" class="g-4" value="Поле ввода"> <span class="f-input-comment">Валидное значение</span>
+								<input type="text" class="g-4" value="Поле ввода"> <span class="f-input-comment">Валидное</span>
 							</div><!-- f-input -->
 							<div class="f-input valid">
-								<select class="g-4"><option>Список</option></select> <span class="f-input-comment"><span class="f-ico">W</span> Валидная иконка</span>
+								<select class="g-4"><option>Список</option></select> <span class="f-input-comment">Валидный</span>
 							</div><!-- f-input -->
 							<div class="f-input valid">
-								<label class="f-check"><input type="checkbox"> флажок</label> <span class="f-input-comment"><span class="f-ico">W</span></span>
+								<label class="f-check"><input type="checkbox"> Валидный флажок</label> <span class="f-input-comment"></span>
 							</div><!-- f-input -->
 							<div class="f-input valid">
-								<label class="f-radio"><input type="radio"> радио-кнопка</label> <span class="f-input-comment"><span class="f-ico">W</span></span>
+								<label class="f-radio"><input type="radio"> Валидная радио-кнопка</label> <span class="f-input-comment"></span>
 							</div><!-- f-input -->
 							<div class="f-input valid">
-								<textarea class="g-4" rows="4" cols="50">Текстовое поле ввода</textarea> <span class="f-input-comment"><span class="f-ico">W</span></span>
+								<textarea class="g-4" rows="4" cols="50">Текстовое поле ввода</textarea> <span class="f-input-comment"></span>
 							</div><!-- f-input -->
 						</div><!-- f-row -->
-					</div><!-- g-9 -->
-					<div class="g-3">
+					</div><!-- g-8 -->
+					<div class="g-4">
 						<p>Валидные поля обозначаются добавлением класса <code>.valid</code> к элементу <code>.f-input</code>:</p>
-<pre class="prettyprint">&lt;div
-   class="f-input valid"
-&gt;</pre>
-					</div><!-- g-3 -->
+<pre class="prettyprint linenums">&lt;div class="f-input valid"&gt;
+	...
+&lt;/div&gt;&lt;!--f-input --&gt;</pre>
+					</div><!-- g-4 -->
 				</div><!-- g-row -->
 				<div class="g-row">
-					<div class="g-9">
+					<div class="g-8">
 						<div class="f-row">
 							<label>Невалидные поля:</label>
 							<div class="f-input invalid">
-								<input type="text" class="g-4" value="Поле ввода"> <span class="f-input-comment">Невалидное значение</span>
+								<input type="text" class="g-4" value="Поле ввода"> <span class="f-input-comment">Невалидное</span>
 							</div><!-- f-input -->
 							<div class="f-input invalid">
-								<select class="g-4"><option>Список</option></select> <span class="f-input-comment"><span class="f-ico">X</span> Невалидная иконка</span>
+								<select class="g-4"><option>Список</option></select> <span class="f-input-comment">Невалидный</span>
 							</div><!-- f-input -->
 							<div class="f-input invalid">
-								<label class="f-check"><input type="checkbox"> флажок</label> <span class="f-input-comment"><span class="f-ico">X</span></span>
+								<label class="f-check"><input type="checkbox"> Невалидный флажок</label> <span class="f-input-comment"></span>
 							</div><!-- f-input -->
 							<div class="f-input invalid">
-								<label class="f-radio"><input type="radio"> радио-кнопка</label> <span class="f-input-comment"><span class="f-ico">X</span></span>
+								<label class="f-radio"><input type="radio"> Невалидная радио-кнопка</label> <span class="f-input-comment"></span>
 							</div><!-- f-input -->
 							<div class="f-input invalid">
-								<textarea class="g-4" rows="4" cols="50">Текстовое поле ввода</textarea> <span class="f-input-comment"><span class="f-ico">X</span></span>
+								<textarea class="g-4" rows="4" cols="50">Текстовое поле ввода</textarea> <span class="f-input-comment"></span>
 							</div><!-- f-input -->
 						</div><!-- f-row -->
-					</div><!-- g-9 -->
-					<div class="g-3">
+					</div><!-- g-8 -->
+					<div class="g-4">
 						<p>Невалидные поля обозначаются добавлением класса <code>.invalid</code> к элементу <code>.f-input</code>:</p>
-<pre class="prettyprint">&lt;div
-   class="f-input invalid"
-&gt;</pre>
-					</div><!-- g-3 -->
+<pre class="prettyprint linenums">&lt;div class="f-input invalid"&gt;
+	...
+&lt;/div&gt;&lt;!--f-input --&gt;</pre>
+					</div><!-- g-4 -->
 				</div><!-- g-row -->
 				<h3>Сообщения</h3>
 				<p>Блок с классом <code>.f-message</code> предназначен для вывода сообщений.</p>
@@ -1239,31 +1236,5 @@
 				changeHash: true
 			});
 		</script>
-
-		<div role="accordion">
-			<section>
-				<h3>Heading 1</h3>
-				<div>
-					<p>Lorem ipsum dolor sit amet...</p>
-				</div>
-			</section>
-			<details>
-				<header>Heading 2</header>
-				<section>
-					<p>Lorem ipsum dolor sit amet...</p>
-					<p>Lorem ipsum dolor sit amet...</p>
-				</section>
-			</details>
-			<div>
-				<div>Heading 2</div>
-				<div>
-					<p>Lorem ipsum dolor sit amet...</p>
-					<p>Lorem ipsum dolor sit amet...</p>
-					<p>Lorem ipsum dolor sit amet...</p>
-				</div>
-			</div>
-		</div><!-- accordion -->
-
-
 	</body>
 </html>

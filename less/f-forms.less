@@ -12,12 +12,12 @@ legend								{ margin: 0; padding: 0 0 (@bottom_spacing * 2) 0; font-size: @h3_
 .f-input-comment,
 .f-input-inline						{ margin-left: 5px; }
 .f-input-comment					{ vertical-align: top; display: inline-block; padding: @form_text_vertical_spacing 0 0 0; }
-.f-actions							{ padding: @bottom_spacing 0 (@bottom_spacing * 2) (@form_label_width + @grid_gutter_width); margin: 0; background: @form_action_bg; .border-radius(0 0 @border_radius @border_radius); }
+.f-actions							{ padding: @bottom_spacing @bottom_spacing @bottom_spacing (@form_label_width + @grid_gutter_width); margin: 0; background: @form_action_bg; .border-radius(0 0 @border_radius @border_radius); }
 
 .f-horizontal .f-row > label,
 .f-horizontal .f-label				{ float: none; text-align: left; width: auto; display: block; padding: 0 0 @form_text_vertical_spacing; }
 .f-horizontal .f-input				{ margin: 0; }
-.f-horizontal .f-actions			{ padding-left: 0; }
+.f-horizontal .f-actions			{ padding: @bottom_spacing; }
 
 /* Inputs
 --------------------------------------- */
@@ -34,8 +34,10 @@ label,
 select,
 button								{ cursor: pointer; }
 .f-bu								{ text-decoration: none; text-align: center; overflow: visible; padding: @form_input_vertical_spacing 10px; position: relative; z-index: 0; }
+.f-bu:visited						{ color: @text_color; }
 .f-bu:active						{ padding-top: @form_input_vertical_spacing + 1; padding-bottom: @form_input_vertical_spacing - 1; }
 select								{ -webkit-appearance: none; }
+option								{ background: @color_white; padding: @form_input_vertical_spacing; }
 textarea,
 input[type="text"]					{ background: @color_white; }
 textarea,
@@ -54,7 +56,6 @@ input::-moz-focus-inner				{ padding: 0; border: none; }
 
 /* Backgrounds
 --------------------------------------- */
-/* TODO сделать нормальный ховер для обычной кнопки */
 .f-bu,
 select								{ .buttonBg(@bu_bg_start, @bu_bg_end); .box-shadow(inset 0 1px 0 0 rgba(255, 255, 255, .5)); border: 1px solid; border-color: transparent rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25); }
 .f-bu-warning,
@@ -67,25 +68,21 @@ select								{ .buttonBg(@bu_bg_start, @bu_bg_end); .box-shadow(inset 0 1px 0 0
 /* Checkbox and Radio
 --------------------------------------- */
 .f-radio,
-.f-check							{ display: inline-block; padding: 4px 0 0 0; }
+.f-check							{ display: inline-block; padding: @form_input_vertical_spacing 0 0 0; }
 .f-radio input,
 .f-check input						{ margin: 2px; }
 
-/* Hover state
---------------------------------------- */
-/*select:hover,
-.f-bu:hover							{ -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, .1); -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, .1); box-shadow: 0 1px 5px rgba(0, 0, 0, .1); z-index: 1; }*/
-
 /* Focus & Active state
 --------------------------------------- */
-.f-bu:active						{ -webkit-box-shadow: inset 1px 2px 2px rgba(0, 0, 0, 0.1); -moz-box-shadow: inset 1px 2px 2px rgba(0, 0, 0, 0.1); box-shadow: inset 1px 2px 2px rgba(0, 0, 0, 0.1); z-index: 1; }
+a.f-bu:focus,
+.f-bu:active						{ .box-shadow(inset 1px 2px 2px rgba(0, 0, 0, 0.1)); z-index: 1; }
 .f-bu:active,
 .f-bu:focus,
 input[type="text"]:focus,
 textarea:focus						{ border-color: #268bd2; outline: none; }
 .f-bu:focus,
 input[type="text"]:focus,
-textarea:focus						{ -webkit-box-shadow: 0 0 5px rgba(38, 139, 210, .3); -moz-box-shadow: 0 0 5px rgba(38, 139, 210, .3); box-shadow: 0 0 5px rgba(38, 139, 210, .3); }
+textarea:focus						{ .box-shadow(0 0 5px rgba(38, 139, 210, .3)); }
 
 /* Disabled state
 --------------------------------------- */
@@ -98,12 +95,16 @@ input[disabled]						{ opacity: 0.75; cursor: not-allowed; }
 /* Valid, invalid state
 --------------------------------------- */
 .valid								{  }
-.valid .f-input-comment				{ color: green; }
+.valid .f-check,
+.valid .f-radio,
+.valid .f-input-comment				{ color: @color_green; }
 .valid select,
 .valid textarea,
-.valid input[type="text"]			{ border-color: green; }
+.valid input[type="text"]			{ border-color: @color_green; }
 .invalid							{  }
-.invalid .f-input-comment			{ color: red; }
+.invalid .f-check,
+.invalid .f-radio,
+.invalid .f-input-comment			{ color: @color_red; }
 .invalid select,
 .invalid textarea,
-.invalid input[type="text"]			{ border-color: red; }
+.invalid input[type="text"]			{ border-color: @color_red; }
