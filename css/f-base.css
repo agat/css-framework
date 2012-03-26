@@ -1065,6 +1065,9 @@ input[disabled] {
   -moz-border-radius: 0;
   border-radius: 0;
 }
+.f-nav-bar-fixed .f-nav-bar-title {
+  padding-left: 0;
+}
 /* Breadcrumbs
 --------------------------------------- */
 .f-breadcrumbs {
