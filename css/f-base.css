@@ -681,11 +681,11 @@ select:hover {
 }
 .f-bu-warning,
 .f-bu-success,
-.f-bu-info {
+.f-bu-default {
   color: #ffffff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
-.f-bu-info {
+.f-bu-default {
   background-color: #268bd2;
   background-repeat: repeat-x;
   background-image: -moz-linear-gradient(#78b9e6, #268bd2);
@@ -697,7 +697,7 @@ select:hover {
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#78b9e6', endColorstr='#268bd2', GradientType=0)";
   background-image: linear-gradient(#78b9e6, #268bd2);
 }
-.f-bu-info:hover {
+.f-bu-default:hover {
   background-color: #227dbc;
   background-repeat: repeat-x;
   background-image: -moz-linear-gradient(#62ade3, #227dbc);
