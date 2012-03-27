@@ -445,10 +445,6 @@ address,
 pre,
 hr,
 .hr,
-.form,
-.form legend,
-.form fieldset,
-.f-message,
 h1,
 .h1,
 h2,
@@ -827,13 +823,16 @@ input[disabled] {
 ---------------------------------------- */
 .f-message {
   padding: 8px 27px 8px 12px;
+  margin: 0 0 12px 0;
   background: #feffe3;
   border: 1px solid #eff3d5;
   color: #5c5d46;
   position: relative;
   border-radius: 3px;
 }
-/*.f-message h5						{ font-size: 16px; }*/
+.f-message h5 {
+  margin-bottom: 6px;
+}
 .f-message .close {
   position: absolute;
   right: 10px;
@@ -845,10 +844,6 @@ input[disabled] {
 }
 .f-message p {
   margin-bottom: 4px;
-}
-.f-message :last-child,
-.f-message * {
-  margin-bottom: 0;
 }
 .f-message-actions {
   text-align: right;
