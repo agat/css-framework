@@ -645,6 +645,11 @@ input::-moz-focus-inner {
   padding: 0;
   border: none;
 }
+.lt-ie8 select,
+.lt-ie8 textarea,
+.lt-ie8 input[type="text"] {
+  height: auto;
+}
 /* Buttons group
 --------------------------------------- */
 .f-buttons .f-bu {
@@ -758,7 +763,7 @@ input::-moz-focus-inner {
 }
 /* Focus & Active state
 --------------------------------------- */
-a.f-bu:focus,
+.f-bu:focus,
 .f-bu:active {
   -webkit-box-shadow: inset 1px 2px 2px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: inset 1px 2px 2px rgba(0, 0, 0, 0.1);
