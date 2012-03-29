@@ -10,3 +10,9 @@
 .f-col-2 .f-column					{ width: 50%; }
 .f-col-3 > .f-column:first-child	{ width: 67%; }
 .f-col-3 > .f-column				{ width: 33%; }
+
+.lt-ie8 .f-column			 		{ padding: 0; }
+.lt-ie8 .f-column > *		 		{ margin-left: @grid_gutter_width/2; }
+.lt-ie8 .f-column:first-child > *	{ margin-right: @grid_gutter_width/2; margin-left: 0; }
+.lt-ie8 .f-col-4 .f-column,
+.lt-ie8 .f-col-3 .f-column .f-column		{ width: 47%; }
