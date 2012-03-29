@@ -29,14 +29,17 @@ input[type="text"]					{ border: 1px solid; border-color: @form_input_border_col
 .f-bu,
 select,
 input[type="text"],
-textarea							{ display: inline-block; vertical-align: top; #font > .base(); color: @text_color; .border-radius; }
+textarea							{ display: inline-block; vertical-align: middle; #font > .base(); color: @text_color; .border-radius; }
 textarea							{ overflow: auto; resize: vertical; padding-right: @form_input_vertical_spacing; height: auto; }
 .f-bu,
 label,
 select,
 button								{ cursor: pointer; }
-.f-bu								{ text-decoration: none; text-align: center; overflow: visible; padding: @form_input_vertical_spacing 10px; position: relative; z-index: 0; }
-.f-bu:link							{ color: @text_color; }
+.f-bu								{ color: @text_color; text-decoration: none; text-align: center; overflow: visible; padding: @form_input_vertical_spacing 10px; position: relative; z-index: 0; }
+.f-bu:link,
+.f-bu:visited,
+.f-bu:hover,
+.f-bu:active						{ color: @text_color; }
 .f-bu:active						{ padding-top: @form_input_vertical_spacing + 1; padding-bottom: @form_input_vertical_spacing - 1; }
 select								{ -webkit-appearance: none; }
 option								{ background: @color_white; padding: @form_input_vertical_spacing; }
