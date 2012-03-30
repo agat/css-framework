@@ -1,16 +1,13 @@
 /* Pager navigation
 ---------------------------------------- */
 .f-pager							{ margin: 0 0 @bottom_spacing 0; }
-.f-pager ul							{ text-align: center; margin: 0; }
+.f-pager ul							{ text-align: center; padding: 0; margin: 0; }
 .f-pager-left ul					{ text-align: left; }
 .f-pager-right ul					{ text-align: right; }
-.f-pager-prev						{ margin-right: @bottom_spacing/2; }
-.f-pager-next						{ margin-left: @bottom_spacing/2; }
-.f-pager-prev a,
-.f-pager-next a						{ }
-.f-pager .active strong,
-.f-pager a							{ text-decoration: none; padding: 0 5px; display: block; }
-.f-pager a:hover					{ text-decoration: underline; }
-.f-pager strong,
-.f-pager ul							{ margin: 0; padding: 0; }
-.f-pager li							{ list-style: none; display: inline-block; }
+.f-pager li							{ list-style: none; display: inline; padding: 0 5px; }
+.f-pager .active,
+.f-pager a							{ text-decoration: none; }
+.f-pager-prev						{ margin-right: @bottom_spacing; }
+.f-pager-next						{ margin-left: @bottom_spacing; }
+.f-pager-prev a:hover,
+.f-pager-next a:hover				{ text-decoration: none; }
