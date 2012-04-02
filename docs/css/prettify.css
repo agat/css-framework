@@ -12,6 +12,7 @@
 	.atv { color: #2aa198 }
 	.dec, .var { color: #606 }
 	.fun { color: red }
+	.prettyprint a { text-decoration: none; }
 }
 
 @media print, projection {
