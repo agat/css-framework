@@ -92,11 +92,16 @@
 		<section class="g-row">
 			<div class="g-12">
 				<h2>Как подключить</h2>
-				<pre class="prettyprint linenums">&lt;head&gt;
-	...
-	&lt;link href="/css/framework.css" rel="stylesheet"&gt;
-	...
-&lt;/head&gt;</pre>
+				<pre class="prettyprint linenums">&lt;!doctype html&gt;
+&lt;!--[if lt IE 7]&gt;&lt;html class="lt-ie9 lt-ie8 lt-ie7" lang="ru"&gt;&lt;![endif]--&gt;
+&lt;!--[if IE 7]&gt;&lt;html class="lt-ie9 lt-ie8" lang="ru"&gt;&lt;![endif]--&gt;
+&lt;!--[if IE 8]&gt;&lt;html class="lt-ie9" lang="ru"&gt;&lt;![endif]--&gt;
+&lt;!--[if gt IE 8]&gt;&lt;!--&gt;&lt;html lang="ru"&gt;&lt;!--&lt;![endif]--&gt;
+	&lt;head&gt;
+		...
+		&lt;link href="/css/framework.css" rel="stylesheet"&gt;
+		...
+	&lt;/head&gt;</pre>
 			</div><!-- g-12 -->
 		</section><!-- g-row -->
 		<section id="grid" class="g-row">
