@@ -46,14 +46,14 @@
 						<h3>Лёгкий</h3>
 						<p>Увеличит размер вашего проекта всего на несколько кибибайт:</p>
 						<ul>
-							<li>4 KiB сжатая версия</li>
-							<li>5 KiB уменьшенная(minify) версия</li>
+							<li>5 KiB сжатая(zip) версия</li>
+							<li>13 KiB уменьшенная(minify) версия</li>
 						</ul>
 					</div><!-- g-4 -->
 					<div class="g-4">
 						<h3>Совместимый</h3>
-						<p>Поддержка всех современных браузеров.</p>
 						<p>Безопасная деградацию для старых браузеров не поддерживающих CSS3 в полном объёме.</p>
+						<p>Не навредит вашему проекту, так как использует префикс &laquo;f-&raquo; для всех блоков, что исключает конфликт имён.</p>
 					</div><!-- g-4 -->
 					<div class="g-4">
 						<h3>Стильный</h3>
@@ -71,22 +71,12 @@
 						<p>Весь фреймворк размещается в одном файле.</p>
 					</div><!-- g-4 -->
 					<div class="g-4">
-						<h3>Понятный</h3>
-						<p>Подробная документация на одной странице.</p>
-					</div><!-- g-4 -->
-				</div><!-- g-row -->
-				<div class="g-row">
-					<div class="g-4">
-						<h3>Дружелюбный</h3>
-						<p>Не навредит вашему проекту, так как использует префикс &laquo;f-&raquo; для всех блоков, что исключает конфликт имён.</p>
-					</div><!-- g-4 -->
-					<div class="g-4">
-						<h3>Примерный</h3>
-					</div><!-- g-4 -->
-					<div class="g-4">
 						<h3>Социальный</h3>
 						<p>Проект размещается на площадке GitHub: <a href="https://github.com/agat/css-framework">/agat/css-framework</a>.</p>
-						<p>Следите за новостями и обновлениями через <a href="https://twitter.com/#!/_framework">твиттер</a>.</p>
+						<ul>
+							<li><a href="#">Загрузить всё с документацией</a></li>
+							<li><a href="#">Написать об ошибке</a></li>
+						</ul>
 					</div><!-- g-4 -->
 				</div><!-- g-row -->
 			</div><!-- g-12 -->
@@ -458,7 +448,7 @@
 					<li class="cur">Продукт</li>
 				</ul><!-- f-breadcrumb -->
 				<h3>Постраничные ссылки</h3>
-				<p>Класс <code class="prettyprint">&lt;div class="f-pager"&gt;...&lt;/div&gt;</code> служит основой для постраничной навигации. Внутри распологается список ссылок.</p>
+				<p>Класс <code class="prettyprint">&lt;div class="f-pager"&gt;...&lt;/div&gt;</code> служит основой для постраничной навигации. Внутри располагается список ссылок.</p>
 				<p>Ссылки &laquo;Вперёд&raquo; и &laquo;Назад&raquo; отделяются от основных классами <code>.f-pager-prev</code> и <code>.f-pager-next</code>. Активный элемент - классом <code>.active</code>.</p>
 <pre class="prettyprint linenums">&lt;div class="f-pager"&gt;
 	&lt;ul&gt;
@@ -469,7 +459,7 @@
 		&lt;li class="f-pager-next"&gt;&lt;a href="#"&gt;Вперёд &amp;#10095;&lt;/a&gt;&lt;/li&gt;
 	&lt;/ul&gt;
 &lt;/div&gt;&lt;!-- f-pager --&gt;</pre>
-				<p>По умолчанию, постраничная навигация отцентрированна:</p>
+				<p>По умолчанию, постраничная навигация выровненна по центру:</p>
 				<div class="f-pager">
 					<ul>
 						<li class="f-pager-prev"><a href="#">&larr; Назад</a></li>
@@ -797,7 +787,7 @@
 							<small>Название картинки</small></a>
 					</div><!-- g-2 -->
 				</div><!-- f-gallery -->
-				<p>Эти элементы комбинируются со знакомымми уже нам классами макета страницы <code>.g-row, .g-1, .g-2, .g-3</code> и т.д.. Позволяющими задавать любую ширину мультимедиа-элементам.</p>
+				<p>Эти элементы комбинируются со знакомыми уже нам классами макета страницы <code>.g-row, .g-1, .g-2, .g-3</code> и т.д.. Позволяющими задавать любую ширину галереи картинок.</p>
 				<div class="f-demo">
 					<div class="g-row f-gallery">
 						<div class="g-5 f-gallery-item">
@@ -831,7 +821,7 @@
 		<section id="columns" class="g-row">
 			<div class="g-12">
 				<h2>Колонки</h2>
-				<p>Для создания колонок с одинакогой шириной сожержимого и фиксированным расстоянием между ними применяется родительский элемент <code>.f-col-x</code> с вложенными <code>.f-column</code>. Где <code>x</code> может быть 1, 2, 3 или 4.</p>
+				<p>Для создания колонок с одинаковой шириной содержимого и фиксированным расстоянием между ними применяется родительский элемент <code>.f-col-x</code> с вложенными <code>.f-column</code>. Где <code>x</code> может быть 1, 2, 3 или 4.</p>
 				<h4>2 колонки</h4>
 				<p>Для создания 2-ух колонок(шириной 50%/50%) требуется родительский элемент <code>.f-col-2</code> с вложенными 2 элементами <code>.f-column</code>.</p>
 <pre class="prettyprint linenums">&lt;div class="f-col-2"&gt;
@@ -883,7 +873,7 @@
 					</div><!-- f-col-3 -->
 				</div><!-- f-demo -->
 				<h3>4 колонки</h3>
-				<p>Для создания 4-ёх колонок(каждая шириной 25%) требуется родительский элемент <code>.f-col-4</code> с вложенными элементами <code>.f-column</code>.</p>
+				<p>Для создания 4-х колонок(каждая шириной 25%) требуется родительский элемент <code>.f-col-4</code> с вложенными элементами <code>.f-column</code>.</p>
 <pre class="prettyprint linenums">&lt;div class="f-col-4"&gt;
 	&lt;div class="f-column"&gt;
 		&lt;div class="f-column"&gt;
@@ -991,7 +981,7 @@
 					</div><!-- g-7 -->
 				</div><!-- g-row -->
 				<h3>Радио-кнопки и флажки</h3>
-				<p>Простейшая конструкция из минимального набора наобходимых элементов, таких как <code>&lt;label&gt;</code> и <code>&lt;input&gt;</code>.</p>
+				<p>Простейшая конструкция из минимального набора необходимых элементов, таких как <code>&lt;label&gt;</code> и <code>&lt;input&gt;</code>.</p>
 				<p>Радио-кнопки помечаются классом <code>.f-radio</code> на элементе <code>&lt;label&gt;</code>. Флажки классом <code>.f-check</code>.</p>
 				<div class="g-row">
 					<div class="g-7">
@@ -1116,7 +1106,7 @@
 					<div class="g-5">
 						<br>
 						<br>
-						<p>Основной компонент фомы, это контейнер с классом <code>.f-row</code> и двумя элементами внутри. Метки и элемента с классом <code>.f-input</code>:</p>
+						<p>Основной компонент формы, это контейнер с классом <code>.f-row</code> и двумя элементами внутри. Метки и элемента с классом <code>.f-input</code>:</p>
 <pre class="prettyprint linenums">&lt;div class="f-row"&gt;
 	&lt;label&gt;...&lt;/label&gt;
 	&lt;div class="f-input"&gt;
@@ -1128,7 +1118,7 @@
 <pre class="prettyprint linenums">&lt;div class="f-input"&gt;
 	&lt;input type="text"&gt;
 	&lt;span class="f-input-comment"&gt;
-		Основной комметарий
+		Основной комментарий
 	&lt;/span&gt;
 	&lt;p class="f-input-help"&gt;
 		Подсказка...
