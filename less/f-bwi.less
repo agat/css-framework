@@ -1,6 +1,18 @@
-/* Block with image
----------------------------------------- */
-.f-bwi								{ margin: 0 0 @bottom_spacing 0; .clearfix; }
-.f-bwi-pic							{ float: left; margin-right: @bottom_spacing; }
-.f-bwi-text							{ overflow: auto; }
-.f-bwi-right .f-bwi-pic				{ float: right; margin-right: 0; margin-left: @bottom_spacing; }
+// Block with image
+// ---------------------------------------
+.f-bwi {
+	.clearfix;
+	margin: 0 0 @bottom_spacing 0;
+}
+.f-bwi-pic {
+	float: left;
+	margin-right: @bottom_spacing;
+}
+.f-bwi-text {
+	overflow: auto;
+}
+.f-bwi-right .f-bwi-pic {
+	float: right;
+	margin-left: @bottom_spacing;
+	margin-right: 0;
+}
