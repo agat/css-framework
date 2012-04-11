@@ -1,9 +1,21 @@
-/* Base body & links styles
----------------------------------------- */
-html								{  }
-body								{ color: @text_color; background: @background_color; #font > .base(); }
+// Base body & links styles
+// ---------------------------------------
+body {
+	#font > .base();
+	background: @background_color;
+	color: @text_color;
+}
 
-a									{ color: @link_color; }
-a:visited							{ color: @link_color_visited; }
-a:hover								{ color: @link_color_hover; }
-a:active							{ outline: none; }
+a {
+	color: @link_color;
+
+	&:visited {
+		color: @link_color_visited;
+	}
+	&:hover {
+		color: @link_color_hover;
+	}
+	&:active {
+		outline: none;
+	}
+}
