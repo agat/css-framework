@@ -2,39 +2,39 @@
 // ---------------------------------------
 
 // Base colors
-@background_color:	#fff;
-@text_color:		#444;
+@background_color:		#fff;
+@text_color:			#444;
 
 // Links
-@link_color:         #268bd2;
-@link_color_hover:	darken(@link_color, 10);
-@link_color_visited:darken(@link_color, 20);
+@link_color:        	#268bd2;
+@link_color_hover:		darken(@link_color, 10);
+@link_color_visited:	darken(@link_color, 20);
 
 // Colors
-@color_orange:		#cb4b16;
-@color_yellow_light:#fdf6e3;
-@color_red:			#dc322f;
-@color_green:		#859900;
-@color_blue:		#268bd2;
+@color_orange:			#cb4b16;
+@color_yellow_light:	#fdf6e3;
+@color_red:				#dc322f;
+@color_green:			#859900;
+@color_blue:			#268bd2;
 
-@color_white:		#fff;
-@color_light:		#eee;
-@color_lighter:		#ccc;
-@color_gray:		#888;
-@color_darker:		#666;
-@color_dark:		#333;
-@color_black:		#000;
+@color_white:			#fff;
+@color_light:			#eee;
+@color_lighter:			#ccc;
+@color_gray:			#888;
+@color_darker:			#666;
+@color_dark:			#333;
+@color_black:			#000;
 
-@header_color:		@color_dark;
-@source_bg:			@color_yellow_light;
-@source_bg_inversed:#073642;
+@header_color:			@color_dark;
+@source_bg:				@color_yellow_light;
+@source_bg_inversed:	#073642;
 
 // Fonts & text
 // ---------------------------------------
 
 // Font Stacks
-@font_sans_serif:	Arial, 'Helvetica Neue', Helvetica, sans-serif;
-@font_monospace:	Consolas, 'Lucida Console', Monaco, monospace;
+@font_sans_serif:		Arial, 'Helvetica Neue', Helvetica, sans-serif;
+@font_monospace:		Consolas, 'Lucida Console', Monaco, monospace;
 
 #font {
 	.base(@weight: normal, @size: @font_size, @line_height: @line_height) {
@@ -46,76 +46,76 @@
 }
 
 // Base fonts
-@font:			@font_sans_serif;
-@font_size:		13px;
-@line_height:	18px;
+@font:					@font_sans_serif;
+@font_size:				13px;
+@line_height:			18px;
 
 // Text size
-@h1_size:			26px;
-@h2_size:			@h1_size - 4;
-@h3_size:			@h2_size - 4;
-@h4_size:			@h3_size - 4;
-@h5_size:			@h4_size - 2;
+@h1_size:				26px;
+@h2_size:				@h1_size - 4;
+@h3_size:				@h2_size - 4;
+@h4_size:				@h3_size - 4;
+@h5_size:				@h4_size - 2;
 
 // Other
-@border_radius:		3px;
-@bottom_spacing:	@line_height - 6;
+@border_radius:			3px;
+@bottom_spacing:		@line_height - 6;
 
 // Z-indexes
-@z_ndex_nav_bar:	2010;
-@z_ndex_nav:		2000;
+@z_ndex_nav_bar:		2010;
+@z_ndex_nav:			2000;
 
 // Grid
-@grid_columns:		12;
-@grid_column_width:	60px;
-@grid_gutter_width:	20px;
-@site_width:		(@grid_columns * @grid_column_width) + (@grid_gutter_width * (@grid_columns - 1));
+@grid_columns:			12;
+@grid_column_width:		60px;
+@grid_gutter_width:		20px;
+@site_width:			(@grid_columns * @grid_column_width) + (@grid_gutter_width * (@grid_columns - 1));
 
 // Components variables
 // ---------------------------------------
 
 // Navigation
 // ---------------------------------------
-@nav_height:					28px;
-@nav_bg:						@color_white;
-@nav_border_color:				darken(@color_white, 15%);
-@nav_hover_color:				@color_black;
-@nav_hover_border_color:		@color_light;
-@nav_hover_bg:					@color_light;
-@nav_active_color:				@color_black;
-@nav_active_border_color:		@color_lighter;
-@nav_active_bg:					@color_white;
-@nav_bar_height:				36px;
-@nav_bar_text_color:			@color_lighter;
-@nav_bar_text_color_shadow:		@color_black;
-@nav_bar_text_color_active:		@color_white;
+@nav_height:						28px;
+@nav_bg:							@color_white;
+@nav_border_color:					darken(@color_white, 15%);
+@nav_hover_color:					@color_black;
+@nav_hover_border_color:			@color_light;
+@nav_hover_bg:						@color_light;
+@nav_active_color:					@color_black;
+@nav_active_border_color:			@color_lighter;
+@nav_active_bg:						@color_white;
+@nav_bar_height:					36px;
+@nav_bar_text_color:				@color_lighter;
+@nav_bar_text_color_shadow:			@color_black;
+@nav_bar_text_color_active:			@color_white;
 @nav_bar_text_color_shadow_active:	@color_black;
-@nav_bar_title_text_size:		@h2_size;
-@nav_bar_bg:					@color_dark;
+@nav_bar_title_text_size:			@h2_size;
+@nav_bar_bg:						@color_dark;
 
 // Tables
 // ---------------------------------------
-@table_header_bg:				lighten(@color_light, 2%);
-@table_hover_bg:				@color_yellow_light;
-@table_border_color:			@color_light;
+@table_header_bg:					lighten(@color_light, 2%);
+@table_hover_bg:					@color_yellow_light;
+@table_border_color:				@color_light;
 
 // Forms
 // ---------------------------------------
-@form_label_width:				200px;
-@form_help_text_size:			12px;
-@form_help_color:				@color_gray;
-@form_text_vertical_spacing:	5px;
-@form_action_bg:				lighten(@color_light, 2%);
-@form_input_border_color:		darken(@color_lighter, 5%) @color_lighter lighten(@color_lighter, 5%);
-@form_input_vertical_spacing:	3px;
+@form_label_width:					200px;
+@form_help_text_size:				12px;
+@form_help_color:					@color_gray;
+@form_text_vertical_spacing:		5px;
+@form_action_bg:					lighten(@color_light, 2%);
+@form_input_border_color:			darken(@color_lighter, 5%) @color_lighter lighten(@color_lighter, 5%);
+@form_input_vertical_spacing:		3px;
 
 // Buttons
 // ---------------------------------------
-@bu_bg_start:					@color_white;
-@bu_bg_end:						lighten(@color_lighter, 5%);
-@bu_info_bg_start:				lighten(@color_blue, 20%);
-@bu_info_bg_end:				@color_blue;
-@bu_success_bg_start:			lighten(@color_green, 10%);
-@bu_success_bg_end:				@color_green;
-@bu_warning_bg_start:			lighten(@color_red, 20%);
-@bu_warning_bg_end:				@color_red;
+@bu_bg_start:						@color_white;
+@bu_bg_end:							lighten(@color_lighter, 5%);
+@bu_info_bg_start:					lighten(@color_blue, 20%);
+@bu_info_bg_end:					@color_blue;
+@bu_success_bg_start:				lighten(@color_green, 10%);
+@bu_success_bg_end:					@color_green;
+@bu_warning_bg_start:				lighten(@color_red, 20%);
+@bu_warning_bg_end:					@color_red;
