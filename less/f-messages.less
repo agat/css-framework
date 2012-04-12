@@ -1,14 +1,62 @@
-/* Message block
----------------------------------------- */
-.f-message							{ padding: 8px 27px 8px 12px; margin: 0 0 @bottom_spacing 0; background: #feffe3; border: 1px solid #eff3d5; color: #5c5d46; position: relative; border-radius: 3px; }
-.f-message h5						{ margin-bottom: @bottom_spacing/2; }
-.f-message .close					{ position: absolute; right: 10px; top: 8px; font-weight: bold; font-size: 18px; cursor: pointer; opacity: 0.2; }
-.f-message p						{ margin-bottom: 4px; }
-.f-message-actions					{ text-align: right; margin: 0 -15px 0 0; }
-.f-message-actions .f-bu			{ margin-left: 5px; }
-.f-message-error					{ background: #ffebe1; border-color: #ffddd3; color: #5c4c45; }
-.f-message-success					{ background: #e9f2c9; border-color: #dbe4bb; color: #4b5331; }
+// Message block
+// ---------------------------------------
+.f-message {
+	background: #feffe3;
+	border-radius: 3px;
+	border: 1px solid #eff3d5;
+	color: #5c5d46;
+	margin: 0 0 @bottom_spacing 0;
+	padding: 8px 27px 8px 12px;
+	position: relative;
+	
+	h5 {
+		margin-bottom: @bottom_spacing/2;
+	}
+	.close {
+		cursor: pointer;
+		font-size: 18px;
+		font-weight: bold;
+		opacity: 0.2;
+		position: absolute;
+		right: 10px;
+		top: 8px;
+	}
+	p {
+		margin-bottom: 4px;
+	}
+}
 
-.close								{ font-weight: bold; font-size: 18px; cursor: pointer; opacity: 0.2; }
-.close:before						{ content: '\00D7'; }
-.close:hover						{ opacity: 0.8; }
+.f-message-actions {
+	margin: 0 -15px 0 0;
+	text-align: right;
+
+	.f-bu {
+		margin-left: 5px;
+	}
+}
+.f-message-error {
+	background: #ffebe1;
+	border-color: #ffddd3;
+	color: #5c4c45;
+}
+.f-message-success {
+	background: #e9f2c9;
+	border-color: #dbe4bb;
+	color: #4b5331;
+}
+
+// Close element
+// ---------------------------------------
+.close {
+	font-weight: bold;
+	font-size: 18px;
+	cursor: pointer;
+	opacity: 0.2;
+
+	&:before {
+		content: '\00D7';
+	}
+	&:hover {
+		opacity: 0.8;
+	}
+}
