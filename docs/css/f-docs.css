@@ -7,6 +7,7 @@ section.g-row		{ padding: 50px 0 0 0; }
 /* Teaser
 --------------------------------------- */
 .f-teaser			{ margin: 0 0 40px 0; }
+.f-teaser-download	{ float: right; margin: 8px 0 0; }
 .f-teaser h1		{ font-size: 40px; font-weight: normal; }
 .f-teaser h2		{ font-weight: normal; }
 
