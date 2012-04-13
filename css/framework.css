@@ -1,7 +1,7 @@
 /* css-framework
 
-	Version:	0.4 beta
-	Author:		Aleksej Romanovskij (http://css-framework.ru)
+	Version:	0.4.0
+	Author:		Aleksej Romanovskij (http://css-framework.com)
 	License:	Creative Commons Attribution 3.0 Unported License (http://creativecommons.org/licenses/by/3.0/)
 
 ---------------------------------------- */
@@ -461,7 +461,7 @@ h4,
 table {
   border-collapse: collapse;
   border-spacing: 0;
-  margin: 0 0 12px 0;
+  margin: 24px 0;
   max-width: 100%;
   width: 100%;
 }
@@ -1007,6 +1007,9 @@ input[disabled] {
 .f-nav-bar .f-nav > .active > a {
   color: #ffffff;
   text-shadow: 1px 1px 0 #000000;
+}
+.f-nav-bar .f-nav-right {
+  float: right;
 }
 .f-nav-bar-title {
   color: #ffffff;
