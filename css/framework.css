@@ -221,16 +221,15 @@ section {
 .lt-ie8 .f-column {
   padding: 0;
 }
-.lt-ie8 .f-column {
+.lt-ie8 .f-column > * {
   margin-left: 10px;
 }
-.lt-ie8 .f-column:first-child {
+.lt-ie8 .f-column:first-child > * {
   margin-right: 10px;
   margin-left: 0;
 }
-.lt-ie8 .f-col-4 .f-column,
-.lt-ie8 .f-col-3 .f-column .f-column {
-  width: 47%;
+.lt-ie8 .f-column .f-column {
+  margin: 0;
 }
 body {
   font: normal 13px / 18px Arial, 'Helvetica Neue', Helvetica, sans-serif;
@@ -365,7 +364,6 @@ pre {
   -o-tab-size: 4;
   tab-size: 4;
   white-space: pre-wrap;
-  white-space: pre;
   word-wrap: break-word;
 }
 code,
