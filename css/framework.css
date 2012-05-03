@@ -1142,3 +1142,9 @@ input[disabled] {
   display: block;
   padding: 0 5px;
 }
+.f-tab {
+  display: none;
+}
+.f-tab.active {
+  display: block;
+}

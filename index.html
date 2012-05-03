@@ -32,6 +32,7 @@
 					<li><a href="#images">Иллюстрации</a></li>
 					<li><a href="#columns">Колонки</a></li>
 					<li><a href="#forms">Формы</a></li>
+					<li><a href="#js">JS</a></li>
 				</ul><!-- f-nav -->
 				<ul class="f-nav f-nav-right">
 					<li><a href="https://github.com/agat/css-framework/issues/new">Написать об ошибке</a></li>
@@ -1326,7 +1327,44 @@
 				</div><!-- g-row -->
 			</div><!-- g-12 -->
 		</section><!-- g-row -->
+        <section id="js" class="g-row">
+            <div class="g-12">
+                <h2>JavaScript-компоненты</h2>
+                <h3>Вкладки</h3>
+                <script src="js/jquery.f-tabs.js"></script>
 
+                <div class="g-row">
+                    <div class="g-7">
+<pre class="prettyprint linenums">&lt;ul class="f-nav f-nav-tabs"&gt;
+    &lt;li class="active"&gt;
+        &lt;a href="#tab-messages" data-toggle="f-tab"&gt;Сообщения&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;a href="#tab-lists" data-toggle="f-tab"&gt;Списки&lt;/a&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;&lt;!-- f-nav-tabs --&gt;
+&lt;div id="tab-messages" class="f-tab active"&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet...&lt;/p&gt;
+&lt;/div&gt;&lt;!-- f-tab --&gt;
+&lt;div id="tab-lists" class="f-tab"&gt;
+    &lt;p&gt;Aliquam arcu libero...&lt;/p&gt;
+&lt;/div&gt;&lt;!-- f-tab --&gt;</pre>
+                    </div><!-- g-7 -->
+                    <div class="g-5">
+                        <ul class="f-nav f-nav-tabs">
+                            <li class="active"><a href="#tab-messages" data-toggle="f-tab">Сообщения</a></li>
+                            <li><a href="#tab-lists" data-toggle="f-tab">Списки</a></li>
+                        </ul><!-- f-nav-tabs -->
+                        <div id="tab-messages" class="f-tab active">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi bibendum aliquet lorem. Duis rhoncus bibendum eleifend.</p>
+                        </div><!-- f-tab -->
+                        <div id="tab-lists" class="f-tab">
+                            <p>Aliquam arcu libero, interdum a mollis a, imperdiet eget velit. Sed porta diam sed quam semper quis semper elit convallis.</p>
+                        </div><!-- f-tab -->
+                    </div><!-- g-5 -->
+                </div><!-- g-row -->
+            </div><!-- g-12 -->
+        </section><!-- g-row -->
 		<script>
 			prettyPrint();
 			$('#nav').onePageNav({
