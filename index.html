@@ -767,7 +767,7 @@
 	...
 	&lt;div class="g-2 f-gallery-item"&gt;
 		&lt;a href="#"&gt;&lt;img src="http://placehold.it/130x80" width="140" height="80" alt="pic" /&gt;
- 		&lt;small&gt;Название картинки&lt;/small&gt;&lt;/a&gt;
+		&lt;small&gt;Название картинки&lt;/small&gt;&lt;/a&gt;
 	&lt;/div&gt;&lt;!-- f-gallery-item --&gt;
 	...
 &lt;/div&gt;&lt;!-- f-gallery --&gt;</pre>
@@ -1327,44 +1327,55 @@
 				</div><!-- g-row -->
 			</div><!-- g-12 -->
 		</section><!-- g-row -->
-        <section id="js" class="g-row">
-            <div class="g-12">
-                <h2>JavaScript-компоненты</h2>
-                <h3>Вкладки</h3>
-                <script src="js/jquery.f-tabs.js"></script>
-
-                <div class="g-row">
-                    <div class="g-7">
+		<section id="js" class="g-row">
+			<div class="g-12">
+				<h2>JavaScript-компоненты</h2>
+				<h3>Вкладки</h3>
+				<p>Расширение для jQuery, добавляющее функционал вкладок для интерфейса.</p>
+				<p>Минимально необходимый элементы для работы расширения - ссылка, с родительским элементом, в данном случае <code>li</code>:</p>
 <pre class="prettyprint linenums">&lt;ul class="f-nav f-nav-tabs"&gt;
-    &lt;li class="active"&gt;
-        &lt;a href="#tab-messages" data-toggle="f-tab"&gt;Сообщения&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-        &lt;a href="#tab-lists" data-toggle="f-tab"&gt;Списки&lt;/a&gt;
-    &lt;/li&gt;
+	&lt;li class="active"&gt;
+		&lt;a href="#tab-messages"&gt;Сообщения&lt;/a&gt;
+	&lt;/li&gt;
 &lt;/ul&gt;&lt;!-- f-nav-tabs --&gt;
 &lt;div id="tab-messages" class="f-tab active"&gt;
-    &lt;p&gt;Lorem ipsum dolor sit amet...&lt;/p&gt;
+	&lt;p&gt;Lorem ipsum dolor sit amet...&lt;/p&gt;
+&lt;/div&gt;&lt;!-- f-tab --&gt;</pre>
+				<p>Аттрибут <code>href</code> ссылки указывает на связанный с ней элемент, к которому добавляется класс <code>.active</code>.</p>
+				<script src="js/jquery.f-tabs.js"></script>
+				<p><a href="js/jquery.f-tabs.js" class="f-bu">Загрузить файл</a></p>
+				<div class="g-row">
+					<div class="g-7">
+<pre class="prettyprint linenums">&lt;ul class="f-nav f-nav-tabs"&gt;
+	&lt;li class="active"&gt;
+		&lt;a href="#tab-messages" data-toggle="f-tab"&gt;Сообщения&lt;/a&gt;
+	&lt;/li&gt;
+	&lt;li&gt;
+		&lt;a href="#tab-lists" data-toggle="f-tab"&gt;Списки&lt;/a&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;&lt;!-- f-nav-tabs --&gt;
+&lt;div id="tab-messages" class="f-tab active"&gt;
+	&lt;p&gt;Lorem ipsum dolor sit amet...&lt;/p&gt;
 &lt;/div&gt;&lt;!-- f-tab --&gt;
 &lt;div id="tab-lists" class="f-tab"&gt;
-    &lt;p&gt;Aliquam arcu libero...&lt;/p&gt;
+	&lt;p&gt;Aliquam arcu libero...&lt;/p&gt;
 &lt;/div&gt;&lt;!-- f-tab --&gt;</pre>
-                    </div><!-- g-7 -->
-                    <div class="g-5">
-                        <ul class="f-nav f-nav-tabs">
-                            <li class="active"><a href="#tab-messages" data-toggle="f-tab">Сообщения</a></li>
-                            <li><a href="#tab-lists" data-toggle="f-tab">Списки</a></li>
-                        </ul><!-- f-nav-tabs -->
-                        <div id="tab-messages" class="f-tab active">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi bibendum aliquet lorem. Duis rhoncus bibendum eleifend.</p>
-                        </div><!-- f-tab -->
-                        <div id="tab-lists" class="f-tab">
-                            <p>Aliquam arcu libero, interdum a mollis a, imperdiet eget velit. Sed porta diam sed quam semper quis semper elit convallis.</p>
-                        </div><!-- f-tab -->
-                    </div><!-- g-5 -->
-                </div><!-- g-row -->
-            </div><!-- g-12 -->
-        </section><!-- g-row -->
+					</div><!-- g-7 -->
+					<div class="g-5">
+						<ul class="f-nav f-nav-tabs">
+							<li class="active"><a href="#tab-messages" data-toggle="f-tab">Сообщения</a></li>
+							<li><a href="#tab-lists" data-toggle="f-tab">Списки</a></li>
+						</ul><!-- f-nav-tabs -->
+						<div id="tab-messages" class="f-tab active">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi bibendum aliquet lorem. Duis rhoncus bibendum eleifend.</p>
+						</div><!-- f-tab -->
+						<div id="tab-lists" class="f-tab">
+							<p>Aliquam arcu libero, interdum a mollis a, imperdiet eget velit. Sed porta diam sed quam semper quis semper elit convallis.</p>
+						</div><!-- f-tab -->
+					</div><!-- g-5 -->
+				</div><!-- g-row -->
+			</div><!-- g-12 -->
+		</section><!-- g-row -->
 		<script>
 			prettyPrint();
 			$('#nav').onePageNav({
