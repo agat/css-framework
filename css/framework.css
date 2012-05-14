@@ -1,6 +1,6 @@
 /* css-framework
 
-	Version:	0.4.0
+	Version:	4.0.1
 	Author:		Aleksej Romanovskij (http://css-framework.com)
 	License:	Creative Commons Attribution 3.0 Unported License (http://creativecommons.org/licenses/by/3.0/)
 
@@ -221,16 +221,15 @@ section {
 .lt-ie8 .f-column {
   padding: 0;
 }
-.lt-ie8 .f-column {
+.lt-ie8 .f-column > * {
   margin-left: 10px;
 }
-.lt-ie8 .f-column:first-child {
+.lt-ie8 .f-column:first-child > * {
   margin-right: 10px;
   margin-left: 0;
 }
-.lt-ie8 .f-col-4 .f-column,
-.lt-ie8 .f-col-3 .f-column .f-column {
-  width: 47%;
+.lt-ie8 .f-column .f-column {
+  margin: 0;
 }
 body {
   font: normal 13px / 18px Arial, 'Helvetica Neue', Helvetica, sans-serif;
@@ -365,7 +364,6 @@ pre {
   -o-tab-size: 4;
   tab-size: 4;
   white-space: pre-wrap;
-  white-space: pre;
   word-wrap: break-word;
 }
 code,
@@ -782,24 +780,24 @@ input[disabled] {
   opacity: 0.75;
   cursor: not-allowed;
 }
-.valid .f-check,
-.valid .f-radio,
-.valid .f-input-comment {
+.f-valid .f-check,
+.f-valid .f-radio,
+.f-valid .f-input-comment {
   color: #859900;
 }
-.valid select,
-.valid textarea,
-.valid input[type="text"] {
+.f-valid select,
+.f-valid textarea,
+.f-valid input[type="text"] {
   border-color: #859900;
 }
-.invalid .f-check,
-.invalid .f-radio,
-.invalid .f-input-comment {
+.f-invalid .f-check,
+.f-invalid .f-radio,
+.f-invalid .f-input-comment {
   color: #dc322f;
 }
-.invalid select,
-.invalid textarea,
-.invalid input[type="text"] {
+.f-invalid select,
+.f-invalid textarea,
+.f-invalid input[type="text"] {
   border-color: #dc322f;
 }
 .f-message {
