@@ -970,23 +970,34 @@ input[disabled] {
   position: relative;
   z-index: 2010;
 }
-.f-nav-bar .f-nav-bar-body {
+.f-nav-bar-body {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   zoom: 1;
   width: 940px;
-  height: 36px;
   line-height: 36px;
   margin: auto;
 }
-.f-nav-bar .f-nav-bar-body:before,
-.f-nav-bar .f-nav-bar-body:after {
+.f-nav-bar-body:before,
+.f-nav-bar-body:after {
   display: table;
   content: '';
 }
-.f-nav-bar .f-nav-bar-body:after {
+.f-nav-bar-body:after {
   clear: both;
+}
+.f-nav-bar-title {
+  color: #ffffff;
+  float: left;
+  font-size: 22px;
+  line-height: 33px;
+  padding: 0 15px;
+  text-shadow: 1px 1px 1px #000000;
+}
+.f-nav-bar-title a {
+  color: #ffffff;
+  text-decoration: none;
 }
 .f-nav-bar .f-nav {
   float: left;
@@ -1009,18 +1020,6 @@ input[disabled] {
 .f-nav-bar .f-nav-right {
   float: right;
 }
-.f-nav-bar-title {
-  color: #ffffff;
-  float: left;
-  font-size: 22px;
-  line-height: 33px;
-  padding: 0 15px;
-  text-shadow: 1px 1px 1px #000000;
-}
-.f-nav-bar-title a {
-  color: #ffffff;
-  text-decoration: none;
-}
 .f-nav-bar-fixed {
   -moz-border-radius: 0;
   border-radius: 0;
@@ -1032,6 +1031,28 @@ input[disabled] {
 }
 .f-nav-bar-fixed .f-nav-bar-title {
   padding-left: 0;
+}
+.f-nav-bar-light {
+  background-color: #e1e1e1;
+  background-image: -moz-linear-gradient(#fbfbfb, #e1e1e1);
+  background-image: -ms-linear-gradient(#fbfbfb, #e1e1e1);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fbfbfb), color-stop(100%, #e1e1e1));
+  background-image: -webkit-linear-gradient(#fbfbfb, #e1e1e1);
+  background-image: -o-linear-gradient(#fbfbfb, #e1e1e1);
+  background-image: linear-gradient(#fbfbfb, #e1e1e1);
+  border: 1px solid #d5d5d5;
+  color: #333333;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.f-nav-bar-light .f-nav > li > a {
+  color: #333333;
+  text-shadow: none;
+}
+.f-nav-bar-light .f-nav > .active > a {
+  color: #333333;
+  text-shadow: none;
 }
 .f-breadcrumbs {
   margin: 0 0 12px;

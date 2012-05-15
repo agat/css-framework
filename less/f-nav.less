@@ -126,13 +126,25 @@
 	position: relative;
 	z-index: @z_ndex_nav_bar;
 
-	.f-nav-bar-body {
+	&-body {
 		.box-sizing;
 		.clearfix;
 		.gridRow(12);
-		height: @nav_bar_height;
 		line-height: @nav_bar_height;
 		margin: auto;
+	}
+	&-title {
+		color: @nav_bar_text_color_active;
+		float: left;
+		font-size: @nav_bar_title_text_size;
+		line-height: @nav_bar_height - 3;
+		padding: 0 15px;
+		text-shadow: 1px 1px 1px @nav_bar_text_color_shadow_active;
+
+		a {
+			color: @nav_bar_text_color_active;
+			text-decoration: none;
+		}
 	}
 	.f-nav {
 		float: left;
@@ -157,33 +169,37 @@
 	.f-nav-right {
 		float: right;
 	}
-}
 
-.f-nav-bar-title {
-	color: @nav_bar_text_color_active;
-	float: left;
-	font-size: @nav_bar_title_text_size;
-	line-height: @nav_bar_height - 3;
-	padding: 0 15px;
-	text-shadow: 1px 1px 1px @nav_bar_text_color_shadow_active;
+	// Top fixed navigation bar
+	// ---------------------------------------
+	&-fixed {
+		.border-radius(0);
+		left: 0;
+		position: fixed;
+		right: 0;
+		top: 0;
+		z-index: @z_ndex_nav_bar;
 
-	a {
-		color: @nav_bar_text_color_active;
-		text-decoration: none;
+		.f-nav-bar-title {
+			padding-left: 0;
+		}
 	}
-}
 
-// Top fixed navigation bar
-// ---------------------------------------
-.f-nav-bar-fixed {
-	.border-radius(0);
-	left: 0;
-	position: fixed;
-	right: 0;
-	top: 0;
-	z-index: @z_ndex_nav_bar;
+	&-light {
+		#gradient > .vertical(lighten(@nav_bar_light_bg, 5%), darken(@nav_bar_light_bg, 5%));
+		border: 1px solid darken(@nav_bar_light_bg, 10%);
+		color: @nav_bar_light_text_color;
+		.box-shadow(none);
 
-	.f-nav-bar-title {
-		padding-left: 0;
+		.f-nav {
+			> li > a {
+				color: @nav_bar_light_text_color;
+				text-shadow: none;
+			}
+			> .active > a {
+				color: @nav_bar_light_text_color;
+				text-shadow: none;
+			}
+		}
 	}
 }
