@@ -1004,6 +1004,14 @@ input[disabled] {
   float: left;
   margin: 0;
 }
+.f-nav-bar .f-nav > .active {
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset;
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset;
+  background: #333333;
+  margin: -1px;
+  padding: 1px;
+}
 .f-nav-bar .f-nav > li {
   margin: 0;
 }
@@ -1031,7 +1039,7 @@ input[disabled] {
   z-index: 2010;
 }
 .f-nav-bar-fixed .f-nav-bar-title {
-  padding-left: 0;
+  padding-left: 10px;
 }
 .f-nav-bar-light {
   background-color: #e1e1e1;
@@ -1041,11 +1049,14 @@ input[disabled] {
   background-image: -webkit-linear-gradient(#fbfbfb, #e1e1e1);
   background-image: -o-linear-gradient(#fbfbfb, #e1e1e1);
   background-image: linear-gradient(#fbfbfb, #e1e1e1);
-  border: 1px solid #d5d5d5;
-  color: #666666;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
+  border: 1px solid #d5d5d5;
+  color: #666666;
+}
+.f-nav-bar-light .f-nav > .active {
+  background: #eeeeee;
 }
 .f-nav-bar-light .f-nav > li > a {
   color: #666666;
@@ -1057,6 +1068,12 @@ input[disabled] {
 .f-nav-bar-light .f-nav > .active > a {
   color: #333333;
   text-shadow: none;
+}
+.f-nav-bar-light.f-nav-bar-fixed {
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+  top: 36px;
 }
 .f-breadcrumbs {
   margin: 0 0 12px;

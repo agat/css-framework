@@ -10,7 +10,7 @@
 		list-style: none;
 		margin: 0 @line_height 0 0;
 		position: relative;
-		
+
 		> a {
 			display: block;
 			line-height: @nav_height;
@@ -41,7 +41,7 @@
 			.border-radius(@border_radius @border_radius 0 0);
 			border-bottom: 1px solid transparent;
 			padding: 1px 10px 0;
-			
+
 			&:hover {
 				background: @nav_hover_bg;
 				border-color: @nav_border_color;
@@ -74,7 +74,7 @@
 			line-height: @nav_height;
 			padding: 0 11px;
 			text-decoration: none;
-			
+
 			&:hover {
 				color: @nav_hover_color;
 			}
@@ -151,6 +151,12 @@
 		float: left;
 		margin: 0;
 
+		> .active {
+			.box-shadow(0 1px 3px rgba(0, 0, 0, .25) inset);
+			background: @nav_bar_bg;
+			margin: -1px;
+			padding: 1px;
+		}
 		> li {
 			margin: 0;
 
@@ -182,17 +188,20 @@
 		z-index: @z_ndex_nav_bar;
 
 		.f-nav-bar-title {
-			padding-left: 0;
+			padding-left: 10px;
 		}
 	}
 
 	&-light {
 		#gradient > .vertical(lighten(@nav_bar_light_bg, 5%), darken(@nav_bar_light_bg, 5%));
+		.box-shadow(none);
 		border: 1px solid darken(@nav_bar_light_bg, 10%);
 		color: @nav_bar_light_text_color;
-		.box-shadow(none);
 
 		.f-nav {
+			> .active {
+				background: @nav_bar_light_bg;
+			}
 			> li > a {
 				color: @nav_bar_light_text_color;
 				text-shadow: none;
@@ -205,5 +214,10 @@
 				text-shadow: none;
 			}
 		}
+	}
+
+	&-light.f-nav-bar-fixed {
+		.box-shadow;
+		top: @nav_bar_height;
 	}
 }
