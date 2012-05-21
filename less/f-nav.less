@@ -123,6 +123,7 @@
 	.box-shadow;
 	border: 1px solid darken(@nav_bar_bg, 5%);
 	color: @nav_bar_text_color;
+	margin: 0 0 @bottom_spacing 0;
 	position: relative;
 	z-index: @z_ndex_nav_bar;
 
@@ -196,8 +197,11 @@
 				color: @nav_bar_light_text_color;
 				text-shadow: none;
 			}
+			&-bar-title,
+			&-bar-title a,
+			> li > a:hover,
 			> .active > a {
-				color: @nav_bar_light_text_color;
+				color: @nav_bar_light_text_color_active;
 				text-shadow: none;
 			}
 		}

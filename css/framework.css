@@ -967,6 +967,7 @@ input[disabled] {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
   border: 1px solid #262626;
   color: #cccccc;
+  margin: 0 0 12px 0;
   position: relative;
   z-index: 2010;
 }
@@ -1041,15 +1042,18 @@ input[disabled] {
   background-image: -o-linear-gradient(#fbfbfb, #e1e1e1);
   background-image: linear-gradient(#fbfbfb, #e1e1e1);
   border: 1px solid #d5d5d5;
-  color: #333333;
+  color: #666666;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
 }
 .f-nav-bar-light .f-nav > li > a {
-  color: #333333;
+  color: #666666;
   text-shadow: none;
 }
+.f-nav-bar-light .f-nav-bar-title,
+.f-nav-bar-light .f-nav-bar-title a,
+.f-nav-bar-light .f-nav > li > a:hover,
 .f-nav-bar-light .f-nav > .active > a {
   color: #333333;
   text-shadow: none;
