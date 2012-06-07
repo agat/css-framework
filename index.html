@@ -13,13 +13,14 @@
 		<script src="docs/js/jquery-1.7.2.min.js"></script>
 		<script src="docs/js/prettify.js"></script>
 		<script src="docs/js/jquery.scrollTo.js"></script>
-		<script src="docs/js/jquery.nav.min.js"></script>
+		<!--<script src="docs/js/jquery.nav.min.js"></script>-->
+		<script src="js/jquery.f-nav.js"></script>
 		<!--[if lt IE 9]>
 			<script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
 	</head>
 	<body class="g">
-		<div class="f-nav-bar f-nav-bar-fixed">
+		<div class="f-nav-bar f-nav-bar-fixed" data-f="f-nav" data-offset="110">
 			<div class="f-nav-bar-body">
 				<div class="f-nav-bar-title">
 					<a href="http://agat.github.com/css-framework/">css-framework</a>
@@ -1357,10 +1358,10 @@
 
 		<script>
 			prettyPrint();
-			$('#nav').onePageNav({
+			/*$('#nav').onePageNav({
 				currentClass: 'active',
 				changeHash: true
-			});
+			});*/
 		</script>
 	</body>
 </html>
