@@ -1,7 +1,7 @@
 'use strict';
 
 !function ($) {
-	var name_space = 'f-nav',
+	var name_space = 'f_nav',
 		attr_selector = '[data-f="' + name_space + '"]',
 		Nav = function (element, options) {
 			var me = this,
@@ -14,14 +14,14 @@
 			me.$links = $(me.$element.find('a')).filter(function () {
 				$target = $($(this).attr('href'));
 
-				if ($target.length) {
+				if ( $target.length ) {
 					me.$targets.push($target.eq(0));
 
 					return true;
 				}
 			});
 
-			$(window).on('scroll', function() {
+			$(window).on('scroll', function () {
 				me.update()
 			});
 
@@ -40,7 +40,7 @@
 			offset          = parseInt(me.$targets[index].offset().top);
 			target_height   = me.$targets[index].outerHeight(true);
 
-			if((scroll >= offset) && (scroll < (offset + target_height))) {
+			if ( (scroll >= offset) && (scroll < (offset + target_height)) ) {
 				$link_parent.addClass(me.options.active_class);
 			} else {
 				$link_parent.removeClass(me.options.active_class);
@@ -54,8 +54,12 @@
 				data = $this.data(name_space),
 				options = (typeof option == 'object') ? option: {};
 
-			if (!data) $this.data(name_space, (data = new Nav(this, options)));
-			if (typeof option == 'string') data[option]();
+			if ( !data ) {
+				$this.data(name_space, (data = new Nav(this, options)));
+			}
+			if ( typeof option == 'string' ) {
+				data[option]();
+			}
 		})
 	};
 
