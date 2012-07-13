@@ -1,7 +1,7 @@
 #! /bin/bash
 
 # Variables
-FRAMEWORK_VERSION="4.0.1"
+FRAMEWORK_VERSION="4.0.2"
 FRAMEWORK_NAME=framework
 FRAMEWORK_CR="/* css-framework v${FRAMEWORK_VERSION} http://css-framework.com/ | http://creativecommons.org/licenses/by/3.0/ */"
 

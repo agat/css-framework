@@ -79,7 +79,8 @@ legend {
 // ---------------------------------------
 select,
 textarea,
-input[type="text"] {
+input[type="text"],
+input[type="password"] {
 	.box-sizing;
 	border: 1px solid;
 	border-color: @form_input_border_color;
@@ -89,6 +90,7 @@ input[type="text"] {
 .f-bu,
 select,
 input[type="text"],
+input[type="password"],
 textarea {
 	#font > .base();
 	.border-radius;
@@ -137,11 +139,13 @@ option {
 }
 select,
 textarea,
-input[type="text"] {
+input[type="text"],
+input[type="password"] {
 	background: @color_white;
 }
 textarea,
-input[type="text"] {
+input[type="text"],
+input[type="password"] {
 	.box-shadow(inset 1px 2px 2px rgba(0, 0, 0, 0.1));
 }
 
@@ -154,7 +158,8 @@ input::-moz-focus-inner {
 .lt-ie8 {
 	select,
 	textarea,
-	input[type="text"] {
+	input[type="text"],
+	input[type="password"] {
 		height: auto;
 	}
 }
@@ -236,12 +241,14 @@ input::-moz-focus-inner {
 .f-bu:active,
 .f-bu:focus,
 input[type="text"]:focus,
+input[type="password"]:focus,
 textarea:focus {
 	border-color: #268bd2;
 	outline: none;
 }
 .f-bu:focus,
 input[type="text"]:focus,
+input[type="password"]:focus,
 textarea:focus {
 	.box-shadow(0 0 5px rgba(38, 139, 210, .3));
 }
@@ -268,7 +275,8 @@ input[disabled] {
 	
 	select,
 	textarea,
-	input[type="text"] {
+	input[type="text"],
+	input[type="password"] {
 		border-color: @color_green;
 	}
 }
@@ -281,7 +289,8 @@ input[disabled] {
 
 	select,
 	textarea,
-	input[type="text"] {
+	input[type="text"],
+	input[type="password"] {
 		border-color: @color_red;
 	}
 }

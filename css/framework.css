@@ -553,7 +553,8 @@ legend {
 }
 select,
 textarea,
-input[type="text"] {
+input[type="text"],
+input[type="password"] {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -565,6 +566,7 @@ input[type="text"] {
 .f-bu,
 select,
 input[type="text"],
+input[type="password"],
 textarea {
   font: normal 13px / 18px Arial, 'Helvetica Neue', Helvetica, sans-serif;
   -moz-border-radius: 3px;
@@ -613,11 +615,13 @@ option {
 }
 select,
 textarea,
-input[type="text"] {
+input[type="text"],
+input[type="password"] {
   background: #ffffff;
 }
 textarea,
-input[type="text"] {
+input[type="text"],
+input[type="password"] {
   -webkit-box-shadow: inset 1px 2px 2px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: inset 1px 2px 2px rgba(0, 0, 0, 0.1);
   box-shadow: inset 1px 2px 2px rgba(0, 0, 0, 0.1);
@@ -629,7 +633,8 @@ input::-moz-focus-inner {
 }
 .lt-ie8 select,
 .lt-ie8 textarea,
-.lt-ie8 input[type="text"] {
+.lt-ie8 input[type="text"],
+.lt-ie8 input[type="password"] {
   height: auto;
 }
 .f-buttons .f-bu {
@@ -761,12 +766,14 @@ input::-moz-focus-inner {
 .f-bu:active,
 .f-bu:focus,
 input[type="text"]:focus,
+input[type="password"]:focus,
 textarea:focus {
   border-color: #268bd2;
   outline: none;
 }
 .f-bu:focus,
 input[type="text"]:focus,
+input[type="password"]:focus,
 textarea:focus {
   -webkit-box-shadow: 0 0 5px rgba(38, 139, 210, 0.3);
   -moz-box-shadow: 0 0 5px rgba(38, 139, 210, 0.3);
@@ -787,7 +794,8 @@ input[disabled] {
 }
 .f-valid select,
 .f-valid textarea,
-.f-valid input[type="text"] {
+.f-valid input[type="text"],
+.f-valid input[type="password"] {
   border-color: #859900;
 }
 .f-invalid .f-check,
@@ -797,7 +805,8 @@ input[disabled] {
 }
 .f-invalid select,
 .f-invalid textarea,
-.f-invalid input[type="text"] {
+.f-invalid input[type="text"],
+.f-invalid input[type="password"] {
   border-color: #dc322f;
 }
 .f-message {
