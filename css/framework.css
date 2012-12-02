@@ -1142,9 +1142,9 @@ input[disabled] {
   display: block;
   padding: 0 5px;
 }
-.f-tab {
+.f_tab {
   display: none;
 }
-.f-tab.active {
+.f_tab.active {
   display: block;
 }

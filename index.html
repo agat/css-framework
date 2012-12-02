@@ -1332,7 +1332,7 @@
 				<h2>JavaScript-компоненты</h2>
 				<h3>Вкладки</h3>
 				<p>Расширение для jQuery, добавляющее функционал вкладок для интерфейса.</p>
-				<p>Минимально необходимый элементы для работы расширения - ссылка, с родительским элементом, в данном случае <code>li</code>:</p>
+				<p>Минимально необходимый элемент для работы расширения - ссылка, с родительским элементом, в данном случае <code>li</code>:</p>
 <pre class="prettyprint linenums">&lt;ul class="f-nav f-nav-tabs"&gt;
 	&lt;li class="active"&gt;
 		&lt;a href="#tab-messages"&gt;Сообщения&lt;/a&gt;
@@ -1341,17 +1341,20 @@
 &lt;div id="tab-messages" class="f-tab active"&gt;
 	&lt;p&gt;Lorem ipsum dolor sit amet...&lt;/p&gt;
 &lt;/div&gt;&lt;!-- f-tab --&gt;</pre>
-				<p>Аттрибут <code>href</code> ссылки указывает на связанный с ней элемент, к которому добавляется класс <code>.active</code>.</p>
-				<script src="js/jquery.f-tabs.js"></script>
+				<p>Аттрибут <code>href</code> ссылки указывает на связанный с ней элемент содержимого вкладки, к которому добавляется класс <code>.active</code>.</p>
+                <h3>Как использовать</h3>
+                <script src="js/jquery.f-tabs.js"></script>
+
+
 				<p><a href="js/jquery.f-tabs.js" class="f-bu">Загрузить файл</a></p>
 				<div class="g-row">
 					<div class="g-7">
 <pre class="prettyprint linenums">&lt;ul class="f-nav f-nav-tabs"&gt;
 	&lt;li class="active"&gt;
-		&lt;a href="#tab-messages" data-toggle="f-tab"&gt;Сообщения&lt;/a&gt;
+		&lt;a href="#tab-messages" data-f="f-tab"&gt;Сообщения&lt;/a&gt;
 	&lt;/li&gt;
 	&lt;li&gt;
-		&lt;a href="#tab-lists" data-toggle="f-tab"&gt;Списки&lt;/a&gt;
+		&lt;a href="#tab-lists" data-f="f-tab"&gt;Списки&lt;/a&gt;
 	&lt;/li&gt;
 &lt;/ul&gt;&lt;!-- f-nav-tabs --&gt;
 &lt;div id="tab-messages" class="f-tab active"&gt;
@@ -1363,19 +1366,25 @@
 					</div><!-- g-7 -->
 					<div class="g-5">
 						<ul class="f-nav f-nav-tabs">
-							<li class="active"><a href="#tab-messages" data-toggle="f-tab">Сообщения</a></li>
-							<li><a href="#tab-lists" data-toggle="f-tab">Списки</a></li>
+							<li class="active"><a href="#tab-messages" data-f="f_tab2">Сообщения</a></li>
+							<li><a href="#tab-lists" data-f="f_tab2">Списки</a></li>
 						</ul><!-- f-nav-tabs -->
-						<div id="tab-messages" class="f-tab active">
+						<div id="tab-messages" class="f_tab active">
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi bibendum aliquet lorem. Duis rhoncus bibendum eleifend.</p>
 						</div><!-- f-tab -->
-						<div id="tab-lists" class="f-tab">
+						<div id="tab-lists" class="f_tab">
 							<p>Aliquam arcu libero, interdum a mollis a, imperdiet eget velit. Sed porta diam sed quam semper quis semper elit convallis.</p>
 						</div><!-- f-tab -->
 					</div><!-- g-5 -->
 				</div><!-- g-row -->
 			</div><!-- g-12 -->
 		</section><!-- g-row -->
+        <script>
+            $('.f-nav-tabs a').on('click', function (e) {
+                e.preventDefault();
+                $(this).f_tab('show');
+            });
+        </script>
 		<script>
 			prettyPrint();
 			$('#nav').onePageNav({
