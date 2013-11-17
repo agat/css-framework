@@ -278,6 +278,11 @@ input[disabled] {
 	input[type="text"],
 	input[type="password"] {
 		border-color: @color_green;
+		
+		&:focus,
+		&:active {
+			.box-shadow(0 0 5px rgba(133, 153, 0, .3));
+		}
 	}
 }
 .f-invalid {
@@ -292,5 +297,10 @@ input[disabled] {
 	input[type="text"],
 	input[type="password"] {
 		border-color: @color_red;
+		
+		&:focus,
+		&:active {
+			.box-shadow(0 0 5px rgba(220, 50, 47, .3));
+		}
 	}
 }
